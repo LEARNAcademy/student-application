@@ -21,21 +21,22 @@ Elements of the commit message:
 
 1. Gitmoji that represents the main objective of the PR
 
-- :bug: Bug
-- :sparkles: New feature
-- :memo: Update documentation
 - :lipstick: Adds or fixes UI
-- :iphone: Responsive design
-- :recycle: Refactor code
-- :pencil2: Fix typos
-- :truck: Move or rename files or resources
-- :construction: Work in progress
+- :bulb: Adds or updates code comments
+- :wrench: Adds or updates config files
+- :memo: Adds or updates documentation
+- :heavy_plus_sign: Adds or updates dependencies
+- :seedling: Adds or updates seed files or mock data
 - :white_check_mark: Adds or updates tests
-- :bulb: Add or update code comments
-- :seedling: Add or update seed files or mock data
+- :bug: Bug
+- :pencil2: Fix typos
 - :technologist: Improve developer experience
+- :truck: Move or rename files or resources
+- :sparkles: New feature
+- :recycle: Refactor code
 - :mute: Remove console logs
-- :wrench: Add or update config files
+- :iphone: Responsive design
+- :construction: Work in progress
 
 2. Ticket ID within brackets: `[2]`
 3. Brief description of the content, should be similar to the branch and ticket name
