@@ -6,7 +6,7 @@ export const user = {
     id: 1,
     user_id: 1,
     absences: 3,
-    assessment: [
+    assessments: [
       {
         id: 1,
         student_id: 1,
@@ -17,7 +17,7 @@ export const user = {
         notes: "you need to spend more time on your assessments 1"
       },
       {
-        id: 1,
+        id: 2,
         student_id: 1,
         week: 2,
         status: "complete",
@@ -26,7 +26,7 @@ export const user = {
         notes: "you need to spend more time on your assessments 2"
       },
       {
-        id: 1,
+        id: 3,
         student_id: 1,
         week: 3,
         status: "complete",
@@ -35,7 +35,7 @@ export const user = {
         notes: "you need to spend more time on your assessments 3"
       },
       {
-        id: 1,
+        id: 4,
         student_id: 1,
         week: 4,
         status: "complete",
@@ -44,7 +44,7 @@ export const user = {
         notes: "you need to spend more time on your assessments 4"
       },
       {
-        id: 1,
+        id: 5,
         student_id: 1,
         week: 5,
         status: "complete",
@@ -53,7 +53,7 @@ export const user = {
         notes: "you need to spend more time on your assessments 5"
       },
       {
-        id: 1,
+        id: 6,
         student_id: 1,
         week: 6,
         status: "complete",
