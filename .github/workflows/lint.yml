@@ -22,4 +22,3 @@ jobs:
 
       - name: Run eslint
         run: yarn eslint src/**.js --fix
-        run: yarn eslint src/**.js
