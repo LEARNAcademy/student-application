@@ -1,4 +1,4 @@
-import './App.css'
+import React from 'react'
 import { StudentDashboard } from './pages/StudentDashboard/StudentDashboard'
 
 const App = () => {
