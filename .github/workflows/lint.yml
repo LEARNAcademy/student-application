@@ -1,15 +1,24 @@
 name: Lint
 
-on: [push]
+on: push
 
 jobs:
-  eslint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - uses: stefanoeb/eslint-action@1.0.2
+
+      - name: Restore workspace cache
+        uses: actions/cache@v3
         with:
-          files: src/
+          path: "**/node_modules"
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run lint
+        run: yarn lint
