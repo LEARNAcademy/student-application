@@ -76,3 +76,5 @@ const assessments = [
 "your answers written in complete sentences the student's own words that provide correct answers",
 "well researched and detailed answers written in complete sentences in the student's own words that provides additional context",
 ]
+
+export {attendancePolicy,assessments}
