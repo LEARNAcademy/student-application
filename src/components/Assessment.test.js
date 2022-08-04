@@ -7,7 +7,8 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe('<Assessment />', () => {
   it('displays 6 divs with id of week', () => {
-    const assessment = shallow(<Assessment />)
+    const assessmentsProps = []
+    const assessment = shallow(<Assessment assessments={assessmentsProps}/>)
     const assessmentDiv = assessment.find('[id="week"]')
     expect(assessmentDiv.length).toEqual(6)
   })
