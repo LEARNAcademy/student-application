@@ -4,8 +4,7 @@ import { Header } from '../../components/Header'
 const StudentDashboard = () => {
   return (
     <>
-    <Header/>
-      <h3 className="underline">LEARN Student Application</h3>
+      <Header/>
     </>
   )
 }

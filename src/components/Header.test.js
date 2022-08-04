@@ -10,7 +10,7 @@ describe("When Header renders", () => {
     beforeEach (() => {
         headerRender = shallow(<Header />)
     })
-  it('displays an image ', () => {
+  it('displays an image', () => {
     const reactHeaderLogo = headerRender.find('img')
     expect(reactHeaderLogo.length).toEqual(1)
   })
