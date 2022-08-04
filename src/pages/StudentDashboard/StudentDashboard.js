@@ -6,8 +6,8 @@ const StudentDashboard = () => {
   const { assessments } = user.student
   return (
     <>
-      <h1 className="underline">LEARN Student Application</h1>
-      <h3>Welcome {user.preferred_name}</h3>
+      <h3 className="underline">LEARN Student Application</h3>
+      <div>Welcome {user.preferred_name}</div>
       <Assessment assessments={assessments}/>
     </>
   )
