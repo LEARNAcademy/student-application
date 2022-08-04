@@ -11,7 +11,7 @@ const Greeter = (props) => {
   }
 
   return (
-    <div id="greeting">Welcome, {greeterName(user)}</div>
+    <div id="greeting">Welcome, {greeterName(user)!}</div>
   )
 }
 
