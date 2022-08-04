@@ -2,9 +2,10 @@ env:
   browser: true
   es2021: true
 extends:
+  - eslint:recommended
   - plugin:react/recommended
+  - plugin:tailwindcss/recommended
   - plugin:jest/recommended
-  - standard
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -12,5 +13,20 @@ parserOptions:
   sourceType: module
 plugins:
   - react
+  - tailwindcss
   - jest
-rules: {}
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - double
+  semi:
+    - error
+    - never
+  react/prop-types: 
+    - off
