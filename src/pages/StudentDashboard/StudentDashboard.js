@@ -7,7 +7,6 @@ const StudentDashboard = () => {
   return (
     <>
       <h3 className="underline">LEARN Student Application</h3>
-      <div>Welcome {user.preferred_name}</div>
       <Assessment assessments={assessments}/>
     </>
   )
