@@ -60,7 +60,7 @@ export const user = {
         comprehension: "competent",
         reviewer: "Instructor",
         notes: "you need to spend more time on your assessments 6"
-      },
-    ],
-  },
-};
+      }
+    ]
+  }
+}

@@ -21,4 +21,4 @@ jobs:
         run: yarn install
 
       - name: Run eslint
-        run: yarn eslint src/ --fix
+        run: yarn eslint . --fix

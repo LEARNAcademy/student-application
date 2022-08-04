@@ -2,9 +2,10 @@ env:
   browser: true
   es2021: true
 extends:
+  - standard
   - plugin:react/recommended
   - plugin:jest/recommended
-  - standard
+  - plugin:tailwindcss/recommended
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -13,4 +14,8 @@ parserOptions:
 plugins:
   - react
   - jest
-rules: {}
+  - tailwindcss
+rules: {
+  quotes: ["error", "double"],
+  jsx-quotes: ["error", "prefer-double"]
+}
