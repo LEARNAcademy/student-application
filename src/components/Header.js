@@ -1,5 +1,5 @@
-import React from 'react'
-import learnLogo from '../assets/LEARN_Academy_logo-purple.png'
+import React from "react"
+import learnLogo from "../assets/LEARN_Academy_logo-purple.png"
 
 const Header = () => {
   return (
