@@ -10,6 +10,6 @@ describe("<Greeter />", () => {
     const greeterProps = {name: "Bob", preferred_name:"Bobby"}
     const greeterRender = shallow(<Greeter user={greeterProps}/>)
     const greetingDiv = greeterRender.find("[id=\"greeting\"]").text()
-    expect(greetingDiv.length).toEqual("Welcome, Bobby!")
+    expect(greetingDiv).toEqual("Welcome, Bobby!")
   })
 })
