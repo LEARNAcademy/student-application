@@ -1,6 +1,6 @@
-import React from 'react'
-import { Assessment } from '../../components/Assessment'
-import { user } from '../../userMock.js'
+import React from "react"
+import { Assessment } from "../../components/Assessment"
+import { user } from "../../userMock.js"
 
 const StudentDashboard = () => {
   const { assessments } = user.student
