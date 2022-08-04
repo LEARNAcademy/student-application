@@ -13,4 +13,6 @@ parserOptions:
 plugins:
   - react
   - jest
-rules: {}
+rules:
+  react/prop-types: 
+    - off
