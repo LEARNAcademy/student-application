@@ -7,15 +7,15 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe("<Greeter />", () => {
   it("displays preferred_name if available", () => {
-    const greeterProps = {name: "Bob", preferred_name:"Bobby"}
+    const greeterProps = {preferred_name:"Bobby"}
     const greeterRender = shallow(<Greeter user={greeterProps}/>)
     const greetingDiv = greeterRender.find("[id=\"greeting\"]").text()
     expect(greetingDiv).toEqual("Welcome, Bobby!")
   }),
-  it("displays name if preferred_name is not available", () => {
-    const greeterProps = {name: "Bob", preferred_name:""}
+  it("displays generic greeting if preferred_name is not available", () => {
+    const greeterProps = {preferred_name:""}
     const greeterRender = shallow(<Greeter user={greeterProps}/>)
     const greetingDiv = greeterRender.find("[id=\"greeting\"]").text()
-    expect(greetingDiv).toEqual("Welcome, Bob!")
+    expect(greetingDiv).toEqual("Welcome, Learn Student!")
   })
 })

@@ -6,7 +6,7 @@ const Greeter = (props) => {
     if (userObj.preferred_name) {
       return userObj.preferred_name
     } else {
-      return userObj.name
+      return "Learn Student"
     }
   }
 
