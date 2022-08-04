@@ -8,6 +8,7 @@ extends:
   - plugin:react/recommended
   - plugin:tailwindcss/recommended
   - plugin:jest/recommended
+  - prettier
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -24,6 +25,9 @@ rules:
   linebreak-style:
     - error
     - unix
+  jsx-quotes:
+    - error
+    - prefer-double
   quotes:
     - error
     - double
