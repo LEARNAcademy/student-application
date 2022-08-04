@@ -18,7 +18,7 @@ const Assessment = (props) => {
     <>
       {assess.map((assessment, index) => {
         return (
-          <div key={index}>
+          <div id="week" key={index}>
             <div> Week {assessment.week} </div>
             <div> Status: {assessment.status} </div>
             <div> Comprehension: {assessment.comprehension}</div>
