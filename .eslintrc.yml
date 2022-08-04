@@ -1,11 +1,14 @@
 env:
   browser: true
   es2021: true
+  jest: true
+  node: true
 extends:
   - eslint:recommended
   - plugin:react/recommended
   - plugin:tailwindcss/recommended
   - plugin:jest/recommended
+  - prettier
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -22,11 +25,16 @@ rules:
   linebreak-style:
     - error
     - unix
+  jsx-quotes:
+    - error
+    - prefer-double
   quotes:
     - error
     - double
   semi:
     - error
     - never
-  react/prop-types: 
+  react/prop-types:
+    - off
+  react/react-in-jsx-scope:
     - off

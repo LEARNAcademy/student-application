@@ -5,10 +5,10 @@ import { StudentDashboard } from "./StudentDashboard"
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('<StudentDashboard />', () => {
-  it('renders a header', () => {
+describe("<StudentDashboard />", () => {
+  it("displays a heading", () => {
     const studentDashboard = shallow(<StudentDashboard />)
-    const studentDashboardHeading = studentDashboard.find('Header')
-    expect(studentDashboardHeading.length).toEqual(1)
+    const studentDashboardHeading = studentDashboard.find("h3").text()
+    expect(studentDashboardHeading).toEqual("LEARN Student Application")
   })
 })
