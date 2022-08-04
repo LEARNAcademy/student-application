@@ -1,11 +1,13 @@
 env:
   browser: true
   es2021: true
+  jest: true
+  node: true
 extends:
-  - standard
+  - eslint:recommended
   - plugin:react/recommended
-  - plugin:jest/recommended
   - plugin:tailwindcss/recommended
+  - plugin:jest/recommended
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -13,9 +15,22 @@ parserOptions:
   sourceType: module
 plugins:
   - react
-  - jest
   - tailwindcss
-rules: {
-  quotes: ["error", "double"],
-  jsx-quotes: ["error", "prefer-double"]
-}
+  - jest
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - double
+  semi:
+    - error
+    - never
+  react/prop-types:
+    - off
+  react/react-in-jsx-scope:
+    - off
