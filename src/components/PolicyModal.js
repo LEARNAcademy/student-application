@@ -56,7 +56,6 @@ const ComprehensionModal = () => {
 
             <p>Lorem ipsum</p> 
 
-            <h1>Tardy</h1>
                       
           
           </div>
