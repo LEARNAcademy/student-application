@@ -13,7 +13,7 @@ const Absences = (props) => {
 
   return (
     <>
-      <div id="absence"> Absence: {absence} </div>
+      <div id="absence">Absence: {absence}</div>
     </>
   )
 }
