@@ -5,7 +5,9 @@ const Absences = (props) => {
   const { student } = props
     
   useEffect(() => {
-    setAbsence(student.absences)
+    if(student.absences) {
+      setAbsence(student.absences)
+    }
   },[])
     
 
