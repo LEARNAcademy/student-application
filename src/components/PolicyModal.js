@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Button, Modal } from "flowbite-react"
 
 const AttendancePolicyModal = () => {
-    const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false)
   return (
     <>
       <Button onClick={() => setVisible(true)}>
@@ -23,7 +23,7 @@ const AttendancePolicyModal = () => {
 
             <h1>Tardy</h1>
 
-    <p>A student is considered tardy if they miss the morning standup
+            <p>A student is considered tardy if they miss the morning standup
 
 With the exception of emergencies, students will notify an instructor by Slack message 24 hours in advance of any absences. 
 
@@ -36,4 +36,34 @@ A student is considered absent when they miss one or more hour If three or more 
   )
 }
 
-export { AttendancePolicyModal }
+const ComprehensionModal = () => {
+  const [visible, setVisible] = useState(false)
+  return (
+    <>
+      <Button onClick={() => setVisible(true)}>
+  Comprehension
+      </Button>
+      <Modal
+        show={visible}
+        onClose={() => setVisible(false)}
+      >
+        <Modal.Header>
+      Comprehension
+        </Modal.Header>
+        <Modal.Body>
+          <div className="space-y-6">
+     
+
+            <p>Lorem ipsum</p> 
+
+            <h1>Tardy</h1>
+                      
+          
+          </div>
+        </Modal.Body>
+      </Modal>
+    </>
+  )
+}
+
+export { AttendancePolicyModal, ComprehensionModal }
