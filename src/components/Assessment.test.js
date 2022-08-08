@@ -1,15 +1,13 @@
 import React from "react"
-import Enzyme, { shallow } from "enzyme"
-import Adapter from "enzyme-adapter-react-16"
 import { Assessment } from "./Assessment"
+import { render, queryAllByAttribute } from "@testing-library/react"
 
-Enzyme.configure({ adapter: new Adapter() })
+const getAllById = queryAllByAttribute.bind(null, "id")
+const dom = render(<Assessment assessments={[]}/>)
 
 describe("<Assessment />", () => {
-  it("displays 6 divs with id of week", () => {
-    const assessmentsProps = []
-    const assessment = shallow(<Assessment assessments={assessmentsProps}/>)
-    const assessmentDiv = assessment.find("[id=\"week\"]")
-    expect(assessmentDiv.length).toEqual(6)
+  test("render 6 divs with the text Week", () => {
+    const week = getAllById(dom.container, "week")
+    expect(week).toHaveLength(6)
   })
 })
