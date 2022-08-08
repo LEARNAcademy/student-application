@@ -13,7 +13,7 @@ const Absences = (props) => {
 
   return (
     <>
-      <div className="font-style: text-red-900 font-bold" id="absence">Absence: {absence}</div>
+      <div className="font-bold text-red-900" id="absence">Absence: {absence}</div>
       
     </>
   )
