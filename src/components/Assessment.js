@@ -9,7 +9,7 @@ const Assessment = (props) => {
   const assessmentsUpdate = () => {
     const newAssess = []
     for(let i = 0; i < 6 ; i++) {
-      if(assessments[i].week === i + 1) {
+      if(assessments[i] && assessments[i].week === i + 1) {
         newAssess.push(assessments[i])
       } else {
         newAssess.push({ week: i+1, status: "unassigned", comprehension: "N/A", reviewer: "N/A", notes: "N/A" })
