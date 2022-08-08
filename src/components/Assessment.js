@@ -16,9 +16,30 @@ const Assessment = (props) => {
     setAssess(assessments.concat(newAssess))
   }, [])
 
+  const [statusColor, setStatusColor] = useState(" bg-[gray]")
+
+  const handleStatusColor = (assessment) => {
+    let status = assessment.status
+
+    status === "pending" ? 
+      () => setStatusColor(" bg-[yellow]") 
+      : 
+      status === "complete" ? 
+        () => setStatusColor(" bg-[green]") 
+        :
+        status === "incomplete" ? 
+          () => setStatusColor(" bg-[red]") 
+          :
+          status === "unassigned" ? 
+            () => setStatusColor(" bg-[gray]") 
+            : 
+            () => setStatusColor(" bg-[black")
+  }
+
   return (
     <>
       {assess.map((assessment, index) => {
+        handleStatusColor(assessment)
         return (
           <div id="week" key={index} className="w-1/3 border-b border-black py-10">
             <div className="flex w-full flex-row justify-between">
@@ -28,10 +49,10 @@ const Assessment = (props) => {
               </div>
               <div className="flex flex-col">
                 <div className="flex w-full flex-row items-center">
-                  <span className="mr-2 h-4 w-4 rounded-full bg-[#ffdd00]" />
+                  <span className={`mr-2 h-4 w-4 rounded-full${statusColor}`}/>
                   <div className="my-1"><strong>Status:</strong> {assessment.status}</div>
                 </div>
-                <div className="my-1 ml-6"><strong>Reviewer:</strong> {assessment.reviewer} </div>
+                <div className="my-1 pl-6"><strong>Reviewer:</strong> {assessment.reviewer} </div>
               </div>
             </div>
             <div className="mt-2"><strong>Notes:</strong> <br/>{assessment.notes} </div>

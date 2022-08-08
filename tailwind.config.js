@@ -6,11 +6,11 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xs: '412px',
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      xs: "412px",
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
     },
     extend: {}
   },
