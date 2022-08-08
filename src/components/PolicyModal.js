@@ -5,7 +5,7 @@ const AttendancePolicyModal = () => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <Button onClick={() => setVisible(true)}>
+      <Button class="px-6 bg-slate-900 text-green-500 rounded shadow" onClick={() => setVisible(true)}>
         Attendance Policy
       </Button>
       <Modal
@@ -16,7 +16,7 @@ const AttendancePolicyModal = () => {
           Attendance Policy
         </Modal.Header>
         <Modal.Body>
-          <div className="space-y-6">
+          <div className="space-y-6 bg-zinc-50">
             <p>
               Regular and punctual attendance is an important part of a students education. Class begins promptly and attendance is strictly monitored. Students should not be late. It is disruptive and unprofessional to enter a class that is already underway.
             </p> 
@@ -37,7 +37,7 @@ const ComprehensionModal = () => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <Button onClick={() => setVisible(true)}>
+      <Button class="px-6 bg-slate-900 text-green-500 rounded shadow" onClick={() => setVisible(true)}>
         Comprehension
       </Button>
       <Modal
