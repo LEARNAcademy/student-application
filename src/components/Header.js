@@ -4,14 +4,14 @@ import { Navigation } from  "./Navigation"
 
 const Header = () => {
   return (
-    <>
+    <div className="flex items-center justify-between">
       <img
         src={ learnLogo }
-        className="mr-3 h-6 sm:h-20"
+        className="h-6 sm:h-20"
         alt="Learn Academy Logo"
       />
       <Navigation />
-    </>
+    </div>
   )
 }
 

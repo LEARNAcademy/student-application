@@ -4,7 +4,7 @@ import { Button } from "flowbite-react"
 const Navigation = () => {
   const [loggedIn, setLoggedIn] = useState(false)
   return (
-    <>
+    <div className="mr-4">
       {loggedIn ? 
         <Button onClick={() => setLoggedIn(false)}>
         Log Out
@@ -14,7 +14,7 @@ const Navigation = () => {
         Log In
         </Button>
       }
-    </>
+    </div>
   )
 }
 
