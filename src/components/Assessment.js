@@ -12,7 +12,7 @@ const Assessment = (props) => {
       if(assessments[i] && assessments[i].week === i + 1) {
         newAssess.push(assessments[i])
       } else {
-        newAssess.push({ week: i+1, status: "unassigned", comprehension: "N/A", reviewer: "N/A", notes: "N/A" })
+        newAssess.push({ week: i+1, status: "Unassigned", comprehension: "N/A", reviewer: "N/A", notes: "N/A" })
       }
     }
     setAssess(newAssess)
@@ -21,13 +21,13 @@ const Assessment = (props) => {
   const colorArray = () => {
     setStatusColor(
       assessments.map(assessment => {
-        if(assessment.status === "pending"){
+        if(assessment.status === "Pending"){
           return "bg-[yellow]"
-        } else if(assessment.status === "complete") {
+        } else if(assessment.status === "Complete") {
           return "bg-[green]"
-        } else if(assessment.status === "incomplete") {
+        } else if(assessment.status === "Incomplete") {
           return "bg-[red]"
-        } else if (assessment.status === "unassigned") {
+        } else if (assessment.status === "Unassigned") {
           return "bg-[gray]"
         }
       })
