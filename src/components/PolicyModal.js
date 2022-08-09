@@ -1,13 +1,14 @@
 import React, { useState } from "react"
-import { Button, Modal } from "flowbite-react"
+import { Modal } from "flowbite-react"
+import { Button } from "./Button"
 
 const AttendancePolicyModal = () => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <Button onClick={() => setVisible(true)}>
-        Attendance Policy
-      </Button>
+      <div className="w-44">
+        <Button text={"Attendance Policy"} onClick={() => setVisible(true)} />
+      </div>
       <Modal
         show={visible}
         onClose={() => setVisible(false)}
@@ -37,9 +38,9 @@ const ComprehensionModal = () => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <Button onClick={() => setVisible(true)}>
-        Comprehension
-      </Button>
+      <div className="w-40">
+        <Button text={"Comprehension"} onClick={() => setVisible(true)} />
+      </div>
       <Modal
         show={visible}
         onClose={() => setVisible(false)}
