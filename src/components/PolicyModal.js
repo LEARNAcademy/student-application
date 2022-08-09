@@ -21,11 +21,15 @@ const AttendancePolicyModal = () => {
               <p>Regular and punctual attendance is an important part of a student&#39;s education. Class begins promptly and attendance is strictly monitored. Students should not be late. It is disruptive and unprofessional to enter a class that is already underway.</p>
               <p>With the exception of emergencies, students will notify an instructor by Slack message 24 hours in advance of any tardies or absences.</p>
               <p>A student is considered <strong>tardy</strong> if:</p>
-              <ul>- they miss the morning check in.</ul>
-              <ul>- they miss one or more hours of class.</ul>
+              <ul className="list-inside list-disc">
+                <li>they miss the morning check in.</li>
+                <li>they miss one or more hours of class.</li>
+              </ul>
               <p>A student is considered <strong>absent</strong> if:</p>
-              <ul>- they miss three or more hours of class.</ul>
-              <ul>- they accrue three tardies.</ul>
+              <ul className="list-inside list-disc">
+                <li>they miss three or more hours of class.</li>
+                <li>they accrue three tardies.</li>
+              </ul>
               <p>If three absences occur for any reason, the status of the student will be reviewed by the instructor to determine a disposition. If five absences occur for any reason, the status of the student will be reviewed by the instructor to determine internship eligibility.</p>
             </div>
           </Modal.Body>
