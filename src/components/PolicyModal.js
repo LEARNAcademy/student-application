@@ -5,7 +5,7 @@ const AttendancePolicyModal = () => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <Button class="px-6 bg-slate-900 text-green-500 rounded shadow" onClick={() => setVisible(true)}>
+      <Button class="px-6 bg-purple-600 text-slate-50 rounded shadow" onClick={() => setVisible(true)}>
         Attendance Policy
       </Button>
       <Modal
@@ -37,7 +37,7 @@ const ComprehensionModal = () => {
   const [visible, setVisible] = useState(false)
   return (
     <>
-      <Button class="px-6 bg-slate-900 text-green-500 rounded shadow" onClick={() => setVisible(true)}>
+      <Button class="px-6 bg-purple-600 text-slate-50 rounded shadow" onClick={() => setVisible(true)}>
         Comprehension
       </Button>
       <Modal
