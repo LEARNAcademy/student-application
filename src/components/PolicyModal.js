@@ -16,7 +16,7 @@ const AttendancePolicyModal = () => {
           Attendance Policy
         </Modal.Header>
         <Modal.Body>
-          <div className="space-y-6 p-6" style={{overflow:"scroll", overflowX:"hidden", height:"60vh"}}>
+          <div className="h-[60vh] space-y-6 overflow-y-scroll p-6">
             <p>Regular and punctual attendance is an important part of a student&#39;s education. Class begins promptly and attendance is strictly monitored. Students should not be late. It is disruptive and unprofessional to enter a class that is already underway.</p>
             <p>With the exception of emergencies, students will notify an instructor by Slack message 24 hours in advance of any tardies or absences.</p>
             <p>A student is considered <strong>tardy</strong> if:</p>
@@ -48,7 +48,7 @@ const ComprehensionModal = () => {
           Comprehension
         </Modal.Header>
         <Modal.Body>
-          <div className="space-y-6 p-6" style={{overflowY:"scroll", overflowX:"hidden", height:"60vh"}}>
+          <div className="h-[60vh] space-y-6 overflow-y-scroll p-6">
             <p>When an instructor reviews a student&#39;s assessment the instructor is evaluating the work through the lens of the Dreyfus model of skill acquisition. The Dreyfus model describes how individuals progress through various levels during the learning process. At LEARN, students will be evaluated as novice, advanced beginner, or competent skill level.</p>
             <p>Skill levels measure current understanding and allow for growth over time.</p>
             <strong>Skill levels are not grades!</strong> 
