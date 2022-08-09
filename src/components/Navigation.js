@@ -1,18 +1,14 @@
 import React, { useState } from "react"
-import { Button } from "flowbite-react"
+import { Button } from "./Button"
 
 const Navigation = () => {
   const [loggedIn, setLoggedIn] = useState(false)
   return (
-    <div className="mr-4">
+    <div className="mr-10">
       {loggedIn ? 
-        <Button onClick={() => setLoggedIn(false)}>
-        Log Out
-        </Button>
+        <Button text={"Log Out"} onClick={() => setLoggedIn(false)} />
         :
-        <Button onClick={() => setLoggedIn(true)}>
-        Log In
-        </Button>
+        <Button text={"Log In"} onClick={() => setLoggedIn(true)} />
       }
     </div>
   )
