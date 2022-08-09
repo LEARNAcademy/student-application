@@ -4,8 +4,8 @@ const Button = (props) => {
   const { text, onClick } = props
   return (
     <div
-        onClick={onClick}
-        className="
+      onClick={onClick}
+      className="
             h-auto w-auto
             cursor-pointer
             select-none border-2
@@ -18,7 +18,7 @@ const Button = (props) => {
             hover:bg-white
             hover:text-[#A670AF]"
     >
-        {text}
+      {text}
     </div>
   )
 }

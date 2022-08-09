@@ -4,10 +4,10 @@ import { Navigation } from  "./Navigation"
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between bg-[#313133]">
       <img
         src={ learnLogo }
-        className="h-6 sm:h-20"
+        className="h-auto w-72 ml-2"
         alt="Learn Academy Logo"
       />
       <Navigation />
