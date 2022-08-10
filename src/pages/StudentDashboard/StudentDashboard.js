@@ -15,8 +15,8 @@ const StudentDashboard = () => {
       <Greeter user={user} />
       <AttendancePolicyModal/>
       <Absences student={student}/>
-      <Assessment assessments={assessments}/>
       <ComprehensionModal/>
+      <Assessment assessments={assessments}/>
     </>
   )
 }
