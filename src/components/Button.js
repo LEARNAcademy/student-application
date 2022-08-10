@@ -6,9 +6,12 @@ const Button = (props) => {
     <div
       onClick={onClick}
       className="
-            h-auto w-auto
-            cursor-pointer
-            select-none border-2
+            flex h-auto
+            w-auto
+            cursor-pointer select-none
+            items-center
+            justify-center
+            border-2
             border-[#A670AF]
             bg-[#A670AF]
             py-2
@@ -17,9 +20,6 @@ const Button = (props) => {
             text-white
             hover:bg-white
             hover:text-[#A670AF]
-            flex
-            justify-center
-            items-center
             "
     >
       {text}

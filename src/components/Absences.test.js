@@ -12,10 +12,10 @@ describe("<Absences />", () => {
     const absenceDiv = absence.find("[id=\"absence\"]")
     expect(absenceDiv.length).toEqual(1)
   })
-  it("displays a default absence of 0", () => {
+  it("displays a default absences of 0", () => {
     const absencesProps = {}
     const absence = shallow(<Absences student={absencesProps}/>)
     const absenceDiv = absence.find("[id=\"absence\"]").text()
-    expect(absenceDiv).toEqual("Absence: 0")
+    expect(absenceDiv).toEqual("Absences: 0")
   })
 })

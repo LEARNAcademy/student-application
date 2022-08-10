@@ -15,7 +15,7 @@ module.exports = {
     extend: {}
   },
   fontFamily: {
-    gesta: ['gesta']
+    gesta: ["gesta"]
   },
   plugins: [
     require("flowbite/plugin")

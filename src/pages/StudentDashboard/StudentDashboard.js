@@ -11,14 +11,14 @@ const StudentDashboard = () => {
   return (
     <div className="overflow-x-hidden">
       <Header user={user}/>
-      <div className="mt-10 mx-32 border-b border-black py-10">
+      <div className="mx-32 mt-10 border-b border-black py-10">
         <Absences student={student}/>
-        <div className="flex mt-5 items-center w-screen">
+        <div className="mt-5 flex w-screen items-center">
           <AttendancePolicyModal/>
         </div>
       </div>
-      <h1 className="font-medium text-5xl mt-10 ml-32">Weekly Assessments</h1>
-      <div className="flex mt-5 ml-32 items-center w-screen">
+      <h1 className="mt-10 ml-32 text-5xl font-medium">Weekly Assessments</h1>
+      <div className="mt-5 ml-32 flex w-screen items-center">
         <ComprehensionModal/>
       </div>
       <Assessment assessments={assessments}/>
