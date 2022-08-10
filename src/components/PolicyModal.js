@@ -4,22 +4,33 @@ import { Button } from "./Button"
 
 const AttendancePolicyModal = () => {
   const [visible, setVisible] = useState(false)
+
+  const handleClick = () => {
+    if(visible) {
+      document.body.style.overflow=""
+      setVisible(false)
+    } else {
+      document.body.style.overflow="hidden"
+      setVisible(true)
+    }
+  }
+
   return (
     <>
-      <div className="w-44">
-        <Button text={"Attendance Policy"} onClick={() => setVisible(true)} />
+      <div className="w-52">
+        <Button text={"Attendance Policy"} onClick={() => handleClick()} />
       </div>
-      <div id="modal-container" onClick={() => setVisible(false)}>
+      <div id="modal-container" onClick={() => handleClick()}>
         <Modal
           show={visible}
-          onClose={() => setVisible(false)}
+          onClose={() => handleClick()}
         >
           <div id="modal-inner" onClick={(e) => e.stopPropagation()}>
             <Modal.Header>
               Attendance Policy
             </Modal.Header>
             <Modal.Body>
-              <div className="h-[60vh] space-y-6 overflow-y-scroll p-6">
+              <div className="h-[60vh] space-y-6 overflow-y-auto p-6 pt-2">
                 <p>Regular and punctual attendance is an important part of a student&#39;s education. Class begins promptly and attendance is strictly monitored. Students should not be late. It is disruptive and unprofessional to enter a class that is already underway.</p>
                 <p>With the exception of emergencies, students will notify an instructor by Slack message 24 hours in advance of any tardies or absences.</p>
                 <p>A student is considered <strong>tardy</strong> if:</p>
@@ -44,22 +55,33 @@ const AttendancePolicyModal = () => {
 
 const ComprehensionModal = () => {
   const [visible, setVisible] = useState(false)
+
+  const handleClick = () => {
+    if(visible) {
+      document.body.style.overflow=""
+      setVisible(false)
+    } else {
+      document.body.style.overflow="hidden"
+      setVisible(true)
+    }
+  }
+  
   return (
     <>
-      <div className="w-40">
-        <Button text={"Comprehension"} onClick={() => setVisible(true)} />
+      <div className="w-52">
+        <Button text={"Comprehension"} onClick={() => handleClick()} />
       </div>
-      <div id="modal-container" onClick={() => setVisible(false)}>
+      <div id="modal-container" onClick={() => handleClick()}>
         <Modal
           show={visible}
-          onClose={() => setVisible(false)}
+          onClose={() => handleClick()}
         >
           <div id="modal-inner" onClick={(e) => e.stopPropagation()}>
             <Modal.Header>
-              Comprehension
+              Assessment Review Process
             </Modal.Header>
             <Modal.Body>
-              <div className="h-[60vh] space-y-6 overflow-y-scroll p-6">
+              <div className="h-[60vh] space-y-6 overflow-y-auto p-6 pt-2">
                 <p>When an instructor reviews a student&#39;s assessment the instructor is evaluating the work through the lens of the Dreyfus model of skill acquisition. The Dreyfus model describes how individuals progress through various levels during the learning process. At LEARN, students will be evaluated as novice, advanced beginner, or competent skill level.</p>
                 <p>Skill levels measure current understanding and allow for growth over time.</p>
                 <strong>Skill levels are not grades!</strong>

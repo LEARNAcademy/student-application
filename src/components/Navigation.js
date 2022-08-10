@@ -4,7 +4,7 @@ import { Button } from "./Button"
 const Navigation = () => {
   const [loggedIn, setLoggedIn] = useState(false)
   return (
-    <div className="mr-10">
+    <div className="mr-10 w-24">
       {loggedIn ? 
         <Button text={"Log Out"} onClick={() => setLoggedIn(false)} />
         :
