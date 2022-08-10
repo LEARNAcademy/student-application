@@ -22,11 +22,11 @@ const Assessment = (props) => {
     setStatusColor(
       assessments.map(assessment => {
         if(assessment.status === "Pending"){
-          return "bg-[yellow]"
+          return "bg-[#FACA15]"
         } else if(assessment.status === "Complete") {
           return "bg-[green]"
         } else if(assessment.status === "Incomplete") {
-          return "bg-[red]"
+          return "bg-[#C81E1E]"
         } else if (assessment.status === "Unassigned") {
           return "bg-[gray]"
         }
