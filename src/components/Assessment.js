@@ -40,13 +40,13 @@ const Assessment = (props) => {
   }, [])
 
   return (
-    <>
+    <div className="px-32">
       {assess.map((assessment, index) => {        
         return (
           <div id="week" key={index} className="w-full border-b border-black py-10">
             <div className="flex w-full flex-row justify-between">
               <div className="flex flex-col">
-                <div className="my-1 font-bold">Week {assessment.week} </div>
+                <div className="my-1 font-bold text-xl">Week {assessment.week} </div>
                 <div className="my-1"><strong>Comprehension:</strong> {assessment.comprehension}</div>
               </div>
               <div className="flex flex-col">
@@ -61,7 +61,7 @@ const Assessment = (props) => {
           </div>
         )
       })}
-    </>
+    </div>
   )
 }
 

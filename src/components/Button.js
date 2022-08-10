@@ -16,7 +16,11 @@ const Button = (props) => {
             font-medium
             text-white
             hover:bg-white
-            hover:text-[#A670AF]"
+            hover:text-[#A670AF]
+            flex
+            justify-center
+            items-center
+            "
     >
       {text}
     </div>
