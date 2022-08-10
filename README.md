@@ -51,26 +51,39 @@ Fill out the Pull Request template.
 
 Project in managed in Notion. Reach out to a member of the team to gain access.
 
-### REACT setup
+### ⚛️ REACT setup
 
-#### Important dependencies
+### Important dependencies
+
 - testing-library/react
 - eslint-plugin-tailwindcss
 - flowbite
 - flowbite-react
 - tailwindcss
 
-#### Important terminal commands
-This command will fix most lint issues within the project.
+### Important terminal commands
+To check what linting errors are in the project run
+```bash
+yarn eslint .
+```
+To check linting errors in a single file run
+```bash
+yarn eslint <filename>
+```
+To fix most lint issues within the project run
 ```bash
 yarn eslint . --fix
 ```
-If only a single file needs to be linted use
+To fix only a single file run
 ```bash
 yarn eslint <filename> --fix
 ```
 
-#### Testing React
+### Testing React
+Use command
+```bash
+yarn test
+```
 Please refer to documentation about testing REACT functional components using the testing library
 
 >[React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
