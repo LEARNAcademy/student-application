@@ -47,17 +47,17 @@ const Assessment = (props) => {
             <div className="flex w-full flex-row justify-between">
               <div className="flex flex-col">
                 <div className="my-1 text-xl font-bold">Week {assessment.week} </div>
-                <div className="my-1"><strong>Comprehension:</strong> {assessment.comprehension}</div>
+                <div className="my-1 text-lg"><strong>Comprehension:</strong> {assessment.comprehension}</div>
               </div>
               <div className="flex flex-col">
                 <div className="flex w-full flex-row items-center">
                   <span className={`mr-2 h-4 w-4 rounded-full ${statusColor[index]}`}/>
-                  <div className="my-1"><strong>Status:</strong> {assessment.status}</div>
+                  <div className="my-1 text-lg"><strong>Status:</strong> {assessment.status}</div>
                 </div>
-                <div className="my-1 pl-6"><strong>Reviewer:</strong> {assessment.reviewer} </div>
+                <div className="my-1 pl-6 text-lg"><strong>Reviewer:</strong> {assessment.reviewer} </div>
               </div>
             </div>
-            <div className="mt-8"><strong>Notes:</strong> <br/>{assessment.notes} </div>
+            <div className="mt-8 w-[58ch] text-base"><strong>Notes:</strong> <br/>{assessment.notes} </div>
           </div>
         )
       })}

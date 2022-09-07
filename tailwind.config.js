@@ -12,7 +12,18 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {}
+    extend: {
+      colors: {
+        "learngray": "#313133",
+        "learnpurple": "#A670AF",
+        "learnpurplehover": "#C797CF",
+        "learnblack": "#101820",
+        "learngreen": "#6FBD73",
+      },
+      fontFamily: {
+        gesta: ["Gesta"],
+      },
+    }
   },
   fontFamily: {
     gesta: ["gesta"]

@@ -9,7 +9,7 @@ const StudentDashboard = () => {
   const { assessments } = user.student
   const { student } = user
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden bg-neutral-200 font-['gesta']">
       <Header user={user}/>
       <div className="mx-32 mt-10 border-b border-black py-10">
         <Absences student={student}/>
@@ -17,7 +17,7 @@ const StudentDashboard = () => {
           <AttendancePolicyModal/>
         </div>
       </div>
-      <h1 className="mt-10 ml-32 text-5xl font-medium">Weekly Assessments</h1>
+      <h1 className="mt-10 ml-32 text-2xl font-medium">Weekly Assessments</h1>
       <div className="mt-5 ml-32 flex w-screen items-center">
         <ComprehensionModal/>
       </div>
