@@ -57,7 +57,7 @@ const Assessment = (props) => {
                 <div className="my-1 pl-6 text-lg"><strong>Reviewer:</strong> {assessment.reviewer} </div>
               </div>
             </div>
-            <div className="mt-8 text-base w-[58ch]"><strong>Notes:</strong> <br/>{assessment.notes} </div>
+            <div className="mt-8 w-[58ch] text-base"><strong>Notes:</strong> <br/>{assessment.notes} </div>
           </div>
         )
       })}

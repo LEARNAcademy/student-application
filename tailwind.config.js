@@ -21,7 +21,7 @@ module.exports = {
         "learngreen": "#6FBD73",
       },
       fontFamily: {
-        gesta: ['Gesta'],
+        gesta: ["Gesta"],
       },
     }
   },
