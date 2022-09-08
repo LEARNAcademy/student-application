@@ -10,9 +10,9 @@ describe("<AttendancePolicyModal />", () => {
   beforeEach(() => {
     modalRender = shallow(<AttendancePolicyModal />)
   })
-  it("renders a button", () => {
-    const modalButton = modalRender.find("Button")
-    expect(modalButton.length).toEqual(1)
+  it("renders an icon", () => {
+    const modalIcon = modalRender.find("img")
+    expect(modalIcon.length).toEqual(1)
   } ),
   it("renders a modal", () => {
     const renderModal = modalRender.find("Modal")
@@ -25,9 +25,9 @@ describe("<ComprehensionModal />", () => {
   beforeEach(() => { 
     modalRender = shallow(<ComprehensionModal />)
   })
-  it("renders a button", () => {
-    const modalButton = modalRender.find("Button")
-    expect(modalButton.length).toEqual(1)
+  it("renders an icon", () => {
+    const modalIcon = modalRender.find("img")
+    expect(modalIcon.length).toEqual(1)
   } ),
   it("renders a modal", () => {
     const renderModal = modalRender.find("Modal")
