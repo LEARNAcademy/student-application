@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Modal } from "flowbite-react"
-import { Button } from "./Button"
+import arrowBox from "../assets/arrow-up-right-from-square-solid.svg"
 
 const AttendancePolicyModal = () => {
   const [visible, setVisible] = useState(false)
@@ -17,8 +17,19 @@ const AttendancePolicyModal = () => {
 
   return (
     <>
-      <div className="w-52">
-        <Button text={"Attendance Policy"} onClick={() => handleClick()} />
+      <div onClick={()=> handleClick()}
+        className="
+          inline-flex
+          cursor-pointer
+          text-[#A670AF]
+          hover:underline
+          "
+      >
+        Attendance Policy
+        <img 
+          src={arrowBox} 
+          className="ml-2 h-auto w-5"
+        />
       </div>
       <div id="modal-container" onClick={() => handleClick()}>
         <Modal
@@ -68,8 +79,19 @@ const ComprehensionModal = () => {
   
   return (
     <>
-      <div className="w-52">
-        <Button text={"Comprehension"} onClick={() => handleClick()} />
+      <div onClick={()=> handleClick()}
+        className="
+          inline-flex
+          cursor-pointer
+          text-[#A670AF]
+          hover:underline
+          "
+      >
+        Comprehension Levels
+        <img 
+          src={arrowBox} 
+          className="ml-2 h-auto w-5"
+        />
       </div>
       <div id="modal-container" onClick={() => handleClick()}>
         <Modal
