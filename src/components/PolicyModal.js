@@ -19,10 +19,10 @@ const AttendancePolicyModal = () => {
     <>
       <div onClick={()=> handleClick()}
         className="
-          hover:underline
-          text-[#A670AF]
           inline-flex
           cursor-pointer
+          text-[#A670AF]
+          hover:underline
           "
       >
         Attendance Policy
@@ -81,10 +81,10 @@ const ComprehensionModal = () => {
     <>
       <div onClick={()=> handleClick()}
         className="
-          hover:underline
-          text-[#A670AF]
           inline-flex
           cursor-pointer
+          text-[#A670AF]
+          hover:underline
           "
       >
         Comprehension Levels
