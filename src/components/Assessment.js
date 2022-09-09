@@ -28,7 +28,7 @@ const Assessment = (props) => {
         } else if(assessment.status === "Incomplete") {
           return "bg-red-300"
         } else if (assessment.status === "Unassigned") {
-          return "bg-[gray]"
+          return "bg-gray-300"
         }
       })
     )
@@ -42,11 +42,11 @@ const Assessment = (props) => {
         } else if(assessment.comprehension === "Complete") {
           return "bg-green-200"
         } else if(assessment.comprehension === "Novice") {
-          return "bg-[#A670AF]"
+          return "bg-[#A670AF]/20"
         } else if (assessment.comprehension === "Advanced Beginner") {
-          return "bg-[#A670AF]"
+          return "bg-[#A670AF]/20"
         } else if (assessment.comprehension === "Competent") {
-          return "bg-[#A670AF]"
+          return "bg-[#A670AF]/20"
         }
       })
     )
@@ -67,13 +67,13 @@ const Assessment = (props) => {
               <div className="flex flex-col">
                 <div className="my-1 text-xl font-bold">Week {assessment.week} </div>
                 <div className="my-1 text-lg"><strong>Comprehension:</strong>
-                  <span className={`relative mx-1 inline-block w-24 rounded-lg text-center before:absolute before:-inset-1 before:block ${compColor[index]}`}>{assessment.comprehension}</span>
+                  <span className={`relative mx-1 inline-block w-28 rounded-lg text-center before:absolute before:-inset-1 before:block ${compColor[index]}`}>{assessment.comprehension}</span>
                 </div>
               </div>
               <div className="flex flex-col">
                 <div className="flex w-full flex-row items-center">
-                  <div className="my-1 text-lg"><strong>Status:</strong>
-                    <span className={`relative mx-1 inline-block w-24 rounded-lg text-center before:absolute before:-inset-1 before:block ${statusColor[index]}`}>{assessment.status}</span>
+                  <div className="mx-6 my-1 text-lg"><strong>Status:</strong>
+                    <span className={`relative mx-1 inline-block w-28 rounded-lg text-center before:absolute before:-inset-1 before:block ${statusColor[index]}`}>{assessment.status}</span>
                   </div>
                 </div>
                 <div className="my-1 pl-6 text-lg"><strong>Reviewer:</strong> {assessment.reviewer} </div>
