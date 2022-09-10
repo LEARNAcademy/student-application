@@ -15,9 +15,9 @@ const Header = (props) => {
         />
       </div>
       <div className="flex flex-row items-center">
-        <div className="mx-10">
+        {user && <div className="mx-10">
           <Greeter user={user} />
-        </div>
+        </div>}
         <Navigation />
       </div>
     </div>
