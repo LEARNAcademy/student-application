@@ -6,9 +6,9 @@ import { App } from "./App"
 Enzyme.configure({ adapter: new Adapter() })
 
 describe("<App />", () => {
-  it("displays the StudentDashboard", () => {
+  it("contains the two Routes", () => {
     const app = shallow(<App/>)
-    const renderedComponent = app.find("StudentDashboard")
-    expect(renderedComponent.length).toEqual(1)
+    const renderedComponent = app.find("Route")
+    expect(renderedComponent.length).toEqual(2)
   })
 })
