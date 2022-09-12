@@ -12,7 +12,7 @@ const StudentDashboard = () => {
   const { student } = user
   return (
     <div className="overflow-x-hidden bg-neutral-200 font-['gesta']">
-      <Header user={user}/>
+      <Header user={user} />
       <div className="mx-32 mt-10 border-b border-black py-10">
         <Absences student={student}/>
         <Attendance absences={student.absences}/>
