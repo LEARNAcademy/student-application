@@ -1,6 +1,6 @@
 import React from "react"
 import { Header } from "../../components/Header"
-import { Checkbox, Button, Label, TextInput } from "flowbite-react"
+import { Checkbox, Label, TextInput } from "flowbite-react"
 
 
 const StudentLogin = () => {
@@ -15,7 +15,7 @@ const StudentLogin = () => {
                 <Label
                   htmlFor="email1"
                 > 
-                  <div className="text-2xl text-learnpurple"> Your email</div>
+                  <div className="text-2xl text-learnpurple">Email</div>
                 </Label>
               </div>
               <TextInput
@@ -29,7 +29,7 @@ const StudentLogin = () => {
                 <Label
                   htmlFor="password1"
                 >
-                  <div className="text-2xl text-learnpurple">Your password</div>
+                  <div className="text-2xl text-learnpurple">Password</div>
                 </Label>
               </div>
               <TextInput
@@ -43,11 +43,10 @@ const StudentLogin = () => {
                 <div className="text-learnpurple">Remember me</div>
               </Label>
             </div>
-            <div className="m-auto">
-              <Button type="submit" color="success" pill={true}>
+            <div className="m-auto w-20 rounded-full bg-learngreen text-center text-lg">
+              <button type="submit">
                 Submit
-              </Button>
-            
+              </button>
             </div>
           </form>
         </div>
