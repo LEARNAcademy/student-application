@@ -1,9 +1,20 @@
 import React from "react"
 import { Header } from "../../components/Header"
 import { Checkbox, Label, TextInput } from "flowbite-react"
+import { useNavigate } from "react-router-dom"
+// import { user } from "../../userMock"
 
+const StudentLogin = (props) => {
+  const { login,setLogin } = props
+  const navigate = useNavigate()
 
-const StudentLogin = () => {
+  const navigateHome = () => {
+    setLogin
+    navigate("/")
+  }
+  
+  console.log(login, navigateHome)
+  
   return (
     <>
       <Header />
@@ -22,7 +33,8 @@ const StudentLogin = () => {
                 id="email1"
                 type="email"
                 placeholder="student@LEARN.com"
-                required={true} />
+                // required={true}
+              />
             </div>
             <div className="m-auto mb-2 w-52">
               <div className="mb-2 block text-center">
@@ -35,7 +47,8 @@ const StudentLogin = () => {
               <TextInput
                 id="password1"
                 type="password"
-                required={true} />
+                // required={true} 
+              />
             </div>
             <div className="m-auto mt-4 mb-6 flex items-center gap-2">
               <Checkbox id="remember" />
@@ -44,7 +57,7 @@ const StudentLogin = () => {
               </Label>
             </div>
             <div className="m-auto w-20 rounded-full bg-learngreen text-center text-lg">
-              <button type="submit">
+              <button type="submit" onClick={() => navigateHome}>
                 Submit
               </button>
             </div>

@@ -4,7 +4,7 @@ import { Navigation } from  "./Navigation"
 import { Greeter } from "../components/Greeter"
 
 const Header = (props) => {
-  const { user } = props
+  const { user, login, setLogin } = props
   return (
     <div className="flex items-center justify-between bg-[#313133]">
       <div className="flex flex-row">
@@ -18,7 +18,7 @@ const Header = (props) => {
         {user && <div className="mx-10">
           <Greeter user={user} />
         </div>}
-        <Navigation />
+        <Navigation user={user} login={login} setLogin={setLogin}/>
       </div>
     </div>
   )

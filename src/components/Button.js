@@ -1,7 +1,7 @@
 import React from "react"
 
 const Button = (props) => {
-  const { text, onClick } = props
+  const { text, onClick, path } = props
   return (
     <div
       onClick={onClick}
@@ -22,7 +22,7 @@ const Button = (props) => {
             hover:text-[#A670AF]
             "
     >
-      {text}
+      <a href={path} >{text}</a>
     </div>
   )
 }
