@@ -7,15 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 const App = () => {
   const [login, setLogin] = useState(false)
 
-  const theDon = () => {
-    setLogin(!login)
-  }
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<StudentDashboard login={login} />} />
-        <Route path="/login" element={<StudentLogin login={login} setLogin={theDon}/>} />
+        <Route path="/" element={<StudentDashboard login={login} setLogin={setLogin}/>} />
+        <Route path="/login" element={<StudentLogin login={login} setLogin={setLogin}/>} />
       </Routes>
     </BrowserRouter>
   )

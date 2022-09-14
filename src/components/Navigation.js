@@ -3,11 +3,12 @@ import { Button } from "./Button"
 // import { user } from "../userMock"
 import { useNavigate } from "react-router-dom"
 
-const Navigation = ({login}) => {
+const Navigation = ({login,setLogin}) => {
   // const [loggedIn, setLoggedIn] = useState(false)
   const navigate = useNavigate()
 
   const navigateLogin = () => {
+    setLogin(false)
     navigate("/login")
   }
 

@@ -9,11 +9,11 @@ const StudentLogin = (props) => {
   const navigate = useNavigate()
 
   const navigateHome = () => {
-    setLogin
+    setLogin(true)
     navigate("/")
   }
   
-  console.log(login, navigateHome)
+  console.log(login)
   
   return (
     <>
@@ -57,7 +57,7 @@ const StudentLogin = (props) => {
               </Label>
             </div>
             <div className="m-auto w-20 rounded-full bg-learngreen text-center text-lg">
-              <button type="submit" onClick={() => navigateHome}>
+              <button type="button" onClick={() => navigateHome()}>
                 Submit
               </button>
             </div>

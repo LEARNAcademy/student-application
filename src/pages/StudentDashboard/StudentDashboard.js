@@ -10,10 +10,12 @@ import { Attendance } from "../../components/Attendance"
 const StudentDashboard = (props) => {
   const { assessments } = user.student
   const { student } = user
-  const { login } = props
+  const { login, setLogin } = props
+
+  console.log(login)
   return (
     <div className="overflow-x-hidden bg-neutral-200 font-['gesta']">
-      <Header user={user} login={login}  />
+      <Header user={user} login={login} setLogin={setLogin} />
       <div className="mx-32 mt-10 border-b border-black py-10">
         <Absences student={student}/>
         <Attendance absences={student.absences}/>
