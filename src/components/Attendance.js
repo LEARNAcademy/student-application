@@ -26,7 +26,7 @@ const Attendance = ({absences}) => {
       </div>
       <div className="mb-1 flex justify-between">
         <span className="ml-2 font-medium text-black dark:text-white">5</span>
-        <span className="ml-2 mr-44 font-medium text-black dark:text-white">3</span>
+        <span className="ml-2 font-medium text-black dark:text-white">3</span>
         <span className="ml-2 font-medium text-black dark:text-white">Awesome</span>
       </div>
     </>
