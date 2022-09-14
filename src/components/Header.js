@@ -5,6 +5,7 @@ import { Greeter } from "../components/Greeter"
 
 const Header = (props) => {
   const { user, login, setLogin } = props
+  
   return (
     <div className="flex items-center justify-between bg-[#313133]">
       <div className="flex flex-row">
