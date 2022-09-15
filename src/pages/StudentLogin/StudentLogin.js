@@ -38,7 +38,7 @@ const StudentLogin = (props) => {
                 <Label
                   htmlFor="email1"
                 > 
-                  <div className="text-2xl text-learnpurple">Email</div>
+                  <div className="text-2xl text-loginlabels">Email</div>
                 </Label>
               </div>
               <TextInput
@@ -55,7 +55,7 @@ const StudentLogin = (props) => {
                 <Label
                   htmlFor="password1"
                 >
-                  <div className="text-2xl text-learnpurple">Password</div>
+                  <div className="text-2xl text-loginlabels">Password</div>
                 </Label>
               </div>
               <TextInput
@@ -69,7 +69,7 @@ const StudentLogin = (props) => {
             <div className="m-auto mt-4 mb-6 flex items-center gap-2">
               <Checkbox id="remember" />
               <Label htmlFor="remember">
-                <div className="text-learnpurple">Remember me</div>
+                <div className="text-loginremember">Remember me</div>
               </Label>
             </div>
             <div className="m-auto w-20 rounded-full bg-learngreen text-center text-lg">
