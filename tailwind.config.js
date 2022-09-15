@@ -19,6 +19,8 @@ module.exports = {
         "learnpurplehover": "#C797CF",
         "learnblack": "#101820",
         "learngreen": "#6FBD73",
+        "loginlabels": "#b67ac0",
+        "loginremember": "#dc93e8"
       },
       fontFamily: {
         gesta: ["Gesta"],

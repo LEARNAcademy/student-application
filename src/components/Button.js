@@ -13,7 +13,7 @@ const Button = (props) => {
             justify-center
             border-2
             border-[#A670AF]
-            bg-[#A670AF]
+            bg-[#95649d]
             py-2
             px-4
             font-medium
