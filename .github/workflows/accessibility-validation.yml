@@ -1,0 +1,25 @@
+name: Accessibility Validation
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Scan for accessibility issues
+        uses: microsoft/accessibility-insights-action@v3
+        with:
+          url: https://learn-student.onrender.com/
+          fail-on-accessibility-error: false
+      - name: Upload report artifact
+        if: success() || failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: accessibility-reports
+          path: ${{ github.workspace }}/_accessibility-reports
