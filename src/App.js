@@ -1,18 +1,24 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { StudentDashboard } from "./pages/StudentDashboard/StudentDashboard"
 import { StudentLogin } from "./pages/StudentLogin/StudentLogin"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-
+import { Routes, Route, useNavigate } from "react-router-dom"
 
 const App = () => {
+  const [login, setLogin] = useState(false)
+  const navigate = useNavigate()
+  
+  useEffect(() => {
+    if(!login) {
+      navigate("/")
+    }
+  }, [login])
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<StudentDashboard />} />
-        <Route path="/login" element={<StudentLogin/>} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<StudentLogin login={login} setLogin={setLogin} navigate={navigate}/>} />
+      <Route path="/studentdash" element={<StudentDashboard login={login} setLogin={setLogin}/>} />
+    </Routes>   
   )
-}
+}     
 
 export { App }
