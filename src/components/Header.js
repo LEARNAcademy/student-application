@@ -4,22 +4,21 @@ import { Navigation } from  "./Navigation"
 import { Greeter } from "../components/Greeter"
 
 const Header = (props) => {
-  const { user, login, setLogin } = props
-  
+  const { user } = props
   return (
     <div className="flex items-center justify-between bg-[#313133]">
-      <div className="flex flex-row">
+      <div className="sm:flex sm:flex-row">
         <img
           src={ learnLogo }
-          className="ml-2 h-auto w-72"
+          className="ml-2 h-12 w-28 xs:h-8 xs:w-20 sm:h-auto sm:w-72"
           alt="Learn Academy Logo"
         />
       </div>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-start sm:items-center">
         {user && <div className="mx-10">
           <Greeter user={user} />
         </div>}
-        <Navigation user={user} login={login} setLogin={setLogin}/>
+        <Navigation />
       </div>
     </div>
   )
