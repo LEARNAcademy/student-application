@@ -5,7 +5,7 @@ export const user = {
   student: {
     id: 1,
     user_id: 1,
-    absences: 0,
+    absences: 2,
     assessments: [
       {
         id: 1,

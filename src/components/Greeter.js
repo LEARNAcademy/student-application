@@ -11,7 +11,7 @@ const Greeter = (props) => {
   }
 
   return (
-    <div id="greeting" className="mr-4 mb-8 py-1 text-lg text-white xs:ml-10 xs:m-9 sm:ml-32 sm:text-2xl">      
+    <div id="greeting" className="mr-4 mb-8 py-1 text-lg text-white xs:m-9 xs:ml-10 sm:ml-32 sm:text-2xl">      
       {`Welcome, ${greeterName(user)}!`}
     </div>
   )

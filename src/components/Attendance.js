@@ -17,21 +17,37 @@ const Attendance = ({absences}) => {
 
   return(
     <>
-      <div className="flex-1">      
-        <tbody className="mt-6 inline-flex h-2.5 w-full rounded-full">
-          {statusColor.map((color, index) => {
-            return(
-              <tr key={index} className={`h-2.5 w-1/3 min-w-[19px] rounded-full  ${color}`}></tr>
-            )})
-          }
-        </tbody>
-        
+      <div>
+        <table className="w-full">
+          <tbody>
+            <tr>
+              {statusColor.map((color, index) => {
+                return(
+                  <>
+                    <td key={index} className={`h-2.5 min-w-[19px] rounded-full ${color}`}></td>
+                  </>
+
+                )})
+              }
+            </tr>
+            <tr>
+              {statusColor.map((color, index) => {        
+                if(index % 3 === 0){
+                  return <td key={index} > { -1 * ((index / 3) - 5)}</td>
+                } else {
+                  return <td key={index}> </td>
+                }
+              })
+              }
+            </tr>
+          </tbody>
+        </table>      
     
-        <div className="mb-1 flex-row space-x-[8rem] md:space-x-[21rem] lg:space-x-[29rem] xl:space-x-[38rem]">
+        {/* <div className="mb-1 flex-row space-x-[8rem] md:space-x-[21rem] lg:space-x-[29rem] xl:space-x-[38rem]">
           <span className="font-medium text-black dark:text-white">5</span>
           <span className="font-medium text-black dark:text-white">3</span>
           <span className="font-medium text-black dark:text-white">Great</span>
-        </div>
+        </div> */}
       </div>
     </>
   )
