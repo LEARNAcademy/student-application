@@ -35,7 +35,7 @@ const Attendance = ({absences}) => {
                 if(index % 3 === 0){
                   return <td key={index} > { -1 * ((index / 3) - 5)}</td>
                 } else {
-                  return <td key={index}> </td>
+                  return <td  key={index}> </td>
                 }
               })
               }

@@ -20,7 +20,7 @@ const StudentLogin = (props) => {
 
   const navigateHome = (e) => {
     e.preventDefault()
-    setLogin(true)
+    setLogin(false)
   }
   
   if(login) {

@@ -14,7 +14,10 @@ const StudentDashboard = () => {
     <div className="w-full overflow-x-hidden bg-neutral-200 font-['gesta']">
       <Header user={user}/>
       <div className="m-8 mt-10 border-b border-black p-5 sm:mx-32 sm:py-10 ">
-        <Absences student={student}/>
+        <div className="mb-5">
+          <Absences student={student}/>
+        </div>
+        
         <div className="w-[80vw]">
           <Attendance absences={student.absences}/>
         </div>
