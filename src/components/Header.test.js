@@ -12,6 +12,6 @@ describe("When Header renders", () => {
   })
   it("displays an image", () => {
     const reactHeaderLogo = headerRender.find("img")
-    expect(reactHeaderLogo.length).toEqual(1)
+    expect(reactHeaderLogo.length).toEqual(2)
   })
 })
