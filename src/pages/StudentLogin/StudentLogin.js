@@ -26,7 +26,7 @@ const StudentLogin = (props) => {
   if(login) {
     navigate("/studentdash")
   }
-  console.log(handleChange)
+  
   return (
     <>
       <Header />

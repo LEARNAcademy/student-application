@@ -41,13 +41,7 @@ const Attendance = ({absences}) => {
               }
             </tr>
           </tbody>
-        </table>      
-    
-        {/* <div className="mb-1 flex-row space-x-[8rem] md:space-x-[21rem] lg:space-x-[29rem] xl:space-x-[38rem]">
-          <span className="font-medium text-black dark:text-white">5</span>
-          <span className="font-medium text-black dark:text-white">3</span>
-          <span className="font-medium text-black dark:text-white">Great</span>
-        </div> */}
+        </table>
       </div>
     </>
   )
