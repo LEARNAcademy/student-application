@@ -16,21 +16,35 @@ const Attendance = ({absences}) => {
   }, [])
 
   return(
-    <> 
-      <div className="mt-6 inline-flex h-2.5 w-full rounded-full">
-        {statusColor.map((color, index) => {
-          return(
-            <div key={index} className={`h-2.5 w-1/3 rounded-full ${color}`}></div>
-          )})
-        }
-      </div>
-      <div className="mb-1 flex justify-between">
-        <span className="ml-2 font-medium text-black dark:text-white">5</span>
-        <span className="ml-2 font-medium text-black dark:text-white">3</span>
-        <span className="ml-2 font-medium text-black dark:text-white">Awesome</span>
+    <>
+      <div>
+        <table className="w-full">
+          <tbody>
+            <tr>
+              {statusColor.map((color, index) => {
+                return(
+                  <>
+                    <td key={index} className={`h-2.5 min-w-[19px] rounded-full ${color}`}></td>
+                  </>
+
+                )})
+              }
+            </tr>
+            <tr>
+              {statusColor.map((color, index) => {        
+                if(index % 3 === 0){
+                  return <td key={index} > { -1 * ((index / 3) - 5)}</td>
+                } else {
+                  return <td  key={index}> </td>
+                }
+              })
+              }
+            </tr>
+          </tbody>
+        </table>
       </div>
     </>
   )
 }
 
-export { Attendance } 
+export { Attendance }
