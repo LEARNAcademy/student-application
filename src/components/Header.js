@@ -4,8 +4,16 @@ import { Navigation } from "./Navigation"
 import { Greeter } from "../components/Greeter"
 
 const Header = (props) => {
-  const { user } = props
+  const { user, login, setLogin } = props
   const [isNavOpen, setIsNavOpen] = useState(false)
+
+  // useEffect(() => {
+  //   if(isNavOpen) {
+  //     document.body.style.position = "fixed"
+  //   }else{
+  //     document.body.style.position = ""
+  //   }
+  // }, [isNavOpen])
 
   return (
     <>
@@ -42,12 +50,10 @@ const Header = (props) => {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <ul className="flex min-h-[250px] flex-col items-center justify-center">
-                <li><Greeter user={user} /></li>
-                <li className="my-8 border-b border-gray-400 text-lg uppercase">
-                  <a href="/">Login</a>
-                </li>
-              </ul>
+              <div className="flex min-h-[250px] flex-col items-center justify-center">
+                <Greeter user={user} />
+                <Navigation user={user} login={login} setLogin={setLogin} />
+              </div>
             </div>
           </section>
         </nav>
@@ -57,7 +63,7 @@ const Header = (props) => {
       }
       .showMenuNav {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100vh;
         top: 0;
@@ -82,7 +88,7 @@ const Header = (props) => {
           {user && <div className="mx-10">
             <Greeter user={user} />
           </div>}
-          <Navigation />
+          <Navigation user={user} login={login} setLogin={setLogin} />
         </div>
       </div>
     </>

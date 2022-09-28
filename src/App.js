@@ -4,7 +4,7 @@ import { StudentLogin } from "./pages/StudentLogin/StudentLogin"
 import { Routes, Route, useNavigate } from "react-router-dom"
 
 const App = () => {
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState(false)
   const navigate = useNavigate()
   
   useEffect(() => {
