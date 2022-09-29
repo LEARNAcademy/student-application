@@ -7,29 +7,21 @@ const Header = (props) => {
   const { user, login, setLogin } = props
   const [isNavOpen, setIsNavOpen] = useState(false)
 
-  // useEffect(() => {
-  //   if(isNavOpen) {
-  //     document.body.style.position = "fixed"
-  //   }else{
-  //     document.body.style.position = ""
-  //   }
-  // }, [isNavOpen])
-
   return (
     <>
-      <div className="flex items-center justify-between border-b border-gray-400 bg-learngray py-2 sm:hidden">
+      <div className="flex justify-between items-center py-2 bg-learngray border-b border-gray-400 sm:hidden">
         <div className="mr-44">
           <img src={learnLogo} alt="logo" className="scale-[75%]" />
         </div>
         <nav>
-          <section className="mr-4 flex">
+          <section className="flex mr-4">
             <div
               className="space-y-2"
               onClick={() => setIsNavOpen((prev) => !prev)}
             >
-              <span className="block h-0.5 w-8 animate-pulse bg-learnpurple"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-learnpurple"></span>
-              <span className="block h-0.5 w-8 animate-pulse bg-learnpurple"></span>
+              <span className="block w-8 h-0.5 bg-learnpurple animate-pulse"></span>
+              <span className="block w-8 h-0.5 bg-learnpurple animate-pulse"></span>
+              <span className="block w-8 h-0.5 bg-learnpurple animate-pulse"></span>
             </div>
 
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
@@ -38,7 +30,7 @@ const Header = (props) => {
                 onClick={() => setIsNavOpen(false)}
               >
                 <svg
-                  className="h-8 w-8 text-gray-600"
+                  className="w-8 h-8 text-gray-600"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -50,7 +42,7 @@ const Header = (props) => {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <div className="flex min-h-[250px] flex-col items-center justify-center">
+              <div className="flex flex-col justify-center items-center min-h-[250px]">
                 <Greeter user={user} />
                 <Navigation user={user} login={login} setLogin={setLogin} />
               </div>
@@ -77,11 +69,11 @@ const Header = (props) => {
       }
     `}</style>
       </div>
-      <div className="hidden sm:flex sm:items-center sm:justify-between sm:bg-[#313133]">
+      <div className="hidden sm:flex sm:justify-between sm:items-center sm:bg-[#313133]">
         <div className="flex flex-row">
           <img
             src={learnLogo}
-            className="ml-2 h-10 w-28 sm:h-auto sm:w-72"
+            className="ml-2 w-28 h-10 sm:w-72 sm:h-auto"
             alt="Learn Academy Logo" />
         </div>
         <div className="flex flex-row items-start sm:items-center">
