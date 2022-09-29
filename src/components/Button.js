@@ -6,20 +6,20 @@ const Button = (props) => {
     <div
       onClick={onClick}
       className="
-            flex h-auto
-            w-auto
-            cursor-pointer select-none
-            items-center
             justify-center
-            border-2
-            border-[#A670AF]
-            bg-[#95649d]
+            items-center
             py-2
             px-4
+            w-auto
             font-medium
             text-white
-            hover:bg-white
             hover:text-[#A670AF]
+            bg-[#95649d]
+            hover:bg-white
+            border-2
+            border-[#A670AF]
+            flex h-auto
+            cursor-pointer select-none
             "
     >
       <a href={path} >{text}</a>
