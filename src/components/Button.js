@@ -6,9 +6,11 @@ const Button = (props) => {
     <div
       onClick={onClick}
       className="
-            flex h-auto
+            flex
+            h-auto
             w-auto
-            cursor-pointer select-none
+            cursor-pointer
+            select-none
             items-center
             justify-center
             border-2
@@ -16,10 +18,8 @@ const Button = (props) => {
             bg-[#95649d]
             py-2
             px-4
-            font-medium
-            text-white
-            hover:bg-white
-            hover:text-[#A670AF]
+            font-medium text-white
+            hover:bg-white hover:text-[#A670AF]
             "
     >
       <a href={path} >{text}</a>

@@ -7,13 +7,14 @@ import { AttendancePolicyModal } from "../../components/PolicyModal.js"
 import { ComprehensionModal } from "../../components/PolicyModal.js"
 import { Attendance } from "../../components/Attendance"
 
-const StudentDashboard = () => {
+const StudentDashboard = (props) => {
+  const { login, setLogin } = props
   const { assessments } = user.student
   const { student } = user
   return (
     <div className="w-full overflow-x-hidden bg-neutral-200 font-['gesta']">
-      <Header user={user}/>
-      <div className="m-8 mt-10 border-b border-black p-5 sm:mx-32 sm:py-10 ">
+      <Header user={user} login={login} setLogin={setLogin} />
+      <div className="m-8 mt-10 border-b border-black p-5 sm:mx-32 sm:py-10">
         <div className="mb-5">
           <Absences student={student}/>
         </div>
@@ -25,8 +26,8 @@ const StudentDashboard = () => {
           <AttendancePolicyModal/>
         </div>
       </div>
-      <h1 className="ml-10 mt-10 text-2xl font-medium sm:ml-32">Weekly Assessments</h1>
-      <div className="ml-10 mt-3 flex w-screen items-center sm:mt-5 sm:ml-32">
+      <h1 className="mt-10 ml-10 text-2xl font-medium sm:ml-32">Weekly Assessments</h1>
+      <div className="mt-3 ml-10 flex w-screen items-center sm:mt-5 sm:ml-32">
         <ComprehensionModal/>
       </div>
       <Assessment assessments={assessments}/>

@@ -22,12 +22,8 @@ const Attendance = ({absences}) => {
           <tbody>
             <tr>
               {statusColor.map((color, index) => {
-                return(
-                  <>
-                    <td key={index} className={`h-2.5 min-w-[19px] rounded-full ${color}`}></td>
-                  </>
-
-                )})
+                return <td key={index} className={`h-2.5 min-w-[19px] rounded-full ${color}`}></td>
+              })
               }
             </tr>
             <tr>
@@ -35,7 +31,7 @@ const Attendance = ({absences}) => {
                 if(index % 3 === 0){
                   return <td key={index} > { -1 * ((index / 3) - 5)}</td>
                 } else {
-                  return <td  key={index}> </td>
+                  return <td key={index}> </td>
                 }
               })
               }

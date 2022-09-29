@@ -72,7 +72,7 @@ const Assessment = (props) => {
               </div>
               <div className="flex flex-col">
                 <div className="flex w-full flex-row items-center">
-                  <div className="mx-6 my-1 ml-16 text-lg"><strong>Status:</strong>
+                  <div className="my-1 mx-6 ml-16 text-lg"><strong>Status:</strong>
                     <span className={`relative mx-1 inline-block w-28 rounded-lg text-center before:absolute before:-inset-1 before:block ${statusColor[index]}`}>{assessment.status}</span>
                   </div>
                 </div>

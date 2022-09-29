@@ -18,21 +18,21 @@ const StudentLogin = (props) => {
     )
   }
 
-  const navigateHome = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    setLogin(false)
+    setLogin(true)
+    if(login) {
+      navigate("/studentdash")
+    }
   }
   
-  if(login) {
-    navigate("/studentdash")
-  }
   
   return (
     <>
       <Header />
       <div className="h-screen bg-slate-200 py-24 font-['gesta'] sm:pt-52">
         <div className="my-8 rounded-xl border-4 bg-zinc-700 sm:m-auto sm:h-96 sm:w-96">
-          <form onSubmit={(e) => navigateHome(e)} className="flex flex-col items-center justify-center border-transparent p-8 sm:pt-12">
+          <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col items-center justify-center border-transparent p-8 sm:pt-12">
             <div className="sm:m-auto sm:mb-4 sm:w-52">
               <div className="mb-2 block text-center">
                 <Label

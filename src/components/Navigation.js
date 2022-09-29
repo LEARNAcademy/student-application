@@ -12,12 +12,12 @@ const Navigation = ({login,setLogin}) => {
 
   return (
     <div className="my-2 mr-5 w-20 text-xs xs:w-12 sm:mr-10 sm:w-24">
-      {login && (
+      {login && 
         <Button text={"Log Out"} onClick={navigateLogin} />
-      )}
-      {!login && (
+      }
+      {!login && 
         <Button text={"Log In"} path={"/"} />
-      )}
+      }
     </div>
   )
 }
