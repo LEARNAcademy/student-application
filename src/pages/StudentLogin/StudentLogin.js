@@ -30,11 +30,11 @@ const StudentLogin = (props) => {
   return (
     <>
       <Header />
-      <div className="py-24 h-screen font-['gesta'] bg-slate-200 sm:pt-52">
-        <div className="my-8 bg-zinc-700 rounded-xl border-4 sm:m-auto sm:w-96 sm:h-96">
-          <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col justify-center items-center p-8 border-transparent sm:pt-12">
+      <div className="h-screen bg-slate-200 py-24 font-['gesta'] sm:pt-52">
+        <div className="my-8 rounded-xl border-4 bg-zinc-700 sm:m-auto sm:h-96 sm:w-96">
+          <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col items-center justify-center border-transparent p-8 sm:pt-12">
             <div className="sm:m-auto sm:mb-4 sm:w-52">
-              <div className="block mb-2 text-center">
+              <div className="mb-2 block text-center">
                 <Label
                   htmlFor="email1"
                 > 
@@ -51,7 +51,7 @@ const StudentLogin = (props) => {
               />
             </div>
             <div className="m-auto mb-2 w-52">
-              <div className="block mb-2 text-center">
+              <div className="mb-2 block text-center">
                 <Label
                   htmlFor="password1"
                 >
@@ -66,13 +66,13 @@ const StudentLogin = (props) => {
                 onChange={(e)=> handleChange(e)}
               />
             </div>
-            <div className="flex gap-2 items-center m-auto mt-4 mb-6">
+            <div className="m-auto mt-4 mb-6 flex items-center gap-2">
               <Checkbox id="remember" />
               <Label htmlFor="remember">
                 <div className="text-loginremember">Remember me</div>
               </Label>
             </div>
-            <div className="m-auto w-20 text-lg text-center bg-learngreen rounded-full">
+            <div className="m-auto w-20 rounded-full bg-learngreen text-center text-lg">
               <button type="submit" >
                 Submit
               </button>

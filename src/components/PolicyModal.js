@@ -20,15 +20,15 @@ const AttendancePolicyModal = () => {
       <div onClick={()=> handleClick()}
         className="
           inline-flex
+          cursor-pointer
           text-[#A670AF]
           hover:underline
-          cursor-pointer
           "
       >
         Attendance Policy
         <img 
           src={arrowBox} 
-          className="ml-2 w-5 h-auto"
+          className="ml-2 h-auto w-5"
         />
       </div>
       <div id="modal-container" onClick={() => handleClick()}>
@@ -41,16 +41,16 @@ const AttendancePolicyModal = () => {
               Attendance Policy
             </Modal.Header>
             <Modal.Body>
-              <div className="overflow-y-auto p-6 pt-2 space-y-6 h-[60vh] font-gesta">
+              <div className="h-[60vh] space-y-6 overflow-y-auto p-6 pt-2 font-gesta">
                 <p>Regular and punctual attendance is an important part of a student&#39;s education. Class begins promptly and attendance is strictly monitored. Students should not be late. It is disruptive and unprofessional to enter a class that is already underway.</p>
                 <p>With the exception of emergencies, students will notify an instructor by Slack message 24 hours in advance of any tardies or absences.</p>
                 <p>A student is considered <strong>tardy</strong> if:</p>
-                <ul className="list-disc list-inside">
+                <ul className="list-inside list-disc">
                   <li>they miss the morning check in.</li>
                   <li>they miss one or more hours of class.</li>
                 </ul>
                 <p>A student is considered <strong>absent</strong> if:</p>
-                <ul className="list-disc list-inside">
+                <ul className="list-inside list-disc">
                   <li>they miss three or more hours of class.</li>
                   <li>they accrue three tardies.</li>
                 </ul>
@@ -82,15 +82,15 @@ const ComprehensionModal = () => {
       <div onClick={()=> handleClick()}
         className="
           inline-flex
+          cursor-pointer
           text-[#A670AF]
           hover:underline
-          cursor-pointer
           "
       >
         Comprehension Levels
         <img 
           src={arrowBox} 
-          className="ml-2 w-5 h-auto"
+          className="ml-2 h-auto w-5"
         />
       </div>
       <div id="modal-container" onClick={() => handleClick()}>
@@ -103,7 +103,7 @@ const ComprehensionModal = () => {
               Assessment Review Process
             </Modal.Header>
             <Modal.Body>
-              <div className="overflow-y-auto p-6 pt-2 space-y-6 h-[60vh] font-gesta">
+              <div className="h-[60vh] space-y-6 overflow-y-auto p-6 pt-2 font-gesta">
                 <p>When an instructor reviews a student&#39;s assessment the instructor is evaluating the work through the lens of the Dreyfus model of skill acquisition. The Dreyfus model describes how individuals progress through various levels during the learning process. At LEARN, students will be evaluated as novice, advanced beginner, or competent skill level.</p>
                 <p>Skill levels measure current understanding and allow for growth over time.</p>
                 <strong>Skill levels are not grades!</strong>

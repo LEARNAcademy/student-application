@@ -12,9 +12,9 @@ const StudentDashboard = (props) => {
   const { assessments } = user.student
   const { student } = user
   return (
-    <div className="overflow-x-hidden w-full font-['gesta'] bg-neutral-200">
+    <div className="w-full overflow-x-hidden bg-neutral-200 font-['gesta']">
       <Header user={user} login={login} setLogin={setLogin} />
-      <div className="p-5 m-8 mt-10 border-b border-black sm:py-10 sm:mx-32">
+      <div className="m-8 mt-10 border-b border-black p-5 sm:mx-32 sm:py-10">
         <div className="mb-5">
           <Absences student={student}/>
         </div>
@@ -22,12 +22,12 @@ const StudentDashboard = (props) => {
         <div className="w-[80vw]">
           <Attendance absences={student.absences}/>
         </div>
-        <div className="flex items-center mt-5 w-screen">
+        <div className="mt-5 flex w-screen items-center">
           <AttendancePolicyModal/>
         </div>
       </div>
       <h1 className="mt-10 ml-10 text-2xl font-medium sm:ml-32">Weekly Assessments</h1>
-      <div className="flex items-center mt-3 ml-10 w-screen sm:mt-5 sm:ml-32">
+      <div className="mt-3 ml-10 flex w-screen items-center sm:mt-5 sm:ml-32">
         <ComprehensionModal/>
       </div>
       <Assessment assessments={assessments}/>
