@@ -12,7 +12,7 @@ const StudentDashboard = (props) => {
   const { assessments } = user.student
   const { student } = user
   return (
-    <div className="w-full overflow-x-hidden bg-neutral-200 font-['gesta']">
+    <div className="w-full overflow-x-hidden bg-white font-['gesta']">
       <Header user={user} login={login} setLogin={setLogin} />
       <div className="m-8 mt-10 border-b border-black p-5 sm:mx-32 sm:py-10">
         <div className="mb-5">
