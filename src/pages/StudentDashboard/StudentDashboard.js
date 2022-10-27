@@ -35,7 +35,7 @@ const StudentDashboard = (props) => {
         <Assessment assessments={assessments}/>
       </div>
       <div>
-      <Footer/>
+        <Footer/>
       </div>
     </>
   )
