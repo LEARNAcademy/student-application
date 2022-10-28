@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { StudentDashboard } from "./pages/StudentDashboard/StudentDashboard"
 import { StudentLogin } from "./pages/StudentLogin/StudentLogin"
 import { Routes, Route, useNavigate } from "react-router-dom"
-import  {Contributor}  from "./pages/Contributor"
+import  { Contributor }  from "./pages/Contributor"
 
 const App = () => {
   const [login, setLogin] = useState(true)
