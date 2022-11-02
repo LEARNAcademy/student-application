@@ -1,9 +1,9 @@
 import React from "react"
-import { contributors } from "../contributors"
-import github from "../assets/github.svg"
-import linkedin from "../assets/linkedin.svg"
-import { Header } from "../components/Header"
-import { Footer } from "../components/Footer"
+import { contributors } from "../../contributor.js"
+import github from "../../assets/github.svg"
+import linkedin from "../../assets/linkedin.svg"
+import { Header } from "../../components/Header"
+import { Footer } from "../../components/Footer"
 import { Card } from "flowbite-react"
 
 const Contributor = () => {
@@ -16,7 +16,7 @@ const Contributor = () => {
 
       <div className="m-8 flex flex-wrap">
         {contributors.map((contributor) => (
-          <div className="m-8 w-60" key={contributor.id}>
+          <div className="m-8 w-72" key={contributor.id}>
             <Card>
               <div>
                 <img
@@ -34,7 +34,7 @@ const Contributor = () => {
                   {contributor.cohort}
                 </h2>
               </div>
-              <div className="w-30 h-30">
+              <div className=" h-44 w-56 ">
                 <div>
                   <p className="flex-wrap font-normal text-gray-700 dark:text-gray-400">
                     {contributor.bio}
@@ -43,7 +43,7 @@ const Contributor = () => {
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                 <div className="mx-8">
-                  <a href={contributor.gitHubb} className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                  <a href={contributor.github} className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
                     <img src={github} />
                   </a>
                 </div>

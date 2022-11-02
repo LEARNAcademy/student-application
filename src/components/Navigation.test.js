@@ -14,14 +14,14 @@ jest.mock("react-router-dom", () => ({
 }))
 
 describe("<Navigation />", () => {
-  let navigationRender 
+  let navigationRender
   beforeEach(() => {
-    navigationRender = shallow(<Navigation />, {wrapper: BrowserRouter})
+    navigationRender = shallow(<Navigation />, { wrapper: BrowserRouter })
   })
   it("renders a button", () => {
-   
+
     const navButton = navigationRender.find("Button")
-   
+
     expect(navButton.length).toEqual(1)
-  } )
+  })
 })
