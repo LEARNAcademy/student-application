@@ -12,7 +12,7 @@ const Contributor = () => {
       <Header />
       <center className="m-11 font-gesta text-5xl text-learnpurple">Contributors</center>
 
-      <p className="m-9">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
+      <p className="m-8">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
 
       <div className="m-8 flex flex-wrap">
         {contributors.map((contributor) => (
