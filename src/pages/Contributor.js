@@ -1,7 +1,7 @@
 import React from "react"
-import { contributors } from "../Helper"
+import { contributors } from "../contributors"
 import github from "../assets/github.svg"
-import Linkedin from "../assets/Linkedin.svg"
+import linkedin from "../assets/linkedin.svg"
 import { Header } from "../components/Header"
 import { Footer } from "../components/Footer"
 import { Card } from "flowbite-react"
@@ -9,7 +9,7 @@ import { Card } from "flowbite-react"
 const Contributor = () => {
   return (
     <>
-      <Header/>
+      <Header />
       <center className="m-11 font-gesta text-5xl text-learnpurple">Contributors</center>
 
       <p className="m-9">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
@@ -18,7 +18,7 @@ const Contributor = () => {
         {contributors.map((contributor) => (
           <div className="m-8 w-60" key={contributor.id}>
             <Card>
-              <div className="">
+              <div>
                 <img
                   className="h-20 w-20 rounded-full"
                   src={contributor.image} alt="contributor-image"
@@ -29,13 +29,13 @@ const Contributor = () => {
                 <div>
                 </div>
               </div>
-              <div> 
+              <div>
                 <h2 className="flex-wrap font-normal text-gray-700 dark:text-gray-400">
                   {contributor.cohort}
                 </h2>
               </div>
-              <div className="w-30 h-30"> 
-                <div> 
+              <div className="w-30 h-30">
+                <div>
                   <p className="flex-wrap font-normal text-gray-700 dark:text-gray-400">
                     {contributor.bio}
                   </p>
@@ -43,13 +43,13 @@ const Contributor = () => {
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                 <div className="mx-8">
-                  <a href={contributor.gitHubb} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                    < img src={github}/>
+                  <a href={contributor.gitHubb} className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                    <img src={github} />
                   </a>
                 </div>
                 <div className="mx-8">
                   <a href={contributor.linkedin} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                    < img src={Linkedin}/>
+                    < img src={linkedin} />
                   </a>
                 </div>
               </div>
@@ -57,9 +57,9 @@ const Contributor = () => {
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
-} 
+}
 
 export { Contributor }
