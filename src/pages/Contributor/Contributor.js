@@ -1,7 +1,7 @@
 import React from "react"
 import { contributors } from "../../contributor.js"
 import github from "../../assets/github.svg"
-import linkedin from "../../assets/linkedin.svg"
+import linkedin from "../../assets/linked-in.svg"
 import { Header } from "../../components/Header"
 import { Footer } from "../../components/Footer"
 import { Card } from "flowbite-react"
