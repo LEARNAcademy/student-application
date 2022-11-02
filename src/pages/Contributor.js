@@ -3,7 +3,7 @@ import { contributors } from "../Helper"
 import github from "../assets/github.svg"
 import Linkedin from "../assets/Linkedin.svg"
 import { Header } from "../components/Header"
-// import footer from "../components?Footer"
+import { Footer } from "../components/Footer"
 import { Card } from "flowbite-react"
 
 const Contributor = () => {
@@ -43,12 +43,12 @@ const Contributor = () => {
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                 <div className="mx-8">
-                  <a href={contributor.gitHubb} className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                  <a href={contributor.gitHubb} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
                     < img src={github}/>
                   </a>
                 </div>
                 <div className="mx-8">
-                  <a href={contributor.linkedin} className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                  <a href={contributor.linkedin} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
                     < img src={Linkedin}/>
                   </a>
                 </div>
@@ -57,10 +57,9 @@ const Contributor = () => {
           </div>
         ))}
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
-}
-     
+} 
 
 export { Contributor }

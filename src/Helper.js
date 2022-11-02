@@ -38,7 +38,7 @@ let contributors = [
   },
   {
     id: 5,
-    name: "Nicole",
+    name: "Nicole Mares Rivera",
     cohort: "Delta Cohort 2022",
     bio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/nicole-mares-rivera/",
@@ -47,7 +47,7 @@ let contributors = [
   },
   {
     id: 6,
-    name: "Will",
+    name: "Will Williams",
     cohort: "Delta Cohort 2022",
     bio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/deanna-will-williams/",
@@ -74,7 +74,7 @@ let contributors = [
   },
   {
     id: 9,
-    name: "Don",
+    name: "Don Yoon",
     cohort: "Charlie Cohort 2022",
     bio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/don-yoon/",
@@ -83,7 +83,7 @@ let contributors = [
   },
   {
     id: 10,
-    name: "Logan",
+    name: "Logan Ramos",
     cohort: "Charlie Cohort 2022",
     bio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/loganramos/",
@@ -92,7 +92,7 @@ let contributors = [
   },
   {
     id: 11,
-    name: "Sarah",
+    name: "Sarah Proctor",
     cohort: "Delta",
     bio:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/sarah-proctor-sd/",
