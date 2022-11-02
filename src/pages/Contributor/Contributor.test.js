@@ -11,6 +11,11 @@ describe("<Contributor />", () => {
     const contributorHeading = contributor.find("Header")
     expect(contributorHeading.length).toEqual(1)
   })
+  it("renders a footer", () => {
+    const contributor = shallow(<Contributor />)
+    const contributorFooter = contributor.find("Footer")
+    expect(contributorFooter.length).toEqual(1)
+  })
 })
 
 
