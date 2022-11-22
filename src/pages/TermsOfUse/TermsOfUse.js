@@ -200,7 +200,6 @@ const TermsOfUse = () => {
       </div>
       <Footer/>
     </>
-
   )
 }
 

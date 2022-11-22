@@ -6,8 +6,7 @@ const CodeOfConduct = () => {
   return (
     <>
       <Header />
-      <h1 className="mt-4 mb-12 text-4xl font-bold text-learnpurple">       
-        
+      <h1 className="mt-4 mb-12 text-4xl font-bold text-learnpurple">             
           Code of Conduct
       </h1>
       <p className="my-3">
