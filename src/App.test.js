@@ -16,6 +16,6 @@ describe("<App />", () => {
   it("contains the two Routes", () => {
     const app = shallow(<App/>)
     const renderedComponent = app.find("Route")
-    expect(renderedComponent.length).toEqual(3)
+    expect(renderedComponent.length).toEqual(7)
   })
 })
