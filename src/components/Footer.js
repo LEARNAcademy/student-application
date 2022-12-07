@@ -7,7 +7,9 @@ const Footer = () => {
     <>
       <div className="h-auto w-full px-8 py-4 text-lg lg:px-8">
         <div className="m-8 mx-20 flex flex-wrap space-x-4 justify-self-auto font-['gesta'] ">
-          < img src={learnSymbol}/>
+          <a href="/"> 
+            < img src={learnSymbol}/>
+          </a>
           <p className="flex-auto"> © 2022 LEARN</p>
           <NavLink to="/aboutus" className="hover:text-learnpurple">About Us</NavLink>
           <NavLink to="/privacypolicy" className="hover:text-learnpurple">Privacy Policy</NavLink>

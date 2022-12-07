@@ -16,7 +16,7 @@ const Navigation = ({login,setLogin}) => {
         <Button text={"Log Out"} onClick={navigateLogin} />
       }
       {!login && 
-        <Button text={"Log In"} path={"/"} />
+        <Button text={"Log In"} path={"/login"} />
       }
     </div>
   )

@@ -21,8 +21,8 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<StudentLogin login={login} setLogin={setLogin} navigate={navigate} />} />
-      <Route path="/studentdash" element={<StudentDashboard login={login} setLogin={setLogin} />} /> 
+      <Route path="/" element={<StudentDashboard login={login} setLogin={setLogin} />} /> 
+      <Route path="/login" element={<StudentLogin login={login} setLogin={setLogin} navigate={navigate} />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="/termsofuse" element={<TermsOfUse />} />
