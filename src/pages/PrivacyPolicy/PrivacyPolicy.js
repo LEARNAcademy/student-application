@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     <>
       <Header />
       <div className="mx-auto my-16 h-auto w-[90%] text-[#616161]">
-        <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnpurple">
+        <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
     Privacy Policy
         </h1>
         <h2 className="text-2xl text-learnblack">

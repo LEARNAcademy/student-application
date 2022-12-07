@@ -10,9 +10,13 @@ const Contributor = () => {
   return (
     <>
       <Header />
-      <center className="m-11 font-gesta text-5xl text-learnpurple">Contributors</center>
+      <div className="mx-auto my-16 h-auto w-[90%] text-[#616161]">
+        <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
+          Contributors
+        </h1>
 
-      <p className="m-8">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
+        <p className="my-3 text-[#616161]">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
+      </div>
 
       <div className="m-8 flex flex-wrap">
         {contributors.map((contributor) => (
@@ -30,20 +34,20 @@ const Contributor = () => {
                 </div>
               </div>
               <div>
-                <h2 className="flex-wrap font-normal text-gray-700 dark:text-gray-400">
+                <h2 className="flex-wrap font-normal text-[#616161]">
                   {contributor.cohort}
                 </h2>
               </div>
               <div className=" h-44 w-56 ">
                 <div>
-                  <p className="flex-wrap font-normal text-gray-700 dark:text-gray-400">
+                  <p className="flex-wrap font-normal text-[#616161]">
                     {contributor.bio}
                   </p>
                 </div>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                 <div className="mx-8">
-                  <a href={contributor.github} className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                  <a href={contributor.github} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
                     <img src={github} />
                   </a>
                 </div>
