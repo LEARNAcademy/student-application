@@ -22,7 +22,7 @@ const StudentLogin = (props) => {
     e.preventDefault()
     setLogin(true)
     if(login) {
-      navigate("/studentdash")
+      navigate("/")
     }
   }
   

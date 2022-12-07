@@ -11,7 +11,9 @@ const Header = (props) => {
     <>
       <div className="flex items-center justify-between border-b border-gray-400 bg-learngray py-2 sm:hidden">
         <div className="mr-44">
-          <img src={learnLogo} alt="logo" className="scale-[75%]" />
+          <a href="/">  
+            <img src={learnLogo} alt="logo" className="scale-[75%]" />
+          </a>
         </div>
         <nav>
           <section className="mr-4 flex">
@@ -71,10 +73,12 @@ const Header = (props) => {
       </div>
       <div className="hidden sm:flex sm:items-center sm:justify-between sm:bg-[#313133]">
         <div className="flex flex-row">
-          <img
-            src={learnLogo}
-            className="ml-2 h-10 w-28 sm:h-auto sm:w-72"
-            alt="Learn Academy Logo" />
+          <a href="/">
+            <img
+              src={learnLogo}
+              className="ml-2 h-10 w-28 sm:h-auto sm:w-72"
+              alt="Learn Academy Logo" />
+          </a>
         </div>
         <div className="flex flex-row items-start sm:items-center">
           {user && <div className="mx-10">
