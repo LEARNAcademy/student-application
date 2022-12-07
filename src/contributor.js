@@ -1,21 +1,30 @@
-import Francisco from "./assets/images/Francisco.png"
-import Elijah from "./assets/images/Elijah.png"
-import Jason from "./assets/images/Jason.png"
-import Gene from "./assets/images/Gene.png"
-import Nicole from  "./assets/images/Nicole.png"
-import Will from "./assets/images/Will.png"
-import Luis from "./assets/images/Luis.jpg"
-import Ahmed from "./assets/images/Ahmed.png"
-import Don from "./assets/images/Don.png"
-import Logan from "./assets/images/Logan.png"
-import Sarah from "./assets/images/Sarah.png"
-import Nate from "./assets/images/Nate.png"
-import Kyle from "./assets/images/Kyle.png"
-import Christian from "./assets/images/Christian.png"
-
+import francisco from "./assets/images/francisco.png"
+import elijah from "./assets/images/elijah.png"
+import jason from "./assets/images/jason.png"
+import gene from "./assets/images/gene.png"
+import nicole from  "./assets/images/nicole.png"
+import will from "./assets/images/will.png"
+import luis from "./assets/images/luis.jpg"
+import ahmed from "./assets/images/ahmed.png"
+import don from "./assets/images/don.png"
+import logan from "./assets/images/logan.png"
+import sarah from "./assets/images/sarah.png"
+import nate from "./assets/images/nate.png"
+import kyle from "./assets/images/kyle.png"
+import christian from "./assets/images/christian.png"
+import athian from "./assets/images/athian.jpg"
 
 
 let contributors = [
+  {
+    id: 15,
+    name: "Athian Camberos",
+    cohort: "Foxtrot cohort 2022",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/athian-camberos-41a91b241/",
+    github: "https://github.com/acamberos1",
+    image: athian
+  },
   {
     id: 14,
     name: "Christian Macias",
@@ -23,7 +32,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/christianmacias91/",
     github: "https://github.com/cmacias56",
-    image: Christian
+    image: christian
   },
   {
     id: 13,
@@ -32,7 +41,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/kyletle/",
     github: "https://github.com/letkyle",
-    image:Kyle
+    image:kyle
   },
   {
     id: 12,
@@ -41,7 +50,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/nathaniel-rossloyo/",
     github: "https://github.com/nathaniel-ross",
-    image: Nate
+    image: nate
   },
   {
     id: 1,
@@ -50,7 +59,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/elijah-barreto/",
     github: "https://github.com/ElijahBcodes",
-    image: Elijah
+    image: elijah
   },
   {
     id: 2,
@@ -59,7 +68,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/francisco-solis-02191995/",
     github: "https://github.com/fpsolis219",
-    image: Francisco
+    image: francisco
   },
   {
     id: 3,
@@ -68,7 +77,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/jason-brown-6b4707b/",
     github: "https://github.com/jayaries329",
-    image: Jason
+    image: jason
   },
   {
     id: 4,
@@ -77,7 +86,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/gene-martinez/",
     github: "https://github.com/Genemichael25",
-    image: Gene
+    image: gene
   },
   {
     id: 5,
@@ -86,7 +95,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/nicole-mares-rivera/",
     github: "https://github.com/nmaresrivera11",
-    image: Nicole
+    image: nicole
   },
   {
     id: 6,
@@ -95,7 +104,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/deanna-will-williams/",
     github: "https://github.com/DFWilliams",
-    image: Will
+    image: will
   },
   {
     id: 7,
@@ -104,7 +113,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/luis-ramos1/",
     github: "https://github.com/ninerboy81",
-    image: Luis
+    image: luis
   },
   {
     id: 8,
@@ -113,7 +122,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/ahmed-alkhafaji/",
     github: "https://github.com/Ahmedkhafaji",
-    image: Ahmed
+    image: ahmed
   },
   {
     id: 9,
@@ -122,7 +131,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/don-yoon/",
     github: "https://github.com/don-yoon",
-    image: Don
+    image: don
   },
   {
     id: 10,
@@ -131,7 +140,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/loganramos/",
     github: "https://github.com/Renzlawr",
-    image: Logan
+    image: logan
   },
   {
     id: 11,
@@ -140,7 +149,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/sarah-proctor-sd/",
     github: "https://github.com/sjproctor",
-    image: Sarah
+    image: sarah
   }
 
 ]
