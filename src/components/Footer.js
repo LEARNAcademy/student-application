@@ -6,8 +6,9 @@ const Footer = () => {
   return (
     <>
       <div className="h-auto w-full px-8 py-4 text-lg lg:px-8">
-        <div className="m-8 mx-20 flex flex-wrap space-x-4 justify-self-auto font-['gesta'] ">
-          <a href="/"> 
+        <div className="justify-start mx-20 space-y-4  sm:m-8 sm:mx-20  sm:flex sm:flex-wrap  sm:space-x-4 sm:space-y-4 sm:justify-self-auto sm:font-['gesta'] md:mx-16">
+          
+          <a href="/"  className="ml-4"> 
             < img src={learnSymbol}/>
           </a>
           <p className="flex-auto"> © 2022 LEARN</p>
