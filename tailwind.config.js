@@ -15,6 +15,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        "learncarbon":"#616161",
         "learngray": "#313133",
         "learnpurple": "#A670AF",
         "learnpurplehover": "#C797CF",
