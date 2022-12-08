@@ -54,6 +54,8 @@ const Contributor = () => {
                 <div className="mx-8">
                   <a href={contributor.linkedin} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
                     < img src={linkedin} />
+
+                
                   </a>
                 </div>
               </div>
