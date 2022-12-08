@@ -63,6 +63,7 @@ const Contributor = () => {
           </div>
         ))}
       </div>
+      
       <Footer />
     </>
   )
