@@ -1,5 +1,57 @@
+import francisco from "./assets/images/francisco1.png"
+import elijah from "./assets/images/elijah1.png"
+import jason from "./assets/images/jason1.png"
+import gene from "./assets/images/gene1.png"
+import nicole from  "./assets/images/nicole1.png"
+import will from "./assets/images/will1.png"
+import luis from "./assets/images/luis1.jpg"
+import ahmed from "./assets/images/ahmed1.png"
+import don from "./assets/images/don1.png"
+import logan from "./assets/images/logan1.png"
+import sarah from "./assets/images/sarah1.png"
+import nate from "./assets/images/nate1.png"
+import kyle from "./assets/images/kyle1.png"
+import christian from "./assets/images/christian1.png"
+import athian from "./assets/images/athian1.jpg"
+
 
 let contributors = [
+  {
+    id: 15,
+    name: "Athian Camberos",
+    cohort: "Foxtrot cohort 2022",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/athian-camberos-41a91b241/",
+    github: "https://github.com/acamberos1",
+    image: athian
+  },
+  {
+    id: 14,
+    name: "Christian Macias",
+    cohort: "Foxtrot Cohort 2022",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/christianmacias91/",
+    github: "https://github.com/cmacias56",
+    image: christian
+  },
+  {
+    id: 13,
+    name: "Kyle Le",
+    cohort: "Foxtrot Cohort 2022",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/kyletle/",
+    github: "https://github.com/letkyle",
+    image:kyle
+  },
+  {
+    id: 12,
+    name: "Nathaniel Ross-Loyo",
+    cohort: "Foxtrot Cohort 2022",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/nathaniel-rossloyo/",
+    github: "https://github.com/nathaniel-ross",
+    image: nate
+  },
   {
     id: 1,
     name: "Elijah Barreto",
@@ -7,7 +59,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/elijah-barreto/",
     github: "https://github.com/ElijahBcodes",
-    image: "https://media-exp1.licdn.com/dms/image/D5603AQHZZ1jtS71Imw/profile-displayphoto-shrink_100_100/0/1666645779429?e=1672876800&v=beta&t=7xn5l8iSSbLJYsHZwNwV9PnFOBPkwtSVLi_IMF6sWGI"
+    image: elijah
   },
   {
     id: 2,
@@ -16,7 +68,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/francisco-solis-02191995/",
     github: "https://github.com/fpsolis219",
-    image: "https://media-exp1.licdn.com/dms/image/C4D03AQGTFrJ26HbMcg/profile-displayphoto-shrink_100_100/0/1612635273814?e=1672876800&v=beta&t=O5uo8BiipLB8aXLbzpGcDUVSFVitfmu-GxDjiTvdRcQ"
+    image: francisco
   },
   {
     id: 3,
@@ -25,7 +77,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/jason-brown-6b4707b/",
     github: "https://github.com/jayaries329",
-    image: "https://media-exp1.licdn.com/dms/image/C5603AQEFOj6Gu5Q9NQ/profile-displayphoto-shrink_100_100/0/1663361580238?e=1672876800&v=beta&t=b77ULxsMuYrGyes_cOeY7wvJGG5ZUXwzyqbg_QPF4Jw"
+    image: jason
   },
   {
     id: 4,
@@ -34,7 +86,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/gene-martinez/",
     github: "https://github.com/Genemichael25",
-    image: "https://media-exp1.licdn.com/dms/image/D5603AQEVq3-lD11eUQ/profile-displayphoto-shrink_800_800/0/1665111891460?e=1672876800&v=beta&t=DKI1KtvfL7DoTqjXsKFB4cUBRwDOhDi8mpAgh5sWi5U"
+    image: gene
   },
   {
     id: 5,
@@ -43,7 +95,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/nicole-mares-rivera/",
     github: "https://github.com/nmaresrivera11",
-    image: "https://media-exp1.licdn.com/dms/image/C4E03AQHKsFWNhNcpcw/profile-displayphoto-shrink_100_100/0/1658805419347?e=1672876800&v=beta&t=UEBW88GaAv0fE-rN8FLCb6ZyT_yE4Zj2jPJRXIYLvbs"
+    image: nicole
   },
   {
     id: 6,
@@ -52,7 +104,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/deanna-will-williams/",
     github: "https://github.com/DFWilliams",
-    image: "https://media-exp1.licdn.com/dms/image/C4D03AQGZ7mF2y-CZEw/profile-displayphoto-shrink_200_200/0/1663802530270?e=1672876800&v=beta&t=w9WbjYLpf1MA41tIROJAd64nceHAbF33CtKCmrmX93c"
+    image: will
   },
   {
     id: 7,
@@ -61,7 +113,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/luis-ramos1/",
     github: "https://github.com/ninerboy81",
-    image: "https://media-exp1.licdn.com/dms/image/D5635AQF_2SlZ8_vTrQ/profile-framedphoto-shrink_100_100/0/1664580063482?e=1669334400&v=beta&t=AZIHGbsHHU_3wxRfGXThcm9MzNvnqI9qQ2k6qUIfbaQ"
+    image: luis
   },
   {
     id: 8,
@@ -70,7 +122,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/ahmed-alkhafaji/",
     github: "https://github.com/Ahmedkhafaji",
-    image: "https://media-exp1.licdn.com/dms/image/C4E03AQFkhDgRPXVJcg/profile-displayphoto-shrink_100_100/0/1659028736504?e=1672876800&v=beta&t=cYwg0kCIP__yV4b28J4AhFehTP2r6wM3B7RVYSFv0UY"
+    image: ahmed
   },
   {
     id: 9,
@@ -79,7 +131,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/don-yoon/",
     github: "https://github.com/don-yoon",
-    image: "https://media-exp1.licdn.com/dms/image/D4D35AQH96E1rJ-jlaw/profile-framedphoto-shrink_100_100/0/1656358233624?e=1669334400&v=beta&t=B5Ydzk0_-Udz1wNoJnxo5i9loHsFrCtq8gj85AMQ9MA"
+    image: don
   },
   {
     id: 10,
@@ -88,7 +140,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/loganramos/",
     github: "https://github.com/Renzlawr",
-    image: "https://media-exp1.licdn.com/dms/image/D5603AQFKxPVjibjpCg/profile-displayphoto-shrink_100_100/0/1667582420961?e=1674086400&v=beta&t=i9lVsYpBC47OWM0zWaZsxGQjcD8mEHUCo3sCy4dlA2w"
+    image: logan
   },
   {
     id: 11,
@@ -97,7 +149,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/sarah-proctor-sd/",
     github: "https://github.com/sjproctor",
-    image: "https://media-exp1.licdn.com/dms/image/C5603AQG9g28R_jOZVw/profile-displayphoto-shrink_100_100/0/1572932473516?e=1672876800&v=beta&t=azzxybOkIe_Vc4A1826ieDAjnEpAnKEevl7yqvAU79A"
+    image: sarah
   }
 
 ]
