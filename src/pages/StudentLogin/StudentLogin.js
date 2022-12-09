@@ -72,9 +72,9 @@ const StudentLogin = (props) => {
                 <div className="text-loginremember">Remember me</div>
               </Label>
             </div>
-            <div className="m-auto w-20 rounded-full bg-learngreen text-center text-lg">
+            <div className="flex h-auto cursor-pointer select-none items-center justify-center border-2 border-[#A670AF] bg-[#95649d] py-2 px-4 font-medium text-white hover:bg-white hover:text-[#A670AF]">
               <button type="submit" >
-                Submit
+                SUBMIT
               </button>
             </div>
           </form>
