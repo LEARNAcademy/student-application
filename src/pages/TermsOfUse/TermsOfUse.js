@@ -7,7 +7,7 @@ const TermsOfUse = () => {
   return (
     <>
       <Header />
-      <div className="mx-auto my-16 h-auto w-[90%] text-[#616161]">
+      <div className="mx-auto mt-32 mb-16 h-auto w-[90%] text-[#616161] sm:my-16">
         <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
                     Terms & Conditions
         </h1>

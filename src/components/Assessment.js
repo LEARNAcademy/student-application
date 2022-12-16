@@ -67,13 +67,13 @@ const Assessment = (props) => {
               <div className="flex flex-col">
                 <div className="my-1 text-xl font-bold">Week {assessment.week} </div>
                 <div className="my-1 text-lg"><strong>Comprehension:</strong>
-                  <span className={`relative mx-1 inline-block w-28 rounded-lg text-center before:absolute before:-inset-1 before:block ${compColor[index]}`}>{assessment.comprehension}</span>
+                  <span className={`mx-1 inline-block w-28 rounded-lg text-center  ${compColor[index]}`}>{assessment.comprehension}</span>
                 </div>
               </div>
               <div className="flex flex-col">
                 <div className="flex w-full flex-row items-center">
                   <div className="my-1 mx-6 ml-16 text-lg"><strong>Status:</strong>
-                    <span className={`relative mx-1 inline-block w-28 rounded-lg text-center before:absolute before:-inset-1 before:block ${statusColor[index]}`}>{assessment.status}</span>
+                    <span className={`mx-1 inline-block w-28 rounded-lg text-center ${statusColor[index]}`}>{assessment.status}</span>
                   </div>
                 </div>
                 <div className="my-1 ml-10 pl-6 text-lg"><strong>Reviewer:</strong> {assessment.reviewer} </div>
