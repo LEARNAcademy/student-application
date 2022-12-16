@@ -15,7 +15,7 @@ const Contributor = () => {
           Contributors
         </h1>
 
-        <p className="my-3 text-[#616161]">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
+        <p className="my-3 text-learncarbon">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
       </div>
 
       <div className="m-8 flex flex-wrap">
@@ -34,13 +34,13 @@ const Contributor = () => {
                 </div>
               </div>
               <div>
-                <h2 className="flex-wrap font-normal text-[#616161]">
+                <h2 className="flex-wrap font-normal text-learncarbon">
                   {contributor.cohort}
                 </h2>
               </div>
               <div className=" h-44 w-56 ">
                 <div>
-                  <p className="flex-wrap font-normal text-[#616161]">
+                  <p className="flex-wrap font-normal text-learncarbon">
                     {contributor.bio}
                   </p>
                 </div>

@@ -1,25 +1,25 @@
-import francisco from "./assets/images/francisco1.png"
-import elijah from "./assets/images/elijah1.png"
-import jason from "./assets/images/jason1.png"
-import gene from "./assets/images/gene1.png"
-import nicole from  "./assets/images/nicole1.png"
-import will from "./assets/images/will1.png"
-import luis from "./assets/images/luis1.jpg"
-import ahmed from "./assets/images/ahmed1.png"
-import don from "./assets/images/don1.png"
-import logan from "./assets/images/logan1.png"
-import sarah from "./assets/images/sarah1.png"
-import nate from "./assets/images/nate1.png"
-import kyle from "./assets/images/kyle1.png"
-import christian from "./assets/images/christian1.png"
-import athian from "./assets/images/athian1.jpg"
+import ahmed from "./assets/images/ahmed.png"
+import athian from "./assets/images/athian.jpg"
+import christian from "./assets/images/christian.png"
+import don from "./assets/images/don.png"
+import elijah from "./assets/images/elijah.png"
+import francisco from "./assets/images/francisco.png"
+import gene from "./assets/images/gene.png"
+import jason from "./assets/images/jason.png"
+import kyle from "./assets/images/kyle.png"
+import logan from "./assets/images/logan.png"
+import luis from "./assets/images/luis.jpg"
+import nate from "./assets/images/nate.png"
+import nicole from  "./assets/images/nicole.png"
+import sarah from "./assets/images/sarah.png"
+import will from "./assets/images/will.png"
 
 
 let contributors = [
   {
     id: 15,
     name: "Athian Camberos",
-    cohort: "Foxtrot cohort 2022",
+    cohort: "Foxtrot Cohort 2022",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/athian-camberos-41a91b241/",
     github: "https://github.com/acamberos1",
@@ -41,7 +41,7 @@ let contributors = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     linkedin: "https://www.linkedin.com/in/kyletle/",
     github: "https://github.com/letkyle",
-    image:kyle
+    image: kyle
   },
   {
     id: 12,
