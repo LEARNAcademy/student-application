@@ -11,7 +11,7 @@ const Absences = (props) => {
   },[])
     
   return (
-    <div className="flex items-center text-2xl font-medium" id="absence">
+    <div className="mt-32 flex items-center text-2xl font-medium sm:mt-0" id="absence">
       Absences: <span className="ml-2 flex items-center justify-center">{absence}</span>
     </div>
   )

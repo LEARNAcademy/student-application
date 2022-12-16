@@ -9,7 +9,7 @@ const Header = (props) => {
 
   return (
     <>
-      <div className="flex items-center justify-between border-b border-gray-400 bg-learngray py-2 sm:hidden">
+      <div className="fixed top-0 flex w-full items-center justify-between border-b border-gray-400 bg-learngray py-2 sm:hidden">
         <div className="mr-44">
           <a href="/">  
             <img src={learnLogo} alt="logo" className="scale-[75%]" />
@@ -44,9 +44,30 @@ const Header = (props) => {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <div className="flex min-h-[250px] flex-col items-center justify-center">
+              <div className="flex min-h-[250px] flex-col justify-center">
                 <Greeter user={user} />
-                <Navigation user={user} login={login} setLogin={setLogin} />
+                <ul className="mb-6 sm:mb-0">
+                  <li>
+                    <a href="/login" className="block items-center justify-center border-b border-learngray text-center text-learnpurple hover:text-learnblack">Log Out</a>
+                  </li>
+                  <div className="my-6 text-right">
+                    <li>
+                      <a href="/aboutus" className="mr-4  hover:text-learnpurple md:mr-6 ">About Us</a>
+                    </li>
+                    <li>
+                      <a href="/privacypolicy" className="mr-4  hover:text-learnpurple md:mr-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="/termsofuse" className="mr-4  hover:text-learnpurple md:mr-6 ">Terms of Use</a>
+                    </li>
+                    <li>
+                      <a href="/codeofconduct" className="mr-4  hover:text-learnpurple">Code of Conduct</a>
+                    </li>
+                    <li>
+                      <a href="/contributors" className="mr-4  hover:text-learnpurple">Contributors</a>
+                    </li>
+                  </div>
+                </ul>
               </div>
             </div>
           </section>
