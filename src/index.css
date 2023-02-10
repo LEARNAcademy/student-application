@@ -59,3 +59,8 @@
         display: none;
       }
 }
+
+@media only screen and (max-width:540px){
+    #dashboard-table{flex-direction: column;}
+    #name{margin-left: 0;}
+}
