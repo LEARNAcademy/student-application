@@ -63,7 +63,8 @@ const Assessment = (props) => {
       {assess.map((assessment, index) => {        
         return (
           <div id="week" key={index} className="w-full border-b border-black py-10">
-            <div id="dashboard-table" className="flex w-full flex-row justify-between">
+            <div className="xl:flex w-full flex-row justify-between
+            lg:flex w-full flex-row justify-between md:flex w-full flex-row justify-between">
               <div className="flex flex-col">
                 <div className="my-1 text-xl font-bold">Week {assessment.week} </div>
                 <div className="my-1 text-lg"><strong>Comprehension:</strong>
@@ -72,11 +73,11 @@ const Assessment = (props) => {
               </div>
               <div className="flex flex-col">
                 <div className="flex w-full flex-row items-center">
-                  <div id="name" className="my-1 mx-6 ml-16 text-lg"><strong>Status:</strong>
+                  <div className="xl:my-1 mx-6 ml-16 text-lg lg:my-1 mx-6 ml-16 text-lg md:my-1 mx-6 ml-16 text-lg xxs:m-0 xs:m-0 sm:m-0"><strong>Status:</strong>
                     <span className={`mx-1 inline-block w-28 rounded-lg text-center ${statusColor[index]}`}>{assessment.status}</span>
                   </div>
                 </div>
-                <div id="name" className="my-1 mx-6 ml-16 text-lg"><strong>Reviewer:</strong> {assessment.reviewer} </div>
+                <div className="xl:my-1 mx-6 ml-16 text-lg lg:my-1 mx-6 ml-16 text-lg md:my-1 mx-6 ml-16 text-lg xxs:m-0 xs:m-0 sm:m-0"><strong>Reviewer:</strong> {assessment.reviewer} </div>
               </div>
             </div>
             <div className="mt-8 w-[30ch] text-base sm:w-[58ch]"><strong>Notes:</strong> <br/>{assessment.notes} </div>
