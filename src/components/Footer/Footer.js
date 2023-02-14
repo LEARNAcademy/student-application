@@ -1,5 +1,5 @@
 import React from "react" 
-import learnSymbol from "../assets/learn-symbol.svg"
+import learnSymbol from "../../assets/learn-symbol.svg"
 
 const Footer = () => {
   return (

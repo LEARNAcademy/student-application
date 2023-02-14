@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import learnLogo from "../assets/LEARN_Academy_logo-purple.png"
-import { Navigation } from "./Navigation"
-import { Greeter } from "../components/Greeter"
+import learnLogo from "../../assets/LEARN_Academy_logo-purple.png"
+import { Navigation } from "../Navigation/Navigation"
+import { Greeter } from "../Greeter/Greeter"
 
 const Header = (props) => {
   const { user, login, setLogin } = props
