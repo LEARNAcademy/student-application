@@ -7,6 +7,7 @@ import { AttendancePolicyModal } from "../../components/PolicyModal.js"
 import { ComprehensionModal } from "../../components/PolicyModal.js"
 import { Attendance } from "../../components/Attendance"
 import { Footer } from "../../components/Footer"
+import { AssessmentProcessModal } from "../../components/AssessmentProcessModal/AssessmentProcessModal"
 
 const StudentDashboard = (props) => {
   const { login, setLogin } = props
@@ -29,6 +30,9 @@ const StudentDashboard = (props) => {
           </div>
         </div>
         <h1 className="mt-10 ml-10 text-2xl font-medium sm:ml-32">Weekly Assessments</h1>
+        <div className="mt-3 ml-10 flex w-screen items-center sm:mt-5 sm:ml-32">
+          <AssessmentProcessModal/>
+        </div>
         <div className="mt-3 ml-10 flex w-screen items-center sm:mt-5 sm:ml-32">
           <ComprehensionModal/>
         </div>
