@@ -17,7 +17,7 @@ describe("<Contributor />", () => {
     expect(contributorFooter.length).toEqual(1)
   })
 })
-
+// Note: Contributer.test.js file
 
 
 
