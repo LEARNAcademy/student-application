@@ -7,8 +7,13 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe("<StudentDashboard />", () => {
   it("renders a header", () => {
-    const studentDashboard = shallow(<StudentDashboard />)
-    const studentDashboardHeading = studentDashboard.find("Header")
-    expect(studentDashboardHeading.length).toEqual(1)
+    const contributor = shallow(<StudentDashboard />)
+    const contributorHeading = contributor.find("Header")
+    expect(contributorHeading.length).toEqual(1)
+  })
+  it("renders a footer", () => {
+    const contributor = shallow(<StudentDashboard />)
+    const contributorFooter = contributor.find("Footer")
+    expect(contributorFooter.length).toEqual(1)
   })
 })
