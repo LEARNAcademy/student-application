@@ -1,12 +1,11 @@
 import React from "react"
-import { Absences } from "../../components/Absences"
-import { Assessment } from "../../components/Assessment"
-import { Header } from "../../components/Header"
+import { Absences } from "../../components/Absences/Absences"
+import { Assessment } from "../../components/Assessment/Assessment"
+import { Header } from "../../components/Header/Header"
 import { user } from "../../userMock.js"
-import { AttendancePolicyModal } from "../../components/PolicyModal.js"
-import { ComprehensionModal } from "../../components/PolicyModal.js"
-import { Attendance } from "../../components/Attendance"
-import { Footer } from "../../components/Footer"
+import { AttendancePolicyModal, ComprehensionModal } from "../../components/PolicyModal/PolicyModal"
+import { Attendance } from "../../components/Attendance/Attendance"
+import { Footer } from "../../components/Footer/Footer"
 import { AssessmentProcessModal } from "../../components/AssessmentProcessModal/AssessmentProcessModal"
 
 const StudentDashboard = (props) => {
