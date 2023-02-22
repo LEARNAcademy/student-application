@@ -11,7 +11,7 @@ import { CodeOfConduct } from "./pages/CodeOfConduct/CodeOfConduct"
 
 const App = () => {
   const [login, setLogin] = useState(true)
-
+  const [setToken] = useState()
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -21,6 +21,28 @@ const App = () => {
   }, [login])
   const verifyLogin = (field) => {
     console.log(field)
+    const data = {
+      email: field.email,
+      password: field.password
+    }
+    fetch("http://localhost:3001/api/v1/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.token) {
+          setToken(data.token)
+          // Save the token in local storage or a cookie so it can be used on subsequent requests.
+          navigate("/")
+        } else {
+          console.error(data.error)
+        }
+      })
+      .catch((error) => {
+        console.error(error)
+      })
   }
   
   return (
