@@ -18,11 +18,13 @@ const App = () => {
       navigate("/")
     }
   }, [login])
-
+  const verifyLogin = (field) => {
+    console.log(field)
+  }
   return (
     <Routes>
       <Route path="/" element={<StudentDashboard login={login} setLogin={setLogin} />} /> 
-      <Route path="/login" element={<StudentLogin login={login} setLogin={setLogin} navigate={navigate} />} />
+      <Route path="/login" element={<StudentLogin login={login} setLogin={setLogin} user={verifyLogin} navigate={navigate} />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="/termsofuse" element={<TermsOfUse />} />

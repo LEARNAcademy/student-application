@@ -3,7 +3,7 @@ import { Header } from "../../components/Header/Header"
 import { Checkbox, Label, TextInput } from "flowbite-react"
 
 const StudentLogin = (props) => {
-  const { login,setLogin,navigate } = props
+  const { login,navigate } = props
   const [field, setField] = useState({
     email: "",
     password: ""
@@ -17,15 +17,15 @@ const StudentLogin = (props) => {
       }
     )
   }
-
   const handleSubmit = (e) => {
+    const user={field}
+    props.user(user)
     e.preventDefault()
-    setLogin(true)
+
     if(login) {
       navigate("/")
     }
   }
-  
   
   return (
     <>
