@@ -18,8 +18,8 @@ const StudentLogin = (props) => {
     )
   }
   const handleSubmit = (e) => {
-    const user={field}
-    props.user(user)
+    const loginInfo={field}
+    props.user(loginInfo)
     e.preventDefault()
 
     if(login) {

@@ -11,6 +11,7 @@ import { CodeOfConduct } from "./pages/CodeOfConduct/CodeOfConduct"
 
 const App = () => {
   const [login, setLogin] = useState(true)
+
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -21,6 +22,7 @@ const App = () => {
   const verifyLogin = (field) => {
     console.log(field)
   }
+  
   return (
     <Routes>
       <Route path="/" element={<StudentDashboard login={login} setLogin={setLogin} />} /> 
