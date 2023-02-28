@@ -19,7 +19,6 @@ const App = () => {
     }
   }, [login])
   const verifyLogin = (field) => {
-    console.log(field)
     const token = localStorage.getItem("jwt_token")
     fetch("http://localhost:3001/api/v1/auth", {
       method: "POST",
@@ -34,11 +33,6 @@ const App = () => {
           // Code 200, navigate to home
           setLogin(true)
           navigate("/")
-        } else {
-          // Error code, log error message to console
-          console.log(response)
-          console.log(token)
-          console.error("Login failed")
         }
         return response.json()
       })
