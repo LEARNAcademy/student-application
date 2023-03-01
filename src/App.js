@@ -10,19 +10,41 @@ import { CodeOfConduct } from "./pages/CodeOfConduct/CodeOfConduct"
 
 
 const App = () => {
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState(false)
   const navigate = useNavigate()
 
   useEffect(() => {
     if (!login) {
-      navigate("/")
+      navigate("/login")
     }
   }, [login])
-
+  const verifyLogin = (field) => {
+    const token = localStorage.getItem("jwt_token")
+    fetch("http://localhost:3001/api/v1/auth", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`
+      },
+      body: JSON.stringify(field),
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Code 200, navigate to home
+          setLogin(true)
+          navigate("/")
+        }
+        return response.json()
+      })
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error))
+  }
+  
+  
   return (
     <Routes>
       <Route path="/" element={<StudentDashboard login={login} setLogin={setLogin} />} /> 
-      <Route path="/login" element={<StudentLogin login={login} setLogin={setLogin} navigate={navigate} />} />
+      <Route path="/login" element={<StudentLogin login={login} setLogin={setLogin} verifyLogin={verifyLogin} navigate={navigate} />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="/termsofuse" element={<TermsOfUse />} />
