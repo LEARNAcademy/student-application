@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import learnLogo from "../../assets/LEARN_Academy_logo-purple.png"
+import learnLogo from "../../assets/learn-academy-logo.png"
 import { Navigation } from "../Navigation/Navigation"
 import { Greeter } from "../Greeter/Greeter"
 
