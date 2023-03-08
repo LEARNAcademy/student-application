@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Modal } from "flowbite-react"
-import arrowBox from "../../assets/arrow-up-right-from-square-solid.svg"
+import arrowBox from "../../assets/arrow-box.svg"
 
 const AttendancePolicyModal = () => {
   const [visible, setVisible] = useState(false)
