@@ -17,10 +17,10 @@ describe("<App />", () => {
         <App />
       </MemoryRouter>
     )
-    const button = screen.getByRole('button', {
+    const button = screen.getByRole("button", {
       name: /submit/i
     })
-    const textbox = screen.getByRole('textbox', {
+    const textbox = screen.getByRole("textbox", {
       name: /email/i
     })
     expect(button).toBeInTheDocument()
