@@ -7,7 +7,7 @@ const Navigation = ({login,setLogin}) => {
 
   const navigateLogin = () => {
     setLogin(false)
-    navigate("/")
+    navigate("/login")
   }
 
   return (

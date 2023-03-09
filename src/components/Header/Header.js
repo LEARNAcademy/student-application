@@ -3,6 +3,7 @@ import learnLogo from "../../assets/learn-academy-logo.png"
 import { Navigation } from "../Navigation/Navigation"
 import { Greeter } from "../Greeter/Greeter"
 
+
 const Header = (props) => {
   const { user, login, setLogin } = props
   const [isNavOpen, setIsNavOpen] = useState(false)
