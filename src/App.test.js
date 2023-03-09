@@ -1,21 +1,29 @@
 import React from "react"
-import Enzyme, { shallow } from "enzyme"
-import Adapter from "enzyme-adapter-react-16"
+import { render, screen } from "@testing-library/react"
+import { MemoryRouter, BrowserRouter } from "react-router-dom"
 import { App } from "./App"
 
-Enzyme.configure({ adapter: new Adapter() })
-
-const mockedUsedNavigate = jest.fn()
-
-jest.mock("react-router-dom", () => ({
-  ...jest.requireActual("react-router-dom"),
-  useNavigate: () => mockedUsedNavigate,
-}))
-
 describe("<App />", () => {
-  it("contains the two Routes", () => {
-    const app = shallow(<App/>)
-    const renderedComponent = app.find("Route")
-    expect(renderedComponent.length).toEqual(7)
+  it("renders without crashing", () => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    )
+  })
+  it("render's a login page for a logged out user", () => {
+    render(
+      <MemoryRouter initialEntries={["/"]}>
+        <App />
+      </MemoryRouter>
+    )
+    const button = screen.getByRole('button', {
+      name: /submit/i
+    })
+    const textbox = screen.getByRole('textbox', {
+      name: /email/i
+    })
+    expect(button).toBeInTheDocument()
+    expect(textbox).toBeInTheDocument()
   })
 })
