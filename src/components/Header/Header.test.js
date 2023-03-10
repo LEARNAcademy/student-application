@@ -1,17 +1,24 @@
 import React from "react"
-import Enzyme, { shallow } from "enzyme"
-import Adapter from "enzyme-adapter-react-16"
 import { Header } from "./Header"
+import { render, screen } from "@testing-library/react"
+import { BrowserRouter } from "react-router-dom"
 
-Enzyme.configure({ adapter: new Adapter() })
+describe("<Header />", () => {
 
-describe("When Header renders", () => {
-  let headerRender
-  beforeEach (() => {
-    headerRender = shallow(<Header />)
-  })
-  it("displays an image", () => {
-    const reactHeaderLogo = headerRender.find("img")
-    expect(reactHeaderLogo.length).toEqual(2)
+  const user = {id: 1, email: "bob@bobemail.com", preferred_name: "manMountain", student: {absences: 0}}
+
+  const login = true
+  const setLogin = true
+  const isNavOpen = true
+
+  it("displays Header", () => {
+    render(
+      <BrowserRouter>
+        <Header user={user} login={login} setLogin={setLogin} isNavOpen={isNavOpen} />
+      </BrowserRouter>
+    )
+    expect(screen.getByAltText("logo", {
+      name: /logo/i
+    })).toBeInTheDocument()
   })
 })
