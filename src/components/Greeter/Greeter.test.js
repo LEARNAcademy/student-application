@@ -3,7 +3,7 @@ import { Greeter } from "./Greeter"
 import { render, screen } from "@testing-library/react"
 
 describe("<Greeter />", () => {
-  it('displays Greeter', () => {
+  it("displays Greeter", () => {
     render(
       <Greeter />
     )

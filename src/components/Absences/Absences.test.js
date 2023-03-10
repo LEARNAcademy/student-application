@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react"
 
 
 describe("<Absences />", () => {
-  it('displays absences', () => {
+  it("displays absences", () => {
     render(
       <Absences student={{ absences: 0 }} />
     )

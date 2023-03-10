@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react"
 import { BrowserRouter } from "react-router-dom"
 
 describe("<PolicyModal />", () => {
-  it('displays PolicyModal', () => {
+  it("displays PolicyModal", () => {
     render(
       <BrowserRouter>
         <AttendancePolicyModal />
