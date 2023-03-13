@@ -1,14 +1,31 @@
-import React from "react"
-import Enzyme, { shallow } from "enzyme"
-import Adapter from "enzyme-adapter-react-16"
-import { StudentLogin } from "./StudentLogin"
-
-Enzyme.configure({ adapter: new Adapter() })
+import React from "react";
+import { StudentLogin } from "./StudentLogin";
+import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 
 describe("<StudentLogin />", () => {
-  it("renders a header", () => {
-    const contributor = shallow(<StudentLogin />)
-    const contributorHeading = contributor.find("Header")
-    expect(contributorHeading.length).toEqual(1)
-  })
-})
+  it("renders input fields", () => {
+    render(
+      <BrowserRouter>
+        <StudentLogin />
+      </BrowserRouter>
+    );
+    expect(
+      screen.getByRole("textbox", {
+        name: /email/i,
+      })
+    ).toBeInTheDocument();
+  });
+  it("renders submit button", () => {
+    render(
+      <BrowserRouter>
+        <StudentLogin />
+      </BrowserRouter>
+    );
+    expect(
+      screen.getByRole("button", {
+        name: /submit/i,
+      })
+    ).toBeInTheDocument();
+  });
+});
