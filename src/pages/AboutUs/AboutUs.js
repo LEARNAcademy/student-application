@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <>
       <Header/>
-      <div className="mx-auto mt-32 mb-16 h-auto w-[90%] sm:my-16 ">
+      <div className="mx-auto mt-32 mb-16 h-auto w-[83vw] sm:my-16 ">
         <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
           About Us
         </h1>

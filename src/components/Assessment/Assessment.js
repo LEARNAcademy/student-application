@@ -62,7 +62,7 @@ const Assessment = (props) => {
     <div className="px-12 sm:px-32">
       {assess.map((assessment, index) => {        
         return (
-          <div id="week" key={index} className="w-full border-b border-black py-10">
+          <div id="week" key={index} className="w-full border-t border-black py-10">
             <div className="w-full flex-row justify-between md:flex lg:flex xl:flex">
               <div className="flex flex-col">
                 <div className="my-1 text-xl font-bold">Week {assessment.week} </div>
