@@ -10,16 +10,16 @@ describe("<Contributor />", () => {
         <Contributor />
       </BrowserRouter>
     )
-    expect(screen.getByRole('heading', {
+    expect(screen.getByRole("heading", {
       name: /sarah proctor/i
     })).toBeInTheDocument()
-    expect(screen.getByRole('heading', {
+    expect(screen.getByRole("heading", {
       name: /nicole mares rivera/i
     })).toBeInTheDocument()
-    expect(screen.getByRole('heading', {
+    expect(screen.getByRole("heading", {
       name: /gene martinez/i
     })).toBeInTheDocument()
-    expect(screen.getByRole('heading', {
+    expect(screen.getByRole("heading", {
       name: /charlie sihaphong/i
     })).toBeInTheDocument()
   })
@@ -29,7 +29,7 @@ describe("<Contributor />", () => {
         <Contributor />
       </BrowserRouter>
     )
-    expect(screen.getByRole('heading', {
+    expect(screen.getByRole("heading", {
       name: /2018 delta/i
     })).toBeInTheDocument()
   })

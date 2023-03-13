@@ -21,19 +21,19 @@ describe("<StudentDashboard />", () => {
         <StudentDashboard login={login}/>
       </MemoryRouter>
     )
-    const heading = screen.getByRole('heading', {
+    const heading = screen.getByRole("heading", {
       name: /weekly assessments/i
     })
-    const logo = screen.getByRole('img', {
+    const logo = screen.getByRole("img", {
       name: /learn logo/i
     })
     const policy = screen.getByText(/attendance policy/i)
-    const cell = screen.getByRole('cell', {
+    const cell = screen.getByRole("cell", {
       name: /5/i
     })
     expect(heading).toBeInTheDocument()
     expect(logo).toBeInTheDocument()
     expect(policy).toBeInTheDocument()
     expect(cell).toBeInTheDocument()
-    })
+  })
 })
