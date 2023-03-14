@@ -14,14 +14,13 @@ const StudentDashboard = ({ login, setLogin }) => {
   const { student } = user
   const navigate = useNavigate()
 
-
   useEffect(() => {
-    if(!login) {
+    if (!login) {
       navigate("/login")
     }
   }, [login])
 
-  return ( 
+  return (
     <>
       {login && (
         <main>
@@ -29,27 +28,29 @@ const StudentDashboard = ({ login, setLogin }) => {
             <Header user={user} login={login} setLogin={setLogin} />
             <div className="m-8 mt-10 border-b border-black sm:mx-32 sm:py-10">
               <div className="mb-5">
-                <Absences student={student}/>
+                <Absences student={student} />
               </div>
-            
+
               <div className="w-[80vw]">
-                <Attendance absences={student.absences}/>
+                <Attendance absences={student.absences} />
               </div>
               <div className="mt-5 flex w-screen items-center">
-                <AttendancePolicyModal/>
+                <AttendancePolicyModal />
               </div>
             </div>
-            <h1 className="mt-10 ml-10 text-2xl font-medium sm:ml-32">Weekly Assessments</h1>
+            <h1 className="mt-10 ml-10 text-2xl font-medium sm:ml-32">
+              Weekly Assessments
+            </h1>
             <div className="mt-3 ml-10 flex w-screen items-center sm:mt-5 sm:ml-32">
-              <AssessmentProcessModal/>
+              <AssessmentProcessModal />
             </div>
-            <div className="mt-3 ml-10 flex w-screen items-center sm:mt-5 sm:ml-32 mb-10">
-              <ComprehensionModal/>
+            <div className="mt-3 ml-10 mb-10 flex w-screen items-center sm:mt-5 sm:ml-32">
+              <ComprehensionModal />
             </div>
-            <Assessment assessments={assessments}/>
+            <Assessment assessments={assessments} />
           </div>
           <div>
-            <Footer/>
+            <Footer />
           </div>
         </main>
       )}

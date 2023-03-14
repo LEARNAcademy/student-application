@@ -4,32 +4,34 @@ import learnSymbol from "../../assets/learn-icon.svg"
 const Footer = () => {
   return (
     <>
-      <div className="w-full flex justify-center">
-        <hr className="border-1 border-black h-0 w-[83vw]"></hr>
+      <div className="flex w-full justify-center">
+        <hr className="h-0 w-[83vw] border-black"></hr>
       </div>
       <main className="flex justify-center">
-        <div className="w-[83vw] flex flex-col lg:flex-row lg:justify-between mb-3">
+        <div className="mb-3 flex w-[83vw] flex-col lg:flex-row lg:justify-between">
           <div className="lg:flex lg:justify-start">
-            <center className="mt-4 cursor-pointer hover:text-learnpurple">
+            <center className="hover:text-learnpurple mt-4 cursor-pointer">
               <a href="/" className="w-12">
-                <img src={learnSymbol} className="mb-1 h-8 w-12" alt="Learn Logo" />
+                <img
+                  src={learnSymbol}
+                  className="mb-1 h-8 w-12"
+                  alt="Learn Logo"
+                />
               </a>
               <span className="block text-center ">
                 {" "}
-                <a href="/">
-                  © 2023 LEARN
-                </a>
+                <a href="/">© 2023 LEARN</a>
               </span>
             </center>
           </div>
           <div className="flex justify-center">
-            <div className="h-auto py-4 text-lg flex lg:justify-end">
+            <div className="flex h-auto py-4 text-lg lg:justify-end">
               <div className="font-['gesta'] sm:flex sm:justify-evenly lg:flex">
-                <ul className="mb-6 flex flex-wrap items-center justify-center sm:mb-0 pt-4">
+                <ul className="mb-6 flex flex-wrap items-center justify-center pt-4 sm:mb-0">
                   <li>
                     <a
                       href="/aboutus"
-                      className="mr-4 hover:text-learnpurple md:mr-6 "
+                      className="hover:text-learnpurple mr-4 md:mr-6 "
                     >
                       About Us
                     </a>
@@ -37,7 +39,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/privacypolicy"
-                      className="mr-4 hover:text-learnpurple md:mr-6"
+                      className="hover:text-learnpurple mr-4 md:mr-6"
                     >
                       Privacy Policy
                     </a>
@@ -45,7 +47,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/termsofuse"
-                      className="mr-4 hover:text-learnpurple md:mr-6 "
+                      className="hover:text-learnpurple mr-4 md:mr-6 "
                     >
                       Terms of Use
                     </a>
@@ -53,7 +55,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/codeofconduct"
-                      className="mr-4 hover:text-learnpurple"
+                      className="hover:text-learnpurple mr-4"
                     >
                       Code of Conduct
                     </a>
@@ -70,6 +72,7 @@ const Footer = () => {
         </div>
       </main>
     </>
-  )}
+  )
+}
 
 export { Footer }
