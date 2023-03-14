@@ -26,7 +26,7 @@ describe("<Footer />", () => {
 
   test("renders the copyright notice", () => {
     render(<Footer />)
-    const copyright = screen.getByText("© 2022 LEARN")
+    const copyright = screen.getByText("© 2023 LEARN")
     expect(copyright).toBeInTheDocument()
   })
 })
