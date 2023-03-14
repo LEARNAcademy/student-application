@@ -19,6 +19,7 @@ parserOptions:
   ecmaVersion: latest
   sourceType: module
 plugins:
+  - postcss-eslint
   - react
   - tailwindcss
   - jest
