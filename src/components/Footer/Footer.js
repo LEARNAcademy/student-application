@@ -10,7 +10,7 @@ const Footer = () => {
       <main className="flex justify-center">
         <div className="mb-3 flex w-[83vw] flex-col lg:flex-row lg:justify-between">
           <div className="lg:flex lg:justify-start">
-          <center className="cursor-pointer mt-4 hover:text-learnpurple">
+            <center className="mt-4 cursor-pointer hover:text-learnpurple">
               <a href="/" className="w-12">
                 <img
                   src={learnSymbol}
@@ -31,7 +31,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/aboutus"
-                      className="mr-4 md:mr-6 hover:text-learnpurple"
+                      className="mr-4 hover:text-learnpurple md:mr-6"
                     >
                       About Us
                     </a>
@@ -39,7 +39,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/privacypolicy"
-                      className="mr-4 md:mr-6 hover:text-learnpurple"
+                      className="mr-4 hover:text-learnpurple md:mr-6"
                     >
                       Privacy Policy
                     </a>
@@ -47,7 +47,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/termsofuse"
-                      className="mr-4 md:mr-6 hover:text-learnpurple"
+                      className="mr-4 hover:text-learnpurple md:mr-6"
                     >
                       Terms of Use
                     </a>

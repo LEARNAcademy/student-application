@@ -8,10 +8,10 @@ const TermsOfUse = () => {
     <>
       <Header />
       <div className="mx-auto mt-32 mb-16 h-auto w-[83vw] text-[#616161] sm:my-16">
-        <h1 className="text-learnblack mt-4 mb-12 text-4xl font-semibold">
+        <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
           Terms & Conditions
         </h1>
-        <h2 className="text-learnblack text-2xl">Welcome to LEARN academy</h2>
+        <h2 className="text-2xl text-learnblack">Welcome to LEARN academy</h2>
         <p className="my-3">
           These terms and conditions outline the rules and regulations for the
           use of LEARN academy&apos;s Website.
@@ -52,7 +52,7 @@ const TermsOfUse = () => {
           plural, capitalization and/or he/she or they, are taken as
           interchangeable and therefore as referring to same.
         </p>
-        <h2 className="text-learnblack text-2xl">Cookies</h2>
+        <h2 className="text-2xl text-learnblack">Cookies</h2>
         <p className="my-3">
           We employ the use of cookies. By using LEARN academy&apos;s website
           you consent to the use of cookies in accordance with LEARN
@@ -65,7 +65,7 @@ const TermsOfUse = () => {
           use for those people visiting. Some of our affiliate/advertising
           partners may also use cookies.
         </p>
-        <h2 className="text-learnblack text-2xl">License</h2>
+        <h2 className="text-2xl text-learnblack">License</h2>
         <p className="my-3">
           Unless otherwise stated, LEARN academy and/or it&apos;s licensors own
           the intellectual property rights for all material on LEARN academy.
@@ -99,7 +99,7 @@ const TermsOfUse = () => {
             specifically made for redistribution)
           </li>
         </ol>
-        <h2 className="text-learnblack text-2xl">
+        <h2 className="text-2xl text-learnblack">
           Hyperlinking to our Content
         </h2>
         <p className="my-3">
@@ -209,13 +209,13 @@ const TermsOfUse = () => {
           No use of LEARN academy&apos;s logo or other artwork will be allowed
           for linking absent a trademark license agreement.
         </p>
-        <h2 className="text-learnblack text-2xl">Iframes</h2>
+        <h2 className="text-2xl text-learnblack">Iframes</h2>
         <p className="my-3">
           Without prior approval and express written permission, you may not
           create frames around our Web pages or use other techniques that alter
           in any way the visual presentation or appearance of our Web site.
         </p>
-        <h2 className="text-learnblack text-2xl">Reservation of Rights</h2>
+        <h2 className="text-2xl text-learnblack">Reservation of Rights</h2>
         <p className="my-3">
           We reserve the right at any time and in its sole discretion to request
           that you remove all links or any particular link to our Web site. You
@@ -225,7 +225,7 @@ const TermsOfUse = () => {
           site, you agree to be bound to and abide by these linking terms and
           conditions.
         </p>
-        <h2 className="text-learnblack text-2xl">
+        <h2 className="text-2xl text-learnblack">
           Removal of links from our website
         </h2>
         <p className="my-3">
@@ -240,7 +240,7 @@ const TermsOfUse = () => {
           commit to ensuring that the website remains available or that the
           material on the website is kept up to date.
         </p>
-        <h2 className="text-learnblack text-2xl">Content Liability</h2>
+        <h2 className="text-2xl text-learnblack">Content Liability</h2>
         <p className="my-3">
           We shall have no responsibility or liability for any content appearing
           on your Web site. You agree to indemnify and defend us against all
@@ -250,7 +250,7 @@ const TermsOfUse = () => {
           criminal, or which infringes, otherwise violates, or advocates the
           infringement or other violation of, any third party rights.
         </p>
-        <h2 className="text-learnblack text-2xl">Disclaimer</h2>
+        <h2 className="text-2xl text-learnblack">Disclaimer</h2>
         <p className="my-3">
           To the maximum extent permitted by applicable law, we exclude all
           representations, warranties, and conditions relating to our website
