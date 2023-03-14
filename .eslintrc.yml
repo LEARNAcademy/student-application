@@ -42,3 +42,13 @@ rules:
     - off
   react/react-in-jsx-scope:
     - off
+  tailwindcss/class-ordering:
+    - error
+    - order:
+      - standard
+      - hover
+      - focus
+      - active
+      - group-hover
+      - group-focus
+      - disabled
