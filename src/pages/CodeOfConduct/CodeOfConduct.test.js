@@ -86,7 +86,7 @@ describe("<CodeOfConduct />", () => {
     ).toBeInTheDocument()
     expect(
       screen.getByText(
-        /we care about individuals’ experiences while they are with us at learn academy\. chelsea and bryan are trained in conflict resolution and diversity and inclusion issues, and they are available to talk with individuals about any topic\. if an individual’s experience as a member of the learn academy community has made them uncomfortable, feel unwelcome, or has in any other way not met their expectations of a professional learning environment, we are here to listen and to protect the brave space\./i
+        /We care about individuals’ experiences while they are with us at LEARN academy\. Chelsea and Sarah are trained in conflict resolution and diversity and inclusion issues, and they are available to talk with individuals about any topic\. If an individual’s experience as a member of the LEARN academy community has made them uncomfortable, feel unwelcome, or has in any other way not met their expectations of a professional learning environment, we are here to listen and to protect the brave space\./i
       )
     ).toBeInTheDocument()
   })
