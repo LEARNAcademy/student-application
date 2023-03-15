@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     screens: {
@@ -15,24 +15,22 @@ module.exports = {
     },
     extend: {
       colors: {
-        "learncarbon":"#616161",
-        "learngray": "#313133",
-        "learnpurple": "#A670AF",
-        "learnpurplehover": "#C797CF",
-        "learnblack": "#101820",
-        "learngreen": "#6FBD73",
-        "loginlabels": "#b67ac0",
-        "loginremember": "#dc93e8"
+        learncarbon: "#616161",
+        learngray: "#313133",
+        learnpurple: "#A670AF",
+        learnpurplehover: "#C797CF",
+        learnblack: "#101820",
+        learngreen: "#6FBD73",
+        loginlabels: "#b67ac0",
+        loginremember: "#dc93e8",
       },
       fontFamily: {
         gesta: ["Gesta"],
       },
-    }
+    },
   },
   fontFamily: {
-    gesta: ["gesta"]
+    gesta: ["gesta"],
   },
-  plugins: [
-    require("flowbite/plugin")
-  ]
+  plugins: [require("flowbite/plugin")],
 }
