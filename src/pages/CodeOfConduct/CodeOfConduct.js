@@ -53,7 +53,7 @@ const CodeOfConduct = () => {
                 Reporting Inappropriate Behavior
         </h2>
         <p className="my-3">
-                We care about individuals’ experiences while they are with us at LEARN academy. Chelsea and Bryan are trained in conflict resolution and diversity and inclusion issues, and they are available to talk with individuals about any topic. If an individual’s experience as a member of the LEARN academy community has made them uncomfortable, feel unwelcome, or has in any other way not met their expectations of a professional learning environment, we are here to listen and to protect the brave space.
+                We care about individuals’ experiences while they are with us at LEARN academy. Chelsea and Sarah are trained in conflict resolution and diversity and inclusion issues, and they are available to talk with individuals about any topic. If an individual’s experience as a member of the LEARN academy community has made them uncomfortable, feel unwelcome, or has in any other way not met their expectations of a professional learning environment, we are here to listen and to protect the brave space.
         </p>
         <h2 className="text-2xl text-learnblack">
                 At LEARN academy, we promise:
@@ -76,14 +76,23 @@ const CodeOfConduct = () => {
         <p className="my-3">
                 Sarah Proctor: <a className="text-learnpurple hover:text-learngreen active:text-learngreen" href="mailto:Sarah@learnacademy.org">Sarah@learnacademy.org</a>
         </p>
-        <p className="my-3">
-                Sources: <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://www.djangoproject.com/conduct/" rel="noreferrer">Django Code of Conduct</a>, <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://geekfeminism.fandom.com/wiki/Conference_anti-harassment/Responding_to_reports" rel="noreferrer">Geek Feminism Wiki – Responding to Reports</a>, <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://github.com/sumeetjain/code_of_conduct" rel="noreferrer">Omaha Code School – Code Of Conduct</a>
+        <br></br>
+        <h3 className="text-lg text-learnblack">
+                Additional Resources:
+        </h3>
+        <ol className="ml-8 list-disc">
+          <li className="my-3"> <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://www.djangoproject.com/conduct/" rel="noreferrer">Code of Conduct - Django</a>
+          </li>
+          <li className="my-3">
+            <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://geekfeminism.fandom.com/wiki/Conference_anti-harassment/Responding_to_reports" rel="noreferrer"> Conference Anti-Harassment/Responding to Reports - Geek Feminism</a>
+          </li>
+          <li className="my-3">
+            <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://github.com/sumeetjain/code_of_conduct" rel="noreferrer">Code of Conduct - Omaha Code School</a>
+          </li>
+        </ol>
+        <p className="my-3"><a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://www.naspa.org/files/dmfile/Policy_and_Practice_No_2_Safe_Brave_Spaces.pdf" rel="noreferrer">Read more about brave spaces here -</a> “Safe Spaces and Brave Spaces Historical Context and Recommendations for Student Affairs Professionals” NASPA Research and Policy Institute, edited by <strong>Diana Ali</strong>, NASPA, Issue 2 October 2017.
         </p>
-        <p className="my-3">
-                Learn more about brave spaces here: Arao, Brian and Kristi Clemens. “Safe Spaces to Brave Spaces: A New Way to Frame Dialogue Around Diversity and Social Justice.” The Art of Effective Facilitation, edited by <strong>Lisa M. Landreman</strong>, Stylus Publishing, 2013, pp. 135-150. <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://www.gvsu.edu/cms4/asset/843249C9-B1E5-BD47-A25EDBC68363B726/from-safe-spaces-to-brave-spaces.pdf" rel="noreferrer">Click here to read more about it</a>.
-        </p>
-        <p className="my-3">
-                More about netizenship (<a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://en.wikipedia.org/wiki/Netizen" rel="noreferrer">https://en.wikipedia.org/wiki/Netizen</a>)
+        <p className="my-3"> Read more about <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://en.wikipedia.org/wiki/Netizen" rel="noreferrer"> netizenship</a>.
         </p>
       </div>
       <Footer />
