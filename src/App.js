@@ -8,11 +8,10 @@ import { PrivacyPolicy } from "./pages/PrivacyPolicy/PrivacyPolicy"
 import { TermsOfUse } from "./pages/TermsOfUse/TermsOfUse"
 import { CodeOfConduct } from "./pages/CodeOfConduct/CodeOfConduct"
 
-
 const App = () => {
   const [login, setLogin] = useState(false)
+  const [cookie, setCookie] = useState([])
   const navigate = useNavigate()
-
   
   const verifyLogin = (field) => {
     const token = localStorage.getItem("jwt_token")
@@ -32,11 +31,21 @@ const App = () => {
         }
         return response.json()
       })
-      .then((data) => console.log(data))
+      .then((data) => setCookie(data))
       .catch((error) => console.error(error))
+  }  
+  
+  const parseJwt = (token) => {
+    let base64Url = token.split(".")[1]
+    let base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/")
+    let jsonPayload = decodeURIComponent(window.atob(base64).split("").map(function(c) {
+      return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2)
+    }).join(""))
+
+    return JSON.parse(jsonPayload)
   }
-  
-  
+  console.log(parseJwt(`${cookie.jwt}`))
+
   return (
     <Routes>
       <Route path="/" element={<StudentDashboard login={login} setLogin={setLogin} />} /> 
