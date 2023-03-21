@@ -10,9 +10,9 @@ import { CodeOfConduct } from "./pages/CodeOfConduct/CodeOfConduct"
 
 const App = () => {
   const [login, setLogin] = useState(false)
-  const [cookie, setCookie] = useState([])
+  const [currentUser, setCurrentUser] = useState([])
   const navigate = useNavigate()
-  
+
   const verifyLogin = (field) => {
     const token = localStorage.getItem("jwt_token")
     fetch("http://localhost:3000/api/v1/auth", {
@@ -21,7 +21,7 @@ const App = () => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`
       },
-      body: JSON.stringify(field),
+      body: JSON.stringify(field)
     })
       .then((response) => {
         if (response.ok) {
@@ -31,25 +31,33 @@ const App = () => {
         }
         return response.json()
       })
-      .then((data) => setCookie(data))
+      .then((data) => setCurrentUser(data))
       .catch((error) => console.error(error))
-  }  
-  
-  const parseJwt = (token) => {
-    let base64Url = token.split(".")[1]
-    let base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/")
-    let jsonPayload = decodeURIComponent(window.atob(base64).split("").map(function(c) {
-      return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2)
-    }).join(""))
-
-    return JSON.parse(jsonPayload)
   }
-  console.log(parseJwt(`${cookie.jwt}`))
 
   return (
     <Routes>
-      <Route path="/" element={<StudentDashboard login={login} setLogin={setLogin} />} /> 
-      <Route path="/login" element={<StudentLogin login={login} setLogin={setLogin} verifyLogin={verifyLogin} navigate={navigate} />} />
+      <Route
+        path="/"
+        element={
+          <StudentDashboard
+            currentUser={currentUser}
+            login={login}
+            setLogin={setLogin}
+          />
+        }
+      />
+      <Route
+        path="/login"
+        element={
+          <StudentLogin
+            login={login}
+            setLogin={setLogin}
+            verifyLogin={verifyLogin}
+            navigate={navigate}
+          />
+        }
+      />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="/termsofuse" element={<TermsOfUse />} />
