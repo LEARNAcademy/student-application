@@ -36,7 +36,7 @@ const StudentDashboard = ({ login, setLogin, currentUser }) => {
             />
             <div className="m-8 mt-10 border-b border-black sm:mx-32 sm:py-10">
               <div className="mb-5">
-                <Absences student={student} />
+                <Absences currentUser={currentUser} />
               </div>
 
               <div className="w-[80vw]">
