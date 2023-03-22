@@ -10,7 +10,7 @@ describe("<StudentDashboard />", () => {
   it("renders without crashing", () => {
     render(
       <BrowserRouter>
-        <StudentDashboard login={login}/>
+        <StudentDashboard login={login} currentUser={{ absences: 0 }}/>
       </BrowserRouter>
     )
   })
@@ -18,7 +18,7 @@ describe("<StudentDashboard />", () => {
     const login = true
     render(
       <MemoryRouter initialEntries={["/"]}>
-        <StudentDashboard login={login}/>
+        <StudentDashboard login={login} currentUser={{ jwt: 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2Mn0.egIuK1AD2Pyrbu4vL4F4BHC9V6e3xyZ1SZMnQU2sb0I', name: 'Maxie', absences: 0 }}/>
       </MemoryRouter>
     )
     const heading = screen.getByRole("heading", {
