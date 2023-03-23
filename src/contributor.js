@@ -16,9 +16,68 @@ import will from "./assets/contributors-profile-pictures/will.png"
 import charlie from "./assets/contributors-profile-pictures/charlie.png"
 import immanuel from "./assets/contributors-profile-pictures/immanuel.jpg"
 import ramirez from "./assets/contributors-profile-pictures/ramirez.jpeg"
-
+import matt from "./assets/contributors-profile-pictures/matt.jpg"
+import chris from "./assets/contributors-profile-pictures/chris.jpg"
+import monica from "./assets/contributors-profile-pictures/monica.jpg"
+import moss from "./assets/contributors-profile-pictures/moss.jpg"
+import torin from "./assets/contributors-profile-pictures/torin.jpg"
+import awhit from "./assets/contributors-profile-pictures/awhit.jpg"
 
 let contributors = [
+  {
+    id: 19,
+    name: "Chris Lee",
+    cohort: "2022 Hotel",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    linkedin: "https://www.linkedin.com/in/chrisyhlee/",
+    github: "https://github.com/chrisyhlee",
+    image: chris
+  },
+  {
+    id: 20,
+    name: "Matthew Munoz",
+    cohort: "2022 Hotel",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/matthew-l-munoz/",
+    github: "https://github.com/MLMunoz85",
+    image: matt
+  },
+  {
+    id: 21,
+    name: "Monica Arganda ",
+    cohort: "2022 Hotel",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/monica-arganda/",
+    github: "https://github.com/monicaarganda",
+    image: monica
+  },
+  {
+    id: 22,
+    name: "Moss Cantrell",
+    cohort: "2022 Hotel",
+    bio: "Hi! I’m a full stack web developer with a passion for web accessibility and finding creative solutions to complex problems. I love tackling challenging projects that make a positive impact on people's lives, and have had a blast working on this app!",
+    linkedin: "https://www.linkedin.com/in/mossc2001/",
+    github: "https://github.com/mosscantrell",
+    image: moss
+  },
+  {
+    id: 23,
+    name: "Torin Jacobs",
+    cohort: "2022 Hotel",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/torinjacobs/",
+    github: "https://github.com/TorinJacobs",
+    image: torin
+  },
+  {
+    id: 24,
+    name: "A. Whitney",
+    cohort: "2022 Hotel",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/msawhit/",
+    github: "https://github.com/msawhit",
+    image: awhit
+  },
   {
     id: 9,
     name: "Anthony Ramirez",
@@ -180,7 +239,8 @@ let contributors = [
     linkedin: "https://www.linkedin.com/in/sarah-proctor-sd/",
     github: "https://github.com/sjproctor",
     image: sarah
-  }
+  },
+  
 
 ]
 
