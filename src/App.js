@@ -34,7 +34,7 @@ const App = () => {
       .then((data) => setCurrentUser(data))
       .catch((error) => console.error(error))
   }
-
+  
   return (
     <Routes>
       <Route
