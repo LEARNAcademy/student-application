@@ -38,14 +38,10 @@ const Contributor = () => {
                   {contributor.cohort}
                 </h2>
               </div>
-              <div className=" h-44 w-56 overflow-auto">
+              <div className=" h-44 w-56 overflow-hidden hover:overflow-auto">
                 <div>
                   <p className="flex-wrap font-normal text-learncarbon">
-
-                    { 
-                      contributor.bio.length > 173 ? contributor.bio.slice(0, 173)
-                      +"..." : contributor.bio 
-                    }
+                    {contributor.bio}
                   </p>
                 </div>
               </div>
