@@ -41,7 +41,11 @@ const Contributor = () => {
               <div className=" h-44 w-56 overflow-auto">
                 <div>
                   <p className="flex-wrap font-normal text-learncarbon">
-                    {contributor.bio}
+
+                    { 
+                      contributor.bio.length > 173 ? contributor.bio.slice(0, 173)
+                      +"..." : contributor.bio 
+                    }
                   </p>
                 </div>
               </div>
