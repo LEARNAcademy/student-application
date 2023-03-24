@@ -38,7 +38,7 @@ const Contributor = () => {
                   {contributor.cohort}
                 </h2>
               </div>
-              <div className=" h-44 w-56 ">
+              <div className=" h-44 w-56 overflow-hidden hover:overflow-auto">
                 <div>
                   <p className="flex-wrap font-normal text-learncarbon">
                     {contributor.bio}
