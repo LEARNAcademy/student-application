@@ -55,7 +55,7 @@ const StudentDashboard = ({ login, setLogin, currentUser }) => {
             <div className="mt-3 ml-10 mb-10 flex w-screen items-center sm:mt-5 sm:ml-32">
               <ComprehensionModal />
             </div>
-            <Assessment assessments={assessments} />
+            <Assessment assessments={assessments} currentUser={currentUser} />
           </div>
           <div>
             <Footer />
