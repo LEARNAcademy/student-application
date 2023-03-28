@@ -28,7 +28,7 @@ let contributors = [
     id: 19,
     name: "Chris Lee",
     cohort: "2022 Hotel",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    bio: "Another day another blocker. But it's okay, eventually we will know what we are doing. Thanks for listening to my tech talk.",
     linkedin: "https://www.linkedin.com/in/chrisyhlee/",
     github: "https://github.com/chrisyhlee",
     image: chris
@@ -37,7 +37,7 @@ let contributors = [
     id: 20,
     name: "Matthew Munoz",
     cohort: "2022 Hotel",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    bio: "I'm Matthew Munoz, a Software Developer based in San Diego, CA. As a former High School Teacher turned Software Developer, I am passionate about continuous learning, mentoring others, and challenging myself to acquire new skills. I had a lot of fun working on this app and I hope you enjoy it!",
     linkedin: "https://www.linkedin.com/in/matthew-l-munoz/",
     github: "https://github.com/MLMunoz85",
     image: matt
@@ -46,7 +46,7 @@ let contributors = [
     id: 21,
     name: "Monica Arganda ",
     cohort: "2022 Hotel",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    bio: "Hey there I'm Monica, a Full Stack Web Developer. By the time you are reading this I have graduated from Learn Academy, where I gained experience building various web applications. I find the design aspect of web development to be enjoyable and take pride in creating visually appealing user interfaces. Collaborating with the other Interns on this project was one of the highlights of my time at LEARN, we hope you enjoy.",
     linkedin: "https://www.linkedin.com/in/monica-arganda/",
     github: "https://github.com/monicaarganda",
     image: monica
@@ -55,7 +55,7 @@ let contributors = [
     id: 22,
     name: "Moss Cantrell",
     cohort: "2022 Hotel",
-    bio: "Hi! I’m a full stack web developer with a passion for web accessibility and finding creative solutions to complex problems. I love tackling challenging projects that make a positive impact on people's lives, and have had a blast working on this app!",
+    bio: "Hi, I'm Moss! I'm a full stack web developer with a passion for web accessibility and finding creative solutions to complex problems. I love tackling challenging projects that make a positive impact on people's lives, and have had a blast working on this app!",
     linkedin: "https://www.linkedin.com/in/mossc2001/",
     github: "https://github.com/mosscantrell",
     image: moss
@@ -64,7 +64,7 @@ let contributors = [
     id: 23,
     name: "Torin Jacobs",
     cohort: "2022 Hotel",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    bio: "I love learning and I love LEARN Academy! Connect with me to code up some wild ideas that may just make this world a better place! Oh, and if you need someone to talk your ear off about Alaska, I'm your guy.",
     linkedin: "https://www.linkedin.com/in/torinjacobs/",
     github: "https://github.com/TorinJacobs",
     image: torin
@@ -73,7 +73,7 @@ let contributors = [
     id: 24,
     name: "A. Whitney",
     cohort: "2022 Hotel",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy. Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.",
+    bio: "Hello! I'm a former elementary and Montessori teacher who has always had a passion for helping others learn and grow. I've recently made the exciting transition to the field of web development. As a LEARN intern, I have really enjoyed working on this project with my fellow Hotel cohort mates. I hope you find it useful.",
     linkedin: "https://www.linkedin.com/in/msawhit/",
     github: "https://github.com/msawhit",
     image: awhit
