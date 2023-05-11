@@ -1,12 +1,8 @@
 import React from "react"
-import { Header } from "../../components/Header/Header"
-import { Footer } from "../../components/Footer/Footer"
-
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Header />
       <div className="mx-auto mt-32 mb-16 h-auto w-[83vw] text-[#616161] sm:my-16">
         <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
     Privacy Policy
@@ -92,7 +88,6 @@ const PrivacyPolicy = () => {
     This privacy policy was created at termsandconditionstemplate.com. If you have any questions about this Privacy Policy, please contact us via <a className="text-learnpurple hover:text-learngreen active:text-learngreen" href="mailto:">email</a>  or  <a className="text-learnpurple hover:text-learngreen active:text-learngreen" href="tel:6197896537">phone</a>.
         </p>
       </div>
-      <Footer />
     </>
   )
 }

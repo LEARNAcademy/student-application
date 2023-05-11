@@ -2,14 +2,11 @@ import React from "react"
 import { contributors } from "../../contributor.js"
 import github from "../../assets/github-icon.svg"
 import linkedin from "../../assets/linkedin-icon.svg"
-import { Header } from "../../components/Header/Header"
-import { Footer } from "../../components/Footer/Footer"
 import { Card } from "flowbite-react"
 
 const Contributor = () => {
   return (
     <>
-      <Header />
       <div className="mx-auto mt-32 mb-16 h-auto w-[83vw] text-[#616161] sm:my-16">
         <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
           Contributors
@@ -63,8 +60,6 @@ const Contributor = () => {
           </div>
         ))}
       </div>
-      
-      <Footer />
     </>
   )
 }

@@ -1,11 +1,8 @@
 import React from "react"
-import { Header } from "../../components/Header/Header"
-import { Footer } from "../../components/Footer/Footer"
 
 const CodeOfConduct = () => {
   return (
     <>
-      <Header />
       <div className="mx-auto mt-32 mb-16 h-auto w-[83vw] text-[#616161] sm:my-16">
         <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
                 Code of Conduct
@@ -95,7 +92,6 @@ const CodeOfConduct = () => {
         <p className="my-3"> Read more about <a className="text-learnpurple hover:text-learngreen active:text-learngreen" target="_blank" href="https://en.wikipedia.org/wiki/Netizen" rel="noreferrer"> netizenship</a>.
         </p>
       </div>
-      <Footer />
     </>
   )
 }
