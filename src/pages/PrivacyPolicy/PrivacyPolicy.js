@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const PrivacyPolicy = () => {
   return (
@@ -15,10 +16,10 @@ const PrivacyPolicy = () => {
         </p>
         <address>2986 Ivy Street, San Diego, CA 92104</address>
         <p className="my-3">
-          <a className="text-learnpurple hover:text-learngreen active:text-learngreen" href="tel:619-789-6537">(619)-789-6537</a>
+          <Link className="text-learnpurple hover:text-learngreen active:text-learngreen" to="tel:619-789-6537">(619)-789-6537</Link>
         </p>
         <p className="my-3">
-    It is LEARN academy&apos;s policy to respect your privacy regarding any information we may collect while operating our website. This Privacy Policy applies to <a className="text-learnpurple hover:text-learngreen active:text-learngreen" href="https://www.learnacademy.org" target="_blank" rel="noreferrer" >https://www.learnacademy.org</a> &quot;(hereinafter, &quot;us&quot;, &quot;we&quot;, or &quot;https://www.learnacademy.org&quot;). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy (&quot;Privacy Policy&quot;) to explain what information may be collected on our Website, how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the Website and does not apply to our collection of information from other sources.
+    It is LEARN academy&apos;s policy to respect your privacy regarding any information we may collect while operating our website. This Privacy Policy applies to <Link className="text-learnpurple hover:text-learngreen active:text-learngreen" to="https://www.learnacademy.org" target="_blank" rel="noreferrer" >https://www.learnacademy.org</Link> &quot;(hereinafter, &quot;us&quot;, &quot;we&quot;, or &quot;https://www.learnacademy.org&quot;). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy (&quot;Privacy Policy&quot;) to explain what information may be collected on our Website, how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the Website and does not apply to our collection of information from other sources.
         </p>
         <p className="my-3">
     This Privacy Policy, together with the Terms and conditions posted on our Website, set forth the general rules and policies governing your use of our Website. Depending on your activities when visiting our Website, you may be required to agree to additional terms and conditions.
@@ -85,7 +86,7 @@ const PrivacyPolicy = () => {
     Credit & Contact Information
         </h2>
         <p className="my-3">
-    This privacy policy was created at termsandconditionstemplate.com. If you have any questions about this Privacy Policy, please contact us via <a className="text-learnpurple hover:text-learngreen active:text-learngreen" href="mailto:">email</a>  or  <a className="text-learnpurple hover:text-learngreen active:text-learngreen" href="tel:6197896537">phone</a>.
+    This privacy policy was created at termsandconditionstemplate.com. If you have any questions about this Privacy Policy, please contact us via <Link className="text-learnpurple hover:text-learngreen active:text-learngreen" to="mailto:">email</Link>  or  <Link className="text-learnpurple hover:text-learngreen active:text-learngreen" to="tel:6197896537">phone</Link>.
         </p>
       </div>
     </>

@@ -45,18 +45,57 @@ const Header = ({ user, login, setLogin }) => {
                 </svg>
               </div>
               <div className="flex min-h-[250px] flex-col justify-center">
-                {/* <Greeter user={user} currentUser={currentUser} /> */}
                 <ul className="mb-6 sm:mb-0">
                   <li>
-                    {user && (
-                      <Link
-                        to="/logout"
-                        className="block items-center justify-center border-b border-learngray text-center text-learnpurple hover:text-learnblack"
-                      >
-                        Log Out
-                      </Link>
-                    )}
+                    <Link
+                      to="/login"
+                      className="block items-center justify-center border-b border-learngray text-center text-learnpurple hover:text-learnblack"
+                    >
+                      Log Out
+                    </Link>
                   </li>
+                  <div className="my-6 text-right">
+                    <li>
+                      <Link
+                        to="/aboutus"
+                        className="mr-4  hover:text-learnpurple md:mr-6 "
+                      >
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/privacypolicy"
+                        className="mr-4  hover:text-learnpurple md:mr-6"
+                      >
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/termsofuse"
+                        className="mr-4  hover:text-learnpurple md:mr-6 "
+                      >
+                        Terms of Use
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/codeofconduct"
+                        className="mr-4  hover:text-learnpurple"
+                      >
+                        Code of Conduct
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/contributors"
+                        className="mr-4  hover:text-learnpurple"
+                      >
+                        Contributors
+                      </Link>
+                    </li>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -95,7 +134,6 @@ const Header = ({ user, login, setLogin }) => {
         <div className="flex flex-row items-start sm:items-center">
           {user && (
             <div className="mx-10">
-              {/* <Greeter user={user} currentUser={currentUser} /> */}
             </div>
           )}
           <Navigation user={user} login={login} setLogin={setLogin} />
