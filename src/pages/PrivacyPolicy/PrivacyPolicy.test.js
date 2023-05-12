@@ -13,10 +13,6 @@ describe("<PrivacyPolicy />", () => {
     )
   })
 
-  it("renders without crashing", () => {
-  
-  })
-
   it("has a heading", () => {
     const header = screen.getByRole("heading", {
       name: /your privacy is critically important to us./i,

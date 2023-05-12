@@ -4,14 +4,6 @@ import { BrowserRouter, MemoryRouter } from "react-router-dom"
 import { StudentDashboard } from "./StudentDashboard"
 
 describe("<StudentDashboard />", () => {
-  let login = true
-  it("renders without crashing", () => {
-    render(
-      <BrowserRouter>
-        <StudentDashboard login={login} currentUser={{ absences: 0 }}/>
-      </BrowserRouter>
-    )
-  })
   it("render's a login page for a logged in user", () => {
     const login = true
     render(
