@@ -18,7 +18,7 @@ const Contributor = () => {
         <p className="my-3 text-learncarbon">Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.</p>
       </div>
 
-      <div className="m-8 flex flex-wrap">
+      <div className="m-8 flex flex-wrap justify-center">
         {contributors.map((contributor) => (
           <div className="m-8 w-72" key={contributor.id}>
             <Card>
