@@ -1,6 +1,6 @@
 import React from "react"
 import { screen, render } from "@testing-library/react"
-import { BrowserRouter, MemoryRouter } from "react-router-dom"
+import {  MemoryRouter } from "react-router-dom"
 import { StudentDashboard } from "./StudentDashboard"
 
 describe("<StudentDashboard />", () => {
