@@ -1,18 +1,19 @@
 import React, { useState } from "react"
 import learnLogo from "../../assets/learn-academy-logo.png"
 import { Navigation } from "../Navigation/Navigation"
-import { Greeter } from "../Greeter/Greeter"
+import { Link } from "react-router-dom"
 
-const Header = ({ user, login, setLogin, currentUser }) => {
+
+const Header = ({ user, login, setLogin }) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   return (
     <>
       <div className="fixed top-0 flex w-full items-center justify-between border-b border-gray-400 bg-learngray py-2 sm:hidden">
         <div className="mr-44">
-          <a href="/">
+          <Link to="/">
             <img src={learnLogo} alt="logo" className="scale-[75%]" />
-          </a>
+          </Link>
         </div>
         <nav>
           <section className="mr-4 flex">
@@ -44,56 +45,55 @@ const Header = ({ user, login, setLogin, currentUser }) => {
                 </svg>
               </div>
               <div className="flex min-h-[250px] flex-col justify-center">
-                <Greeter user={user} currentUser={currentUser} />
                 <ul className="mb-6 sm:mb-0">
                   <li>
-                    <a
-                      href="/login"
+                    <Link
+                      to="/login"
                       className="block items-center justify-center border-b border-learngray text-center text-learnpurple hover:text-learnblack"
                     >
                       Log Out
-                    </a>
+                    </Link>
                   </li>
                   <div className="my-6 text-right">
                     <li>
-                      <a
-                        href="/aboutus"
+                      <Link
+                        to="/aboutus"
                         className="mr-4  hover:text-learnpurple md:mr-6 "
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/privacypolicy"
+                      <Link
+                        to="/privacypolicy"
                         className="mr-4  hover:text-learnpurple md:mr-6"
                       >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/termsofuse"
+                      <Link
+                        to="/termsofuse"
                         className="mr-4  hover:text-learnpurple md:mr-6 "
                       >
                         Terms of Use
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/codeofconduct"
+                      <Link
+                        to="/codeofconduct"
                         className="mr-4  hover:text-learnpurple"
                       >
                         Code of Conduct
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/contributors"
+                      <Link
+                        to="/contributors"
                         className="mr-4  hover:text-learnpurple"
                       >
                         Contributors
-                      </a>
+                      </Link>
                     </li>
                   </div>
                 </ul>
@@ -123,18 +123,17 @@ const Header = ({ user, login, setLogin, currentUser }) => {
       </div>
       <div className="hidden sm:flex sm:items-center sm:justify-between sm:bg-[#313133]">
         <div className="flex flex-row">
-          <a href="/">
+          <Link to="/">
             <img
               src={learnLogo}
               className="ml-2 h-10 w-28 sm:h-auto sm:w-72"
               alt="Learn Academy Logo"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex flex-row items-start sm:items-center">
           {user && (
             <div className="mx-10">
-              <Greeter user={user} currentUser={currentUser} />
             </div>
           )}
           <Navigation user={user} login={login} setLogin={setLogin} />

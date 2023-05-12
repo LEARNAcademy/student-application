@@ -1,12 +1,8 @@
 import React from "react"
-import { Header } from "../../components/Header/Header"
-import { Footer } from "../../components/Footer/Footer"
-
 
 const TermsOfUse = () => {
   return (
     <>
-      <Header />
       <div className="mx-auto mt-32 mb-16 h-auto w-[83vw] text-[#616161] sm:my-16">
         <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
           Terms & Conditions
@@ -291,7 +287,6 @@ const TermsOfUse = () => {
           loss or damage of any nature.
         </p>
       </div>
-      <Footer />
     </>
   )
 }

@@ -7,6 +7,9 @@ import { AboutUs } from "./pages/AboutUs/AboutUs"
 import { PrivacyPolicy } from "./pages/PrivacyPolicy/PrivacyPolicy"
 import { TermsOfUse } from "./pages/TermsOfUse/TermsOfUse"
 import { CodeOfConduct } from "./pages/CodeOfConduct/CodeOfConduct"
+import { Header } from "./components/Header/Header"
+import { Footer } from "./components/Footer/Footer"
+
 
 const App = () => {
   const [login, setLogin] = useState(false)
@@ -36,34 +39,38 @@ const App = () => {
   }
   
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <StudentDashboard
-            currentUser={currentUser}
-            login={login}
-            setLogin={setLogin}
-          />
-        }
-      />
-      <Route
-        path="/login"
-        element={
-          <StudentLogin
-            login={login}
-            setLogin={setLogin}
-            verifyLogin={verifyLogin}
-            navigate={navigate}
-          />
-        }
-      />
-      <Route path="/aboutus" element={<AboutUs />} />
-      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-      <Route path="/termsofuse" element={<TermsOfUse />} />
-      <Route path="/codeofconduct" element={<CodeOfConduct />} />
-      <Route path="/contributors" element={<Contributor />} />
-    </Routes>
+    <>
+      <Header user={currentUser} login={login} setLogin={setLogin} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <StudentDashboard
+              currentUser={currentUser}
+              login={login}
+              setLogin={setLogin}
+            />
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <StudentLogin
+              login={login}
+              setLogin={setLogin}
+              verifyLogin={verifyLogin}
+              navigate={navigate}
+            />
+          }
+        />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy currentUser={currentUser}/>} />
+        <Route path="/termsofuse" element={<TermsOfUse />} />
+        <Route path="/codeofconduct" element={<CodeOfConduct />} />
+        <Route path="/contributors" element={<Contributor />} />
+      </Routes>
+      <Footer />
+    </>
   )
 }
 

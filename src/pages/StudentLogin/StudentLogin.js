@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Header } from "../../components/Header/Header"
 import { Checkbox, Label, TextInput } from "flowbite-react"
 
 const StudentLogin = (props) => {
@@ -30,7 +29,6 @@ const StudentLogin = (props) => {
   
   return (
     <>
-      <Header />
       <div className="h-screen bg-white py-24 font-['gesta'] sm:pt-52">
         <div className="my-8 rounded-xl border-4 bg-zinc-700 sm:m-auto sm:h-96 sm:w-96">
           <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col items-center justify-center border-transparent p-8 sm:pt-12">

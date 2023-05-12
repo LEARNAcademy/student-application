@@ -1,16 +1,25 @@
 import React from "react"
 import { render, screen } from "@testing-library/react"
+import { BrowserRouter as Router } from "react-router-dom"
 import { Footer } from "./Footer"
 
 describe("<Footer />", () => {
   test("renders the logo", () => {
-    render(<Footer />)
+    render(
+      <Router>
+        <Footer />
+      </Router>
+    )
     const logo = screen.getByAltText("Learn Logo")
     expect(logo).toBeInTheDocument()
   })
 
   test("renders the links", () => {
-    render(<Footer />)
+    render(
+      <Router>
+        <Footer />
+      </Router>
+    )
     const aboutUsLink = screen.getByText("About Us")
     const privacyPolicyLink = screen.getByText("Privacy Policy")
     const termsOfUseLink = screen.getByText("Terms of Use")
@@ -25,7 +34,11 @@ describe("<Footer />", () => {
   })
 
   test("renders the copyright notice", () => {
-    render(<Footer />)
+    render(
+      <Router>
+        <Footer />
+      </Router>
+    )
     const copyright = screen.getByText("© 2023 LEARN")
     expect(copyright).toBeInTheDocument()
   })

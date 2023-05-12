@@ -1,5 +1,6 @@
 import React from "react" 
 import learnSymbol from "../../assets/learn-icon.svg"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -11,16 +12,16 @@ const Footer = () => {
         <div className="mb-3 flex w-[83vw] flex-col lg:flex-row lg:justify-between">
           <div className="lg:flex lg:justify-start">
             <center className="mt-4 cursor-pointer hover:text-learnpurple">
-              <a href="/" className="w-12">
+              <Link to="/" className="w-12">
                 <img
                   src={learnSymbol}
                   className="mb-1 h-8 w-12"
                   alt="Learn Logo"
                 />
-              </a>
+              </Link>
               <span className="block text-center ">
                 {" "}
-                <a href="/">© 2023 LEARN</a>
+                <Link to="/">© 2023 LEARN</Link>
               </span>
             </center>
           </div>
@@ -29,41 +30,41 @@ const Footer = () => {
               <div className="font-['gesta'] sm:flex sm:justify-evenly lg:flex">
                 <ul className="mb-6 flex flex-wrap items-center justify-center pt-4 sm:mb-0">
                   <li>
-                    <a
-                      href="/aboutus"
+                    <Link
+                      to="/aboutus"
                       className="mr-4 hover:text-learnpurple md:mr-6"
                     >
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/privacypolicy"
+                    <Link
+                      to="/privacypolicy"
                       className="mr-4 hover:text-learnpurple md:mr-6"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/termsofuse"
+                    <Link
+                      to="/termsofuse"
                       className="mr-4 hover:text-learnpurple md:mr-6"
                     >
                       Terms of Use
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/codeofconduct"
+                    <Link
+                      to="/codeofconduct"
                       className="mr-4 hover:text-learnpurple"
                     >
                       Code of Conduct
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/contributors" className=" hover:text-learnpurple">
+                    <Link to="/contributors" className=" hover:text-learnpurple">
                       Contributors
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

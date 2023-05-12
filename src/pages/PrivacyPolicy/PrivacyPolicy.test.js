@@ -1,19 +1,30 @@
 import React from "react"
-import Enzyme, { shallow } from "enzyme"
-import Adapter from "enzyme-adapter-react-16"
+import "@testing-library/jest-dom"
+import { render, screen } from "@testing-library/react"
 import { PrivacyPolicy } from "./PrivacyPolicy"
-
-Enzyme.configure({ adapter: new Adapter() })
+import { BrowserRouter } from "react-router-dom"
 
 describe("<PrivacyPolicy />", () => {
-  it("renders a header", () => {
-    const contributor = shallow(<PrivacyPolicy />)
-    const contributorHeading = contributor.find("Header")
-    expect(contributorHeading.length).toEqual(1)
+  beforeEach(() => {
+    render(
+      <BrowserRouter>
+        <PrivacyPolicy />
+      </BrowserRouter>
+    )
   })
-  it("renders a footer", () => {
-    const contributor = shallow(<PrivacyPolicy />)
-    const contributorFooter = contributor.find("Footer")
-    expect(contributorFooter.length).toEqual(1)
+
+  it("has a heading", () => {
+    const header = screen.getByRole("heading", {
+      name: /your privacy is critically important to us./i,
+    })
+    expect(header).toBeInTheDocument()
+  })
+
+  it("has a description", () => {
+    const description = screen.getByText(/It is LEARN academy's policy to respect your privacy regarding any information we may collect while operating our website./i)
+    expect(description).toBeInTheDocument()
   })
 })
+
+
+
