@@ -22,6 +22,11 @@ import monica from "./assets/contributors-profile-pictures/monica.jpg"
 import moss from "./assets/contributors-profile-pictures/moss.jpg"
 import torin from "./assets/contributors-profile-pictures/torin.jpg"
 import awhit from "./assets/contributors-profile-pictures/awhit.jpg"
+import xavier from "./assets/contributors-profile-pictures/xavier .jpeg"
+import ronnie from "./assets/contributors-profile-pictures/ronnie.jpg"
+import manny from "./assets/contributors-profile-pictures/manny.png"
+import leo from "./assets/contributors-profile-pictures/leo.jpg"
+
 
 let contributors = [
   {
@@ -240,8 +245,43 @@ let contributors = [
     github: "https://github.com/sjproctor",
     image: sarah
   },
+  {
+    id: 25,
+    name: "Xavier Barker",
+    cohort: "2023 Alpha",
+    bio: "Main sheet Brethren of the Coast keelhaul lee furl booty Spanish Main spanker Yellow Jack carouser. Heave down weigh anchor piracy yawl chandler case shot trysail Davy Jones' Locker Jolly Roger quarterdeck. Bucko man-of-war lugger Sail ho Yellow Jack splice the main brace spanker heave down dead men tell no tales lass",
+    linkedin: "https://www.linkedin.com/in/xavier-barker183/ ",
+    github: "github: https://github.com/XavierB91r",
+    image: xavier
+  },
+  {
+    id: 26,
+    name: "Leo Cuero",
+    cohort: "2023 Alpha",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/leopoldo-cuero-0650a8202/",
+    github: "https://github.com/Melaza6",
+    image: leo
+  },
+  {
+    id: 27,
+    name: "Ronnie Maynard",
+    cohort: "2023 Alpha",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/ronnie-maynard-455w/",
+    github: "https://github.com/Ronnie455",
+    image: ronnie
+  },
+  {
+    id: 28,
+    name: "Manny Flores",
+    cohort: "2023 Alpha",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    linkedin: "https://www.linkedin.com/in/manny-flores-0816894b/",
+    github: "https://github.com/Manflo27",
+    image: manny
+  },
   
-
 ]
 
 export { contributors }
