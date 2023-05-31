@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react"
 
 const Attendance = ({absences}) => {
+  console.log(absences)
   let [statusColor, setStatusColor] = useState([ "bg-red-600", "bg-red-600", "bg-red-600", "bg-orange-500", "bg-orange-500", "bg-orange-500", "bg-yellow-300", "bg-yellow-300", "bg-yellow-300", "bg-green-500", "bg-green-500", "bg-green-500", "bg-green-600", "bg-green-600", "bg-green-600" ])
 
-  const absenceUpdate = (absences) => {
+  const absenceUpdate = () => {
     let updateAbsence = [...statusColor]
     for(let i = statusColor.length - Math.ceil(3 * absences); i < statusColor.length; i++) {
       updateAbsence[i] = "bg-white"
@@ -13,7 +14,7 @@ const Attendance = ({absences}) => {
 
   useEffect(() => {
     absenceUpdate(absences)
-  }, [])
+  }, [absences])
 
   return(
     <>
@@ -29,7 +30,7 @@ const Attendance = ({absences}) => {
             <tr>
               {statusColor.map((color, index) => {        
                 if(index % 3 === 0){
-                  return <td key={index} > { -1 * ((index / 3) - 5)}</td>
+                  return <td key={index} >{ -1 * ((index / 3) - 5)} </td>
                 } else {
                   return <td key={index}> </td>
                 }
