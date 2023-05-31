@@ -51,29 +51,29 @@ const Assessment = ({ currentUser }) => {
                     </span>
                   )}
                 </div>
-              </div>
+              </div>  
               <div className="flex flex-col">
                 <div className="flex w-full flex-row items-center">
                   <div className="mx-6 ml-16 text-lg xxs:m-0 xs:m-0 sm:m-0 md:my-1 lg:my-1 xl:my-1">
-                    <strong>Status:</strong> 
-                    {assessment.status === 0 && (
+                    <strong>Status:</strong>
+                    {assessment.status === "Unassigned" && (
                       <span className="mx-1 inline-block w-28 rounded-lg bg-red-300 text-center">
-                        Incomplete
-                      </span>
-                    )}
-                    {assessment.status === 1 && (
-                      <span className="mx-1 inline-block w-28 rounded-lg bg-gray-300 text-center">
                         Unassigned
                       </span>
                     )}
-                    {assessment.status === 2 && (
-                      <span className="mx-1 inline-block w-28 rounded-lg bg-yellow-100 text-center">
+                    {assessment.status === "Pending" && (
+                      <span className="mx-1 inline-block w-28 rounded-lg bg-gray-300 text-center">
                         Pending
                       </span>
                     )}
-                    {assessment.status === 3 && (
-                      <span className="mx-1 inline-block w-28 rounded-lg bg-green-200 text-center">
+                    {assessment.status === "Complete" && (
+                      <span className="mx-1 inline-block w-28 rounded-lg bg-yellow-100 text-center">
                         Complete
+                      </span>
+                    )}
+                    {assessment.status === "Incomplete" && (
+                      <span className="mx-1 inline-block w-28 rounded-lg bg-green-200 text-center">
+                        Incomplete
                       </span>
                     )}
                   </div>
