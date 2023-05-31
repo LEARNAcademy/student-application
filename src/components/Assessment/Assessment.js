@@ -24,28 +24,28 @@ const Assessment = ({ currentUser }) => {
                   Week {assessment.week}{" "}
                 </div>
                 <div className="my-1 text-lg">
-                  <strong>Comprehension:</strong>
-                  {assessment.comprehension === 0 && (
+                  <strong>Comprehension:</strong> 
+                  {assessment.comprehension === "Unassigned" && (
                     <span className="mx-1 inline-block w-28 rounded-lg bg-red-300 text-center">
-                      Incomplete
+                      Unassigned
                     </span>
                   )}
-                  {assessment.comprehension === 1 && (
+                  {assessment.comprehension === "Complete" && (
                     <span className="mx-1 inline-block w-28 rounded-lg bg-green-200 text-center">
                       Complete
                     </span>
                   )}
-                  {assessment.comprehension === 2 && (
+                  {assessment.comprehension === "Novice" && (
                     <span className="mx-1 inline-block w-28 rounded-lg bg-[#A670AF]/20 text-center">
                       Novice
                     </span>
                   )}
-                  {assessment.comprehension === 3 && (
+                  {assessment.comprehension === "Advanced Beginner" && (
                     <span className="mx-1 inline-block w-28 rounded-lg bg-[#A670AF]/20 text-center">
                       Advanced Beginner
                     </span>
                   )}
-                  {assessment.comprehension === 4 && (
+                  {assessment.comprehension === "Competent" && (
                     <span className="mx-1 inline-block w-28 rounded-lg bg-[#A670AF]/20 text-center">
                       Competent
                     </span>
