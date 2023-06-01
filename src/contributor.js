@@ -23,7 +23,7 @@ import moss from "./assets/contributors-profile-pictures/moss.jpg"
 import torin from "./assets/contributors-profile-pictures/torin.jpg"
 import awhit from "./assets/contributors-profile-pictures/awhit.jpg"
 import xavier from "./assets/contributors-profile-pictures/xavier .jpeg"
-import ronnie from "./assets/contributors-profile-pictures/ronnie.jpg"
+import ronnie from "./assets/contributors-profile-pictures/ronnie.png"
 import manny from "./assets/contributors-profile-pictures/manny.png"
 import leo from "./assets/contributors-profile-pictures/leo.jpg"
 
@@ -249,7 +249,7 @@ let contributors = [
     id: 25,
     name: "Xavier Barker",
     cohort: "2023 Alpha",
-    bio: "Main sheet Brethren of the Coast keelhaul lee furl booty Spanish Main spanker Yellow Jack carouser. Heave down weigh anchor piracy yawl chandler case shot trysail Davy Jones' Locker Jolly Roger quarterdeck. Bucko man-of-war lugger Sail ho Yellow Jack splice the main brace spanker heave down dead men tell no tales lass",
+    bio: "My name is Xavier Barker, and I'm a Full Stack Developer who knows various computer languages. I'm currently interning at LEARN academy in sunny San Diego, California, and I'm always striving to be the best software programmer I can be!💻 I'm super interested in all things technology, software, and video game development, and how it impacts our world and society. It's crazy to think about how everything we use these days, from our phones to our microwaves, is powered by software in some form, and I just can't get enough of it. Fun fact about me - I used to be a Hospital Corpsman in the USN and am currently an active Martial Arts instructor. Those experiences have taught me a lot about being patient with myself and others when working on objectives and having a keen attention to detail. I think those same skills and attitudes serve me well in the coding environment.🥋 When I'm not buried in code or working on a new project, you can find me doing some of my favorite things. I love listening to music 🎧, watching anime 🍿, and participating in Martial Arts. I've been practicing Martial Arts since I was seven and have spent the last nine years competing and coaching. So that's a little about me! I'm always learning 📚, and I'm excited to connect with you.",
     linkedin: "https://www.linkedin.com/in/xavier-barker183/ ",
     github: "github: https://github.com/XavierB91r",
     image: xavier
@@ -258,7 +258,7 @@ let contributors = [
     id: 26,
     name: "Leo Cuero",
     cohort: "2023 Alpha",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    bio: "My name is Leopoldo F. Cuero, I am from Cali, Colombia. I served for 2 decades in the U.S. Government in multiple roles, I consider myself an unwritten code with a code in mine 'The more I LEARN the more I realize I need to LEARN more.'",
     linkedin: "https://www.linkedin.com/in/leopoldo-cuero-0650a8202/",
     github: "https://github.com/Melaza6",
     image: leo
@@ -267,7 +267,7 @@ let contributors = [
     id: 27,
     name: "Ronnie Maynard",
     cohort: "2023 Alpha",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    bio: "I am a full stack web developer, an Army veteran in blue-collar work. Tech has always been my passion, and being a student at LEARN and an intern for LEARN, helping develop this application, has allowed me to explore that passion and fully immerse myself in the world of tech.",
     linkedin: "https://www.linkedin.com/in/ronnie-maynard-455w/",
     github: "https://github.com/Ronnie455",
     image: ronnie
@@ -276,7 +276,7 @@ let contributors = [
     id: 28,
     name: "Manny Flores",
     cohort: "2023 Alpha",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    bio: "I’m Manny Flores, a veteran and currently a full stack web developer. As a recent graduate of a coding bootcamp I am eager to bring my newly acquired skills toward a challenging and rewarding role as a full stack web developer.",
     linkedin: "https://www.linkedin.com/in/manny-flores-0816894b/",
     github: "https://github.com/Manflo27",
     image: manny
