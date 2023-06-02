@@ -13,7 +13,6 @@ import { Greeter } from "../../components/Greeter/Greeter"
 
 const StudentDashboard = ({ login, currentUser, setLogin }) => {
   const { assessments } = user.student
-  const { student } = user
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -40,7 +39,7 @@ const StudentDashboard = ({ login, currentUser, setLogin }) => {
               </div>
 
               <div className="w-[80vw]">
-                <Attendance absences={student.absences} />
+                <Attendance absences={currentUser.absences}/>
               </div>
               <div className="mt-5 flex w-screen items-center">
                 <AttendancePolicyModal />
