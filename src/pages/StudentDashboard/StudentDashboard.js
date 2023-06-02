@@ -13,7 +13,6 @@ import { Greeter } from "../../components/Greeter/Greeter"
 
 const StudentDashboard = ({ login, currentUser, setLogin }) => {
   const { assessments } = user.student
-  // const { student } = user
   const navigate = useNavigate()
 
   useEffect(() => {
