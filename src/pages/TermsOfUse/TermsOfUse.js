@@ -7,7 +7,7 @@ const TermsOfUse = () => {
         <h1 className="mt-4 mb-12 text-4xl font-semibold text-learnblack">
           Terms & Conditions
         </h1>
-        <h2 className="text-2xl text-learnblack max-w-readable">Welcome to LEARN academy</h2>
+        <h2 className="max-w-readable text-2xl text-learnblack">Welcome to LEARN academy</h2>
         <p className="my-3 max-w-readable">
           These terms and conditions outline the rules and regulations for the
           use of LEARN academy&apos;s Website.
@@ -48,7 +48,7 @@ const TermsOfUse = () => {
           plural, capitalization and/or he/she or they, are taken as
           interchangeable and therefore as referring to same.
         </p>
-        <h2 className="text-2xl text-learnblack max-w-readable">Cookies</h2>
+        <h2 className="max-w-readable text-2xl text-learnblack">Cookies</h2>
         <p className="my-3 max-w-readable">
           We employ the use of cookies. By using LEARN academy&apos;s website
           you consent to the use of cookies in accordance with LEARN
@@ -61,7 +61,7 @@ const TermsOfUse = () => {
           use for those people visiting. Some of our affiliate/advertising
           partners may also use cookies.
         </p>
-        <h2 className="text-2xl text-learnblack max-w-readable">License</h2>
+        <h2 className="max-w-readable text-2xl text-learnblack">License</h2>
         <p className="my-3 max-w-readable">
           Unless otherwise stated, LEARN academy and/or it&apos;s licensors own
           the intellectual property rights for all material on LEARN academy.
@@ -78,7 +78,7 @@ const TermsOfUse = () => {
           for your own personal use subject to restrictions set in these terms
           and conditions.
         </p>
-        <p className="my-3 font-bold max-w-readable">You must not:</p>
+        <p className="my-3 max-w-readable font-bold">You must not:</p>
         <ol className="ml-7 list-decimal">
           <li className="my-3 max-w-readable">
             Republish material from https://www.learnacademy.org
@@ -95,14 +95,14 @@ const TermsOfUse = () => {
             specifically made for redistribution)
           </li>
         </ol>
-        <h2 className="text-2xl text-learnblack max-w-readable">
+        <h2 className="max-w-readable text-2xl text-learnblack">
           Hyperlinking to our Content
         </h2>
         <p className="my-3 max-w-readable">
           The following organizations may link to our Web site without prior
           written approval:
         </p>
-        <ol className="ml-8 list-disc max-w-readable">
+        <ol className="ml-8 max-w-readable list-disc">
           <li className="my-3 max-w-readable">Government agencies</li>
           <li className="my-3 max-w-readable">Search engines</li>
           <li className="my-3 max-w-readable">News organizations</li>
@@ -130,7 +130,7 @@ const TermsOfUse = () => {
           We may consider and approve in our sole discretion other link requests
           from the following types of organizations:
         </p>
-        <ol className="ml-8 list-disc max-w-readable">
+        <ol className="ml-8 max-w-readable list-disc">
           <li className="my-3 max-w-readable">
             Commonly-known consumer and/or business information sources such as
             Chambers of Commerce, American Automobile Association, AARP and
@@ -176,7 +176,7 @@ const TermsOfUse = () => {
           interested in linking to our website, you must notify us by sending an
           e-mail to{" "}
           <a
-            className="text-learnpurple hover:text-learngreen active:text-learngreen max-w-readable"
+            className="max-w-readable text-learnpurple hover:text-learngreen active:text-learngreen"
             href="mailto:hello@learnacademy.org"
           >
             hello@learnacademy.org
@@ -190,7 +190,7 @@ const TermsOfUse = () => {
         <p className="my-3 max-w-readable">
           Approved organizations may hyperlink to our Web site as follows:
         </p>
-        <ol className="ml-8 list-disc max-w-readable">
+        <ol className="ml-8 max-w-readable list-disc">
           <li className="my-3 max-w-readable">By use of our corporate name</li>
           <li className="my-3 max-w-readable">
             By use of the uniform resource locator (Web address) being linked to
@@ -201,17 +201,17 @@ const TermsOfUse = () => {
             on the linking party&apos;s site.
           </li>
         </ol>
-        <p className="my-3 font-bold max-w-readable">
+        <p className="my-3 max-w-readable font-bold">
           No use of LEARN academy&apos;s logo or other artwork will be allowed
           for linking absent a trademark license agreement.
         </p>
-        <h2 className="text-2xl text-learnblack max-w-readable">Iframes</h2>
+        <h2 className="max-w-readable text-2xl text-learnblack">Iframes</h2>
         <p className="my-3 max-w-readable">
           Without prior approval and express written permission, you may not
           create frames around our Web pages or use other techniques that alter
           in any way the visual presentation or appearance of our Web site.
         </p>
-        <h2 className="text-2xl text-learnblack max-w-readable">Reservation of Rights</h2>
+        <h2 className="max-w-readable text-2xl text-learnblack">Reservation of Rights</h2>
         <p className="my-3 max-w-readable">
           We reserve the right at any time and in its sole discretion to request
           that you remove all links or any particular link to our Web site. You
@@ -221,7 +221,7 @@ const TermsOfUse = () => {
           site, you agree to be bound to and abide by these linking terms and
           conditions.
         </p>
-        <h2 className="text-2xl text-learnblack max-w-readable">
+        <h2 className="max-w-readable text-2xl text-learnblack">
           Removal of links from our website
         </h2>
         <p className="my-3 max-w-readable">
@@ -236,7 +236,7 @@ const TermsOfUse = () => {
           commit to ensuring that the website remains available or that the
           material on the website is kept up to date.
         </p>
-        <h2 className="text-2xl text-learnblack max-w-readable">Content Liability</h2>
+        <h2 className="max-w-readable text-2xl text-learnblack">Content Liability</h2>
         <p className="my-3 max-w-readable">
           We shall have no responsibility or liability for any content appearing
           on your Web site. You agree to indemnify and defend us against all
@@ -246,7 +246,7 @@ const TermsOfUse = () => {
           criminal, or which infringes, otherwise violates, or advocates the
           infringement or other violation of, any third party rights.
         </p>
-        <h2 className="text-2xl text-learnblack max-w-readable">Disclaimer</h2>
+        <h2 className="max-w-readable text-2xl text-learnblack">Disclaimer</h2>
         <p className="my-3 max-w-readable">
           To the maximum extent permitted by applicable law, we exclude all
           representations, warranties, and conditions relating to our website
@@ -255,7 +255,7 @@ const TermsOfUse = () => {
           for purpose and/or the use of reasonable care and skill). Nothing in
           this disclaimer will:
         </p>
-        <ol className="ml-8 list-disc max-w-readable">
+        <ol className="ml-8 max-w-readable list-disc">
           <li className="my-3 max-w-readable">
             Limit or exclude our or your liability for death or personal injury
             resulting from negligence
