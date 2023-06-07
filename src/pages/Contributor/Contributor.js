@@ -5,6 +5,22 @@ import linkedin from "../../assets/linkedin-icon.svg"
 import { Card } from "flowbite-react"
 
 const Contributor = () => {
+
+  const sortContributor = (member) => {
+    member.sort((a, b) => b.cohort.localeCompare(a.cohort))
+    member.sort((a, b) => {
+      if (a.cohort === b.cohort){
+        const lastNameA = a.name.split(" ")[1]
+        const lastNameB = b.name.split(" ")[1]
+        return lastNameA.localeCompare(lastNameB)
+      }
+      return 0
+    })
+    return member
+  }
+  
+  const sortedContributors = sortContributor(contributors)
+ 
   return (
     <>
       <div className="mx-auto mt-32 mb-16 h-auto w-[83vw] text-[#616161] sm:my-16">
@@ -16,7 +32,7 @@ const Contributor = () => {
       </div>
 
       <div className="m-8 flex flex-wrap justify-center">
-        {contributors.map((contributor) => (
+        {sortedContributors.map((contributor) => (
           <div className="m-8 w-72" key={contributor.id}>
             <Card>
               <div>
