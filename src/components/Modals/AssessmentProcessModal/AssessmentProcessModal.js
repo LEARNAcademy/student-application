@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import arrowBox from "../../../assets/arrow-box.svg"
 import { Modal } from "flowbite-react"
-import arrowBox from "../../assets/arrow-box.svg"
+import React, { useState } from "react"
 
 const AssessmentProcessModal = () => {
   const [visible, setVisible] = useState(false)

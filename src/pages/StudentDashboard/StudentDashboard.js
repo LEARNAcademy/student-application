@@ -2,12 +2,10 @@ import React, { useEffect } from "react"
 import { Absences } from "../../components/Absences/Absences"
 import { Assessment } from "../../components/Assessment/Assessment"
 import { user } from "../../userMock.js"
-import {
-  AttendancePolicyModal,
-  ComprehensionModal
-} from "../../components/PolicyModal/AttendancePolicyModal"
+import { ComprehensionModal } from "../../components/Modals/ComprehensionModal/ComprehensionModal"
 import { Attendance } from "../../components/Attendance/Attendance"
-import { AssessmentProcessModal } from "../../components/AssessmentProcessModal/AssessmentProcessModal"
+import { AttendancePolicyModal } from "../../components/Modals/PolicyModal/AttendancePolicyModal"
+import { AssessmentProcessModal } from "../../components/Modals/AssessmentProcessModal/AssessmentProcessModal"
 import { useNavigate } from "react-router-dom"
 import { Greeter } from "../../components/Greeter/Greeter"
 

@@ -1,6 +1,7 @@
+import { AssessmentProcessModal } from "../../Modals/AssessmentProcessModal/AssessmentProcessModal"
 import React from "react"
 import { render } from "@testing-library/react"
-import { AssessmentProcessModal } from "./AssessmentProcessModal"
+
 
 describe("<AssessmentProcessModal />", () => {
   it("renders an icon", () => {

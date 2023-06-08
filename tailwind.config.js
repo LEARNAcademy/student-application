@@ -26,6 +26,9 @@ module.exports = {
       },
       fontFamily: {
         gesta: ["Gesta"]
+      },
+      maxWidth: {
+        "readable": "80ch"
       }
     }
   },
