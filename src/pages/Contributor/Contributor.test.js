@@ -33,4 +33,64 @@ describe("<Contributor />", () => {
       name: /2018 delta/i
     })).toBeInTheDocument()
   })
+
+  it("renders a card", () => {
+    render(
+      <BrowserRouter>
+        <Contributor />
+      </BrowserRouter>
+    )
+    const contributorCard = screen.queryAllByTestId("contributor-card")
+    contributorCard.forEach((card) => {
+      expect(card).toBeInTheDocument()
+    })
+  })
+
+  it("renders an image", () => {
+    render(
+      <BrowserRouter>
+        <Contributor />
+      </BrowserRouter>
+    )
+    const contributorImage = screen.getAllByRole("img", {name: "contributor-image"})
+    contributorImage.forEach((image) => {
+      expect(image).toBeInTheDocument()
+    })
+  })
+
+  it("renders a github link", () => {
+    render(
+      <BrowserRouter>
+        <Contributor />
+      </BrowserRouter>
+    )
+    const contributorGithub = screen.queryAllByTestId("github-link")
+    contributorGithub.forEach((github) => {
+      expect(github).toBeInTheDocument()
+    })
+  })
+
+  it("renders a linkedin link", () => {
+    render(
+      <BrowserRouter>
+        <Contributor />
+      </BrowserRouter>
+    )
+    const contributorLinkedIn = screen.queryAllByTestId("linkedin-link")
+    contributorLinkedIn.forEach((linkedin) => {
+      expect(linkedin).toBeInTheDocument()
+    })
+  })
+  
+  it("renders a contributor bio", () => {
+    render(
+      <BrowserRouter>
+        <Contributor />
+      </BrowserRouter>
+    )
+    const contributorBio = screen.getAllByText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    contributorBio.forEach((bio) => {
+      expect(bio).toBeInTheDocument()
+    })
+  })
 })

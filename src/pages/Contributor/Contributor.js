@@ -34,7 +34,7 @@ const Contributor = () => {
       <div className="m-8 flex flex-wrap justify-center">
         {sortedContributors.map((contributor) => (
           <div className="m-8 w-72" key={contributor.id}>
-            <Card>
+            <Card data-testid="contributor-card">
               <div>
                 <img
                   className="h-20 w-20 rounded-full"
@@ -60,7 +60,8 @@ const Contributor = () => {
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                 <div className="mx-8">
-                  <a href={contributor.github} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                  <a href={contributor.github} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    data-testid="github-link">
                     <img src={github} />
                   </a>
                 </div>
