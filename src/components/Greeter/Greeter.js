@@ -14,7 +14,7 @@ const Greeter = ({ currentUser }) => {
       {currentUser && (
         <div
           id="greeting"
-          className="absolute top-10 right-40 m-4 text-3xl text-learngray sm:m-2 sm:text-2xl sm:text-learnpurple"
+          className="mt-32 text-3xl text-learnpurple sm:my-2 sm:text-2xl sm:text-learnpurple"
         >
           {`Welcome, ${greeterName(currentUser)}!`}
         </div>
