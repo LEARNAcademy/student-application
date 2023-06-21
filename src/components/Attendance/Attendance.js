@@ -22,7 +22,7 @@ const Attendance = ({absences}) => {
           <tbody>
             <tr>
               {statusColor.map((color, index) => {
-                return <td key={index} className={`h-2.5 min-w-[19px] rounded-full ${color}`}></td>
+                return <td key={index} className={`h-2.5 min-w-[19px] rounded-full ${color} outline`}></td>
               })
               }
             </tr>
