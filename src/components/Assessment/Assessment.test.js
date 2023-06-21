@@ -20,4 +20,24 @@ describe ("<Assessment />", () => {
     const weeklyAssessment = screen.getByText(/week/i)
     expect(weeklyAssessment).toBeInTheDocument()
   })
+  it("renders the status of the weekly assessments", () => {
+    render(<Assessment currentUser={currentUser}/>)
+    const status = screen.getByText(/status/i)
+    expect(status).toBeInTheDocument()
+  })
+  it("renders the comprehension of the weekly assessments", () => {
+    render(<Assessment currentUser={currentUser}/>)
+    const comprehension = screen.getByText(/comprehension/i)
+    expect(comprehension).toBeInTheDocument()
+  })
+  it("renders the reviewer of the weekly assessments", () => {
+    render(<Assessment currentUser={currentUser}/>)
+    const reviewer = screen.getByText(/reviewer/i)
+    expect(reviewer).toBeInTheDocument()
+  })
+  it("renders the notes of the weekly assessments", () => {
+    render(<Assessment currentUser={currentUser}/>)
+    const notes = screen.getByText(/notes/i)
+    expect(notes).toBeInTheDocument()
+  })
 })
