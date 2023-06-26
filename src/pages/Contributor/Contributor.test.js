@@ -88,7 +88,7 @@ describe("<Contributor />", () => {
         <Contributor />
       </BrowserRouter>
     )
-    const contributorBio = screen.getAllByText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    const contributorBio = screen.getAllByText("Chainsaw werewolf spooky blood werewolf chainsaw nightmare. Black cat blood abomination scare candy mummy candy. Nightmare afraid haunted spooky skeleton boo candy. Scare haunted trick-or-treat blood chainsaw mummy candy. Candy nightmare cauldron vampire afraid chainsaw candy.")
     contributorBio.forEach((bio) => {
       expect(bio).toBeInTheDocument()
     })
