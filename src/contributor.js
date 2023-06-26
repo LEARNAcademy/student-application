@@ -26,9 +26,48 @@ import sarah from "./assets/contributors-profile-pictures/sarah.png"
 import torin from "./assets/contributors-profile-pictures/torin.jpg"
 import will from "./assets/contributors-profile-pictures/will.png"
 import xavier from "./assets/contributors-profile-pictures/xavier .jpeg"
+import evelyn from "./assets/contributors-profile-pictures/evelyn.jpg"
+import eddie from "./assets/contributors-profile-pictures/eddie.jpg"
+import jose from "./assets/contributors-profile-pictures/jose.jpg"
 
 
 let contributors = [
+  {
+    id: 32,
+    name: "Jose Salas",
+    cohort: "2023 Bravo",
+    bio: "Hi, my name is Jose Salas, and I am a father of two amazing kids. I currently live in Beaufort, SC. I started writing code because I wanted to impress my kids.",
+    linkedin: "https://www.linkedin.com/in/joselsalas/",
+    github: "https://github.com/salas89jl",
+    image: jose
+  },
+  {
+    id: 31,
+    name: "Eddie Carrion",
+    cohort: "2023 Bravo",
+    bio: "My name is Eduviges but I also go by Eddie. When I am not working I enjoy getting in a good workout, reading a good book, and spending time with my loved ones.",
+    linkedin: "https://www.linkedin.com/in/eduviges-carrion/",
+    github: "https://github.com/EddieCarrion",
+    image: eddie
+  },
+  {
+    id: 30,
+    name: "Valeria Casillas",
+    cohort: "2023 Bravo",
+    bio:"My name is Valeria Casillas. Full Stack Web Developer from Bravo 2023.",
+    linkedin: "https://www.linkedin.com/in/valeria-casillas/",
+    github: "https://github.com/ValC001",
+    image:""
+  },
+  {
+    id: 29,
+    name: "Evelyn Alvarez",
+    cohort: "2023 Bravo",
+    bio: "In today's world, we use technology in EVERYTHING that we do! I have always had a passion for learning new things, especially for learning more about technology and how everything works behind the scenes. So, what does it take to be a coder? I've found out that I now have the ability to understand and know exactly what a coder does thanks to LEARN. I am super excited to be a part of the process for this project and can't wait to see it all come together.",
+    linkedin: "https://linkedin.com/in/evelyn-a-alvarez/",
+    github: "https://github.com/Ealvarez01",
+    image: evelyn
+  },
   {
     id: 28,
     name: "Xavier Barker",
