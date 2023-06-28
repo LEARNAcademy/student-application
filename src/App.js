@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { StudentDashboard } from "./pages/StudentDashboard/StudentDashboard"
+import { NotFound } from "./pages/NotFound/NotFound"
 import { StudentLogin } from "./pages/StudentLogin/StudentLogin"
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { Contributor } from "./pages/Contributor/Contributor"
@@ -9,6 +10,7 @@ import { TermsOfUse } from "./pages/TermsOfUse/TermsOfUse"
 import { CodeOfConduct } from "./pages/CodeOfConduct/CodeOfConduct"
 import { Header } from "./components/Header/Header"
 import { Footer } from "./components/Footer/Footer"
+
 
 
 const App = () => {
@@ -68,6 +70,7 @@ const App = () => {
         <Route path="/termsofuse" element={<TermsOfUse />} />
         <Route path="/codeofconduct" element={<CodeOfConduct />} />
         <Route path="/contributors" element={<Contributor />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
