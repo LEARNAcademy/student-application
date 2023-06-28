@@ -58,6 +58,12 @@ const NotFound = () => {
       renderer.render(scene,camera)
     } 
 
+    window.onresize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight
+      camera.updateProjectionMatrix()
+      renderer.setSize(window.innerWidth, window.innerHeight)
+    }
+    
     animate()
     window.addEventListener("mousemove", handleMouseMove)
 
