@@ -67,6 +67,7 @@ const NotFound = () => {
   }, [])
  
   const navigate = useNavigate()
+  
   const handleGoBack = () => {
     navigate(-1)
   }
@@ -75,43 +76,34 @@ const NotFound = () => {
     navigate("/")
   }
 
-
   return(
     <>
-    
-      <div>
-        <canvas ref={canvasRef} style={{position: "absolute", height: "100%", marginBottom: "20px"}} className="shadow-xl shadow-learnpurple"/>
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            // transform: "translate(50%, 50%)",
-          }}
+      <canvas ref={canvasRef}  className="sticky left-auto top-auto mb-4 flex h-auto justify-self-center align-middle shadow-xl shadow-learnpurple"/>
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+        }}
+      >
+        <h1 className="rounded-lg text-4xl font-bold text-white">404</h1>
+        <p className="py-2 font-medium text-white">Sorry Anime Not Found...</p>
+        <button
+          onClick={() => handleGoBack()}
+          className="rounded-lg bg-learngreen py-2 px-4 font-semibold text-white shadow-md transition-all duration-500 ease-in-out hover:scale-110 hover:bg-purple-500"
         >
-          <h1 className="rounded-lg pl-3 font-bold text-white">404</h1>
-          <p>Sorry Anime Not Found...</p>
-          <button
-            onClick={() => handleGoBack()}
-            className="rounded-lg bg-blue-500 py-2 px-4 font-semibold text-white shadow-md transition-all duration-500 ease-in-out hover:scale-110 hover:bg-purple-500"
-          >
-            Go Back
-          </button>
+          Go Back
+        </button>
 
-          <button
-            onClick={() => handleGoHome()}
-            className="rounded-lg bg-learnpurple py-2 px-4 font-semibold text-white shadow-md transition-all duration-500 ease-in-out hover:bg-pink-500 hover:from-pink-500 hover:to-purple-500"
-          >
-            Go Home
-          </button>
-        </div>
+        <button
+          onClick={() => handleGoHome()}
+          className="rounded-lg bg-learnpurple py-2 px-4 font-semibold text-white shadow-md transition-all duration-500 ease-in-out hover:bg-pink-500 hover:from-pink-500 hover:to-purple-500"
+        >
+          Go Home
+        </button>
       </div>
-
-    
     </>
   )
 }
-
-
 
 export { NotFound }
