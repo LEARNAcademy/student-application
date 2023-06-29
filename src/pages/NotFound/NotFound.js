@@ -96,7 +96,7 @@ const NotFound = () => {
           className="absolute top-1/2 left-1/2"
         >
           <h1 className="rounded-lg text-4xl font-bold text-white">404</h1>
-          <p className="py-2 font-medium text-white text-3xl"><span className="py-2 text-black">This isn&apos;t where I parked my car</span></p>
+          <p className="py-2 text-3xl font-medium text-white"><span className="py-2 text-black">This isn&apos;t where I parked my car</span></p>
           <button
             onClick={() => handleGoBack()}
             className="rounded-lg bg-learngreen py-2 px-4 font-semibold text-white shadow-md transition-all duration-500 ease-in-out hover:scale-110 hover:bg-purple-500"
