@@ -10,8 +10,10 @@ describe("<App />", () => {
         <App />
       </BrowserRouter>
     )
+    const element = screen.getByText("Email")
+    expect(element).toBeInTheDocument()
   })
-  it("render's a login page for a logged out user ", () => {
+  it("render's a login page for a logged out user", () => {
     render(
       <MemoryRouter initialEntries={["/"]}>
         <App />
