@@ -86,13 +86,7 @@ const NotFound = () => {
     <>
       <div className="relative mb-8 sm:flex sm:min-w-fit">
         <canvas ref={canvasRef}  className="shadow-xl shadow-learnpurple"/>
-
         <div
-          // style={{ 
-          //   position: "absolute",
-          //   top: "50%",
-          //   left: "50%",
-          // }}
           className="absolute top-1/2 left-1/2"
         >
           <h1 className="rounded-lg text-4xl font-bold text-white">404</h1>
