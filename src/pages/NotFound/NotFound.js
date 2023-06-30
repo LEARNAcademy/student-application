@@ -97,7 +97,6 @@ const NotFound = () => {
           >
             Go Back
           </button>
-
           <button
             onClick={() => handleGoHome()}
             className="rounded-lg bg-learnpurple py-2 px-4 font-semibold text-white shadow-md transition-all duration-500 ease-in-out hover:bg-pink-500 hover:from-pink-500 hover:to-purple-500"
