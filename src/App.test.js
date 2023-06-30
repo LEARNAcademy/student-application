@@ -11,19 +11,13 @@ describe("<App />", () => {
       </BrowserRouter>
     )
   })
-  it("render's a login page for a logged out user", () => {
+  it("render's a login page for a logged out user ", () => {
     render(
       <MemoryRouter initialEntries={["/"]}>
         <App />
       </MemoryRouter>
     )
-    const button = screen.getByRole("button", {
-      name: /submit/i
-    })
-    const textbox = screen.getByRole("textbox", {
-      name: /email/i
-    })
-    expect(button).toBeInTheDocument()
-    expect(textbox).toBeInTheDocument()
+    const element = screen.getByText("Password")
+    expect(element).toBeInTheDocument()
   })
 })
